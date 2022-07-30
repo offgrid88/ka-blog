@@ -1,0 +1,13 @@
+[Unit]
+Description=Gunicorn instance to serve offgrid8 blog
+After=network.target
+
+[Service]
+User=mdx8
+Group=www-data
+WorkingDirectory=/home/mdx8/ka-blog
+Environment="PATH=/home/mdx8/ka-blog/venv/bin"
+ExecStart=/home/mdx8/ka-blog/venv/bin/gunicorn --config gunicorn_config.py wsgi:app
+
+[Install]
+WantedBy=multi-user.target
