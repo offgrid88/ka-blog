@@ -2,7 +2,18 @@
 <body>
 {% include 'menu.html'%}
   <main>
-    <section class="main-2">
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+
+	  <section class="main-2">
       <div class="site-header">
         <h1 class="site-title">Offgrid8</h1>
         <p class="site-subheader">I like tinkering with hardware from a software perspective</p>
@@ -19,6 +30,12 @@
       <div class="elements"></div>
     </section>
   </div>
+    <!-- Java Script
+    ================================================== -->
+    <script src="/static/js/jquery-3.2.1.min.js"></script>
+    <script src="/static/js/plugins.js"></script>
+    <script src="/static/js/main.js"></script>
+
 
   </main>
 </body>
