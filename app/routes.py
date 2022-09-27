@@ -8,7 +8,6 @@ from flask_migrate import Migrate
 
 
 
-
 #app.config.from_object(Config)
 #db = SQLAlchemy(app)
 #migrate = Migrate(app, db)
@@ -17,9 +16,9 @@ from flask_migrate import Migrate
 def index():
     return render_template('home.html')
 
-@app.route('/home')
-def home():
-    return render_template('home.html')
+@app.route('/add_article')
+def add_article():
+    return render_template('add_article.html')
 
 @app.route('/about')
 def about():
@@ -29,7 +28,9 @@ def about():
 def articles():
     return render_template('articles.html')
 
-@app.route('/contact')
-def contact():
-    return render_template('contact.html')
+@app.route('/projects')
+def projects():
+    return render_template('projects.html')
+
+
 

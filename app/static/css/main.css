@@ -1933,8 +1933,7 @@ select:-webkit-autofill:focus {
 }
 
 .header__logo img {
-  width: 125px;
-  height: 30px;
+  
   margin: 0;
 }
 
@@ -2226,7 +2225,7 @@ select:-webkit-autofill:focus {
 .header__search-trigger {
   z-index: 1;
   display: block;
-  color: #000000;
+  color: white;
   height: 16px;
   width: 16px;
   background-repeat: no-repeat;
@@ -2243,7 +2242,7 @@ select:-webkit-autofill:focus {
   display: block;
   width: 1px;
   height: calc(100vh - 200px);
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
   position: fixed;
   right: 48px;
   top: auto;
@@ -2295,7 +2294,7 @@ select:-webkit-autofill:focus {
 }
 
 .header__search-form label {
-  color: #000000;
+  color: #ecd7d7;
 }
 
 .header__search-form::after {
@@ -2305,12 +2304,12 @@ select:-webkit-autofill:focus {
   font-size: 1.6rem;
   margin-top: 3.2rem;
   text-align: center;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(236, 202, 202, 0.5);
 }
 
 .header__search-form input[type="search"] {
   background-color: transparent;
-  color: #000000;
+  color: #3f3737;
   height: auto;
   width: 100%;
   font-family: "IBM Plex Sans", sans-serif;
@@ -2477,8 +2476,9 @@ body.search-is-visible {
   }
 
   .header__logo img {
-    width: 120px;
-    height: 29px;
+    width: 50px;
+  height: 50px;
+    
   }
 
   .header__nav-wrap {
@@ -2679,12 +2679,12 @@ body.search-is-visible {
   padding-bottom: 8rem;
   font-size: 1.6rem;
   line-height: 2.4rem;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(63, 63, 63, 0.5);
   text-align: center;
 }
 
 .s-footer a {
-  color: #000000;
+  color: #2e2e2e;
 }
 
 /* -------------------------------------------------------------------
@@ -2698,7 +2698,7 @@ body.search-is-visible {
   content: "|";
   display: inline-block;
   padding: 0 1.2rem 0 1.4rem;
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(97, 97, 97, 0.3);
 }
 
 .footer__copyright span:last-child::after {
