@@ -1,6 +1,7 @@
 /* ===================================================================
  * TypeRite - Main JS
  *
+ *
  * ------------------------------------------------------------------- */
 
 (function($) {
@@ -20,7 +21,7 @@
     doc.setAttribute('data-useragent', navigator.userAgent);
 
 
-   /* Preloader
+   /* preloader
     * -------------------------------------------------- */
     var ssPreloader = function() {
         
@@ -45,24 +46,14 @@
     };
 
 
-   /* Pretty Print
-    * -------------------------------------------------- */
-    var ssPrettyPrint = function() {
-        $('pre').addClass('prettyprint');
-        $( document ).ready(function() {
-            prettyPrint();
-        });
-    };
-
-   
    /* search
     * ------------------------------------------------------ */
     var ssSearch = function() {
             
-        var searchWrap = $('.header__search'),
+        var searchWrap = $('.search-block'),
             searchField = searchWrap.find('.search-field'),
-            closeSearch = searchWrap.find('.header__search-close'),
-            searchTrigger = $('.header__search-trigger'),
+            closeSearch = searchWrap.find('.search-close'),
+            searchTrigger = $('.search-trigger'),
             siteBody = $('body');
 
 
@@ -276,7 +267,6 @@
     (function clInit() {
 
         ssPreloader();
-        ssPrettyPrint();
         ssSearch();
         ssMenu();
         ssMasonryFolio();
