@@ -1,12 +1,17 @@
 from flask import Flask
-from config import Config
-from flask_sqlalchemy import SQLAlchemy
-from flask_migrate import Migrate
+from flask import Flask, flash, redirect, render_template, request, session, abort
+import os
+import random
+from celery import Celery
+from datetime import datetime
+import re
+import hashlib, binascii
+#from taskworker import *
+#from mailApp import *
+from bson.objectid import ObjectId
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://mdx8:I.lovecpu758400@localhost/low-life'
-db = SQLAlchemy(app)
-migrate = Migrate(app, db)
-from app import routes, models
+
+from app import routes
 
 
