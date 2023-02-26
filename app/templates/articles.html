@@ -12,39 +12,37 @@
                 <div class="masonry">
     
                     <div class="grid-sizer"></div>
-    
-    
+                    <!-- article list -->
+                    {% for post in posts: %}
                     <article class="masonry__brick entry format-standard animate-this">
-                        {% for post in collection: %}
-                        
+                            
                         <div class="entry__thumb">
                             <a href="/fullpost?postId={{ post['_id'] }}" class="entry__thumb-link">
-                                <img src="images/thumbs/masonry/real-600.jpg" 
-                                        srcset="images/thumbs/masonry/real-600.jpg 1x, images/thumbs/masonry/real-1200.jpg 2x" alt="">
+                                <img src="images/thumbs/masonry/woodcraft-600.jpg" 
+                                        srcset="images/thumbs/masonry/woodcraft-600.jpg 1x, images/thumbs/masonry/woodcraft-1200.jpg 2x" alt="">
                             </a>
                         </div>
-    
+        
                         <div class="entry__text">
                             <div class="entry__header">
+    
                                 <h2 class="entry__title"><a href="/fullpost?postId={{ post['_id'] }}">{{ post['title'] }}</a></h2>
-                                <div class="entry__meta">
-                                    <span class="entry__meta-cat">
-                                        <a href="category.html">Travel</a>
-                                        <a href="category.html">Vacation</a>
-                                    </span>
+                                <!-- <div class="entry__meta">
+                                    <li class="author">By <a href="#0">{{ post['author'] }}</a></li>
                                     <span class="entry__meta-date">
-                                        <a href="/fullpost?postId={{ post['_id'] }}">{{ post['created_at'] }}</a>
+                                        <a href="single-standard.html">{{ post['created_at'] }}</a>
                                     </span>
-                                </div>
+                                </div> -->
+                                
                             </div>
                             <div class="entry__excerpt">
                                 <p>
-                                    {{ post['content'] }}
+                                    {{ post | safe}}.
                                 </p>
                             </div>
                         </div>
-    
-                    </article> <!-- end article -->
+        
+                    </article> <!-- article list -->
                     {% endfor %}
                 </div> <!-- end masonry -->
 
@@ -57,11 +55,6 @@
                             <li><a class="pgn__prev" href="#0">Prev</a></li>
                             <li><a class="pgn__num" href="#0">1</a></li>
                             <li><span class="pgn__num current">2</span></li>
-                            <li><a class="pgn__num" href="#0">3</a></li>
-                            <li><a class="pgn__num" href="#0">4</a></li>
-                            <li><a class="pgn__num" href="#0">5</a></li>
-                            <li><span class="pgn__num dots">…</span></li>
-                            <li><a class="pgn__num" href="#0">8</a></li>
                             <li><a class="pgn__next" href="#0">Next</a></li>
                         </ul>
                     </nav>

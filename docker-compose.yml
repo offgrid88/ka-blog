@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  offgrid8_db:
+    image: mongo
+    restart: unless-stopped
+    env_file: ./.env
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=$MONGODB_USER
+      - MONGO_INITDB_ROOT_PASSWORD=$MONGODB_PASSWORD
+    ports:
+      - $MONGODB_LOCAL_PORT:$MONGODB_DOCKER_PORT
+    volumes:
+      - ./database:/data/db
+volumes:
+  database:
