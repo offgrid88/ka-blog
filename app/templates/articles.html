@@ -27,17 +27,18 @@
                             <div class="entry__header">
     
                                 <h2 class="entry__title"><a href="/fullpost?postId={{ post['_id'] }}">{{ post['title'] }}</a></h2>
-                                <!-- <div class="entry__meta">
+                                
+                                 <div class="entry__meta">
                                     <li class="author">By <a href="#0">{{ post['author'] }}</a></li>
                                     <span class="entry__meta-date">
                                         <a href="single-standard.html">{{ post['created_at'] }}</a>
                                     </span>
-                                </div> -->
-                                
+                                </div> 
+                            
                             </div>
                             <div class="entry__excerpt">
                                 <p>
-                                    {{ post | safe}}.
+                                    {{ post['content'] | safe}}.
                                 </p>
                             </div>
                         </div>

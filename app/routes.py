@@ -6,6 +6,8 @@ from dotenv import load_dotenv, find_dotenv
 import urllib
 import os
 from pymongo import MongoClient
+from bson import ObjectId
+
 
 
 
@@ -100,7 +102,7 @@ def add_article():
         return render_template("add_article.html")
     else:
         json = request.json
-        print(json)     
+        inserted_id=postsDB.insert_one(json).inserted_id 
         #with open("article", "w") as f:
         #    f.write()
         return render_template("add_article.html") 

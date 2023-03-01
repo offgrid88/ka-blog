@@ -1,4 +1,7 @@
-
+.editor-container {
+  height: 300px; // Replace 300px = any number you want
+  width: 200px;
+}
 
 *,
 *::after,
@@ -2024,7 +2027,7 @@ select:-webkit-autofill:focus {
   -webkit-flex-flow: column nowrap;
   -ms-flex-flow: column nowrap;
   flex-flow: column nowrap;
-  width: 300px;
+  width: 250px;
   background-color: #151515;
   padding-top: 6.4rem;
   padding-right: 3.2rem;
@@ -2546,7 +2549,7 @@ body.search-is-visible {
  * ------------------------------------------------------------------- */
 @media screen and (max-width:1600px) {
   .s-header {
-    width: 290px;
+    width: 250px;
   }
 
 }
@@ -3265,6 +3268,9 @@ body.search-is-visible {
 .comment__info {
   position: relative;
 }
+.author {
+  color: red;
+}
 
 .comment__info .comment__author {
   font-family: "Heebo", sans-serif;
@@ -3272,7 +3278,7 @@ body.search-is-visible {
   font-size: 1.9rem;
   line-height: 1.684;
   font-style: normal;
-  color: #000000;
+  color: #d8d8d8;
 }
 
 .comment__meta {
