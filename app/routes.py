@@ -7,19 +7,13 @@ import urllib
 import os
 from pymongo import MongoClient
 
-from flask_wtf import FlaskForm
-from wtforms import SubmitField
-
-from wtforms import StringField
-from wtforms.validators import DataRequired
-
 
 
 load_dotenv(find_dotenv())
 password= urllib.parse.quote_plus(os.environ.get("MONGO_PWD"))
-#username=os.environ.get("USER_NAME")
+
 username = urllib.parse.quote_plus(os.environ.get("USER_NAME"))
-#password = urllib.parse.quote_plus(password)
+
 
 #app.config['SESSION_TYPE'] = 'memcached'
 #app.config['SECRET_KEY'] = '1234'
@@ -37,7 +31,7 @@ def databaseArticles():
 usersDB = databaseUsers()
 postsDB = databaseArticles()
 
-def insert_doc():
+"""def insert_doc():
     
     testdoc={
         "title":"test title",
@@ -48,7 +42,7 @@ def insert_doc():
     }
     inserted_id=postsDB.insert_one(testdoc).inserted_id
     print(inserted_id)
-insert_doc()
+insert_doc()"""
 
 @app.route('/')
 def index():
@@ -106,8 +100,9 @@ def add_article():
         return render_template("add_article.html")
     else:
         json = request.json
-        with open("article", "w") as f:
-            f.write(json.get("content"))
+        print(json)     
+        #with open("article", "w") as f:
+        #    f.write()
         return render_template("add_article.html") 
 
 

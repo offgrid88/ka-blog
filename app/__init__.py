@@ -2,7 +2,7 @@
 from flask import Flask, flash, redirect, render_template, request, session, abort
 import os
 import random
-from celery import Celery
+
 from datetime import datetime
 import re
 import hashlib, binascii

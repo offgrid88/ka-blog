@@ -14,58 +14,86 @@
 
                     <div class="media-wrap">
                         <div class="content__page-header">
-                            <h1 text-align=center class="display-1">
-                                Offgrid8
-                            </h1>
+                            <h4 text-align=center class="display-1">
+                                Create article
+                            </h4>
                         </div> <!-- end content__page-header -->
-                        <div>
-                            <img src="static/pics/ka.png" >
-                        </div>
+                       
                    <p>
                 <!-- Create the editor container -->
+               
+                <div class="form__group">
+                  <input type="text" class="form__input" id="title" placeholder="Title" required="" />
+                  <label for="title" class="form__label">Title</label>
+                </div>
+
+                <div class="form__group">
+                  <input type="text" class="form__input" id="author"  placeholder="Author" required="" />
+                  <label for="Title" class="form__label">author</label>
+                </div>
+            
      <div id="editor">
         <p>Hello Friend!</p>
         <p>If you are the owner, start pouring some knowledge, if not <strong>get lost !</strong> </p>
         <p><br></p>
       </div>
-      <a href="/add_article">
-        <button type="button" id="submit" class="bn54">
-          <span class="bn54span">submit</span>
+     
+        <button type="submit" id="submit" class="bn54">
+          <span  class="bn54span">submit</span>
         </button>
-      </a>
+   
       
-      
+   
       
       <!-- Initialize Quill editor -->
       <script>
+        var toolbarOptions = [
+  ['bold', 'italic', 'underline', 'strike'],        // toggled buttons
+  ['blockquote', 'code-block'],
+
+  [{ 'header': 1 }, { 'header': 2 }],               // custom button values
+  [{ 'list': 'ordered'}, { 'list': 'bullet' }],
+  [{ 'script': 'sub'}, { 'script': 'super' }],      // superscript/subscript
+  [{ 'indent': '-1'}, { 'indent': '+1' }],          // outdent/indent
+  [{ 'direction': 'rtl' }],                         // text direction
+
+  [{ 'size': ['small', false, 'large', 'huge'] }],  // custom dropdown
+  [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
+
+  [{ 'color': [] }, { 'background': [] }],          // dropdown with defaults from theme
+  [{ 'font': [] }],
+  [{ 'align': [] }],
+
+  ['clean']                                         // remove formatting button
+];
+
         var quill = new Quill('#editor', {
-            
-          theme: 'snow'
-        });
+          modules: {
+    toolbar:  toolbarOptions
+  },
+  theme: 'snow'  // or 'bubble'
+});
+
 
         document.getElementById("submit").onclick =  async() => {
-           const content =  quill.root.innerHTML;
-           console.log(content)
+          const title = document.getElementById("title").value; 
+          const author = document.getElementById("author").value; 
+          const content =  quill.root.innerHTML;
+          const doc_dict = {title,author,content} 
+          const full_doc = JSON.stringify(doc_dict);
+           console.log(full_doc)
             fetch("/add_article", {
                 method: 'POST',
                 headers: {
                     "Content-Type": "application/json; charset=UTF-8"
                 },
-                body: JSON.stringify({content})
+                body: full_doc
             })
 
         }
       </script>
  <!-- Create the editor container -->
-   </p>
-
-                 
-
-                  
-                            
-                            
-                          
-
+   </p>                               
                     </div>
 
                 </section>
