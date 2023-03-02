@@ -19,20 +19,24 @@
                             </h4>
                         </div> <!-- end content__page-header -->
                        
+                          
+                          
+                     
                    <p>
                 <!-- Create the editor container -->
                
                 <div class="form__group">
-                  <input type="text" class="form__input" id="title" placeholder="Title" required="" />
+                  <input type="text" class="form__input" id="title" placeholder="Title" required />
                   <label for="title" class="form__label">Title</label>
                 </div>
 
                 <div class="form__group">
-                  <input type="text" class="form__input" id="author"  placeholder="Author" required="" />
+                  <input type="text" class="form__input" id="author"  placeholder="Author" required/>
                   <label for="Title" class="form__label">author</label>
                 </div>
+               
             
-     <div id="editor">
+     <div class="editor-container" id="editor">
         <p>Hello Friend!</p>
         <p>If you are the owner, start pouring some knowledge, if not <strong>get lost !</strong> </p>
         <p><br></p>
@@ -42,9 +46,7 @@
           <span  class="bn54span">submit</span>
         </button>
    
-      
-   
-      
+
       <!-- Initialize Quill editor -->
       <script>
         var toolbarOptions = [
@@ -71,7 +73,7 @@
           modules: {
     toolbar:  toolbarOptions
   },
-  theme: 'snow'  // or 'bubble'
+  theme: 'snow'  
 });
 
 
