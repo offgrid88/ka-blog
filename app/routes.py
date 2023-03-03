@@ -138,3 +138,17 @@ def login():
             message = 'Email not found'
             return render_template('login.html', message=message)
     return render_template('login.html', message=message)
+
+
+
+@app.route('/register',methods=["POST", "GET"])
+def register():
+    if request.method == 'GET':
+        return render_template('register.html')
+    else:
+        email = request.form['email']
+        username=request.form['user']
+        password=request.form['password']
+        verif_pass=request.form['verif_pass']
+        return email , username, password, verif_pass
+        #return render_template('register.html')

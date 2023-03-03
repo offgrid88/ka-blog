@@ -1,4 +1,35 @@
 
+input.inputp {
+  color: white;
+  padding-left: 20px;
+  margin-top: 20px;
+  float: center;
+  width: 100%;
+  height: 45px;
+  background-color: rgb(20, 20, 20);
+  border: 0;
+  border-radius: 5px;
+}
+
+input.inputp:hover{
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+input.inputp:not(:hover){
+  transition: 0.5s;
+  transform: scale(1.0);
+}
+
+input.inputp:focus{
+  outline: 0;
+  padding-left: 30px;
+  transform: scale(1.1);
+  border: 2px solid rgb(119, 0, 255);
+}
+
+
+
 .editor-container {
   height: 300px; // Replace 300px = any number you want
   width: 200px;
