@@ -14,7 +14,7 @@ services:
       - ./database:/data/db
   web:
     build: ./services/web
-    command: ls ./venv/bin/
+    command: python3 wsgi.py
     volumes:
       - ./services/web/:/usr/src/app/
     ports:
