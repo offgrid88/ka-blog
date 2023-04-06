@@ -150,5 +150,6 @@ def register():
         username=request.form['user']
         password=request.form['password']
         verif_pass=request.form['verif_pass']
-        return email , username, password, verif_pass
+        print( username, password, verif_pass)
+        return email
         #return render_template('register.html')
