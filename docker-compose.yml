@@ -12,5 +12,14 @@ services:
       - $MONGODB_LOCAL_PORT:$MONGODB_DOCKER_PORT
     volumes:
       - ./database:/data/db
+  web:
+    build: ./services/web
+    command: ls ./venv/bin/
+    volumes:
+      - ./services/web/:/usr/src/app/
+    ports:
+      - 5000:5000
+    env_file:
+      - ./.env
 volumes:
   database:
