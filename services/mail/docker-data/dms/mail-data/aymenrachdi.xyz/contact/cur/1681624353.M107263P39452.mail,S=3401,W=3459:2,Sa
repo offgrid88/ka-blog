@@ -1,0 +1,58 @@
+Return-Path: <webank@webank.com.tn>
+Delivered-To: contact@aymenrachdi.xyz
+Received: from mail.aymenrachdi.xyz
+	by mail.aymenrachdi.xyz with LMTP
+	id BoNIBiGNO2QcmgAAYytROg
+	(envelope-from <webank@webank.com.tn>)
+	for <contact@aymenrachdi.xyz>; Sun, 16 Apr 2023 01:52:33 -0400
+Received: from localhost (localhost [127.0.0.1])
+	by mail.aymenrachdi.xyz (Postfix) with ESMTP id 0E3F6A3D20
+	for <contact@aymenrachdi.xyz>; Sun, 16 Apr 2023 01:52:33 -0400 (EDT)
+X-Virus-Scanned: Yes
+Received-SPF: Pass (mailfrom) identity=mailfrom; client-ip=41.224.6.186; helo=smtp1.attijaribank.com.tn; envelope-from=webank@webank.com.tn; receiver=<UNKNOWN> 
+Authentication-Results: mail.aymenrachdi.xyz; dmarc=none (p=none dis=none) header.from=webank.com.tn
+Authentication-Results: mail.aymenrachdi.xyz; dmarc=none (p=none dis=none) header.from=webank.com.tn
+Received: from smtp1.attijaribank.com.tn (smtp1.attijaribank.com.tn [41.224.6.186])
+	by mail.aymenrachdi.xyz (Postfix) with ESMTP id 13D03A3D1E
+	for <contact@aymenrachdi.xyz>; Sun, 16 Apr 2023 01:52:29 -0400 (EDT)
+X-AuditID: ac1e042f-d6fff7000000e20e-e8-6437f7d3636b
+Received: from SRV-P-EXCH03.bank-sud.tn (SRV-P-EXCH03.bank-sud.tn [172.28.14.141])
+	(using TLS with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits))
+	(Client did not present a certificate)
+	by smtp1.attijaribank.com.tn (smtp.attijaribank.com.tn) with SMTP id 38.24.57870.3D7F7346; Thu, 13 Apr 2023 13:38:43 +0100 (WAT)
+Received: from 172.28.14.143 (172.28.28.12) by srv-p-exch03.bank-sud.tn
+ (172.28.14.143) with Microsoft SMTP Server id 15.1.2507.23; Thu, 13 Apr 2023
+ 13:38:42 +0100
+From: <webank@webank.com.tn>
+To: <contact@aymenrachdi.xyz>
+Subject: WEBANK
+Content-Type: text/html; charset="UTF-8"
+MIME-Version: 1.0
+Message-ID: <825e02d9-64e9-477d-bec6-2d25c886dd5b@SRV-P-EXCH03.bank-sud.tn>
+Date: Thu, 13 Apr 2023 13:38:42 +0100
+Content-Transfer-Encoding: quoted-printable
+X-Brightmail-Tracker: H4sIAAAAAAAAA+NgFvrFJMWRmVeSWpSXmKPExsWyRoavV/fyd/MUg2trWS1ufktzYPRYNbmf
+	KYAxissmJTUnsyy1SN8ugSuj70l1wRa2irZb6xgbGGezdjFycEgImEjsv8DXxcjFISRwmEmi
+	48wDNghnOaPEr/+XGUGK2ARkJB5+FOhi5OQQEZCV2Pt9LzuILSzAL3F+2gkwm1lAQ2LBnX2M
+	IDavgKDEyZlPWEBaeQW8JV6uTQIJCwkoSpyddJkFxGYRUJV42HKIGaJVW2LZwtfMExh5ZiGZ
+	NAvJpFlIyhYwMq9ilCzOLSkw1EssKcnMSizKTErMy9ZLzs/VK8nbxAgKETkW/R2MU+b4HmIU
+	4GBU4uENyLZJEmJNLCuuzD3EKMHBrCTC+8PFNEWINyWxsiq1KD++qDQntfgQozQHi5I476ds
+	9RQhgfTEktTs1NSC1CKYLBMHp1QDY7HmXKMPS08tcmnfwnP52qOJy02iSj9uFdgh7/KU7+6O
+	Fxb2ESqv2puYrnzQL38XxyLi9Tvx6u1wjr+7z0xuWW0c9dhvucTZuQrK3i8mvuJUfXP3FLeI
+	a1z0rRzX6TyHa55tE+E57Dzvt/2ZyQfcNbvnfGvLser67JFQEbZzGleLcrFgZc7DfUosxRmJ
+	hlrMRcWJAIF3WSUNAgAA
+
+<img src=3D"https://www.webank.com.tn/assets/images/jpg/header_mail.jpg" />=
+ <br><br>Mme/Mr AYMEN RACHDI,<br> Votre compte Webank 00135 0070822721 en D=
+INAR TUNISIEN vient d'enregistrer l'(les) operation(s) debitrice(s) superie=
+ure(s) a 10 TND suivantes :<br>  Le 13/04/2023 13:36:41, debit de 400 TND V=
+IREMENT AGENCE HORS PLACE <br> Si vous voulez modifier ou supprimer cette a=
+lerte rendez-vous sur votre espace client Webank rubrique Alertes.<br> L'eq=
+uipe Webank vous remercie pour votre confiance.<br> Si vous avez des questi=
+ons, lancez le chat en ligne, ou contactez notre service client du lundi au=
+ samedi de 8h a 20h au numero vert 80 101 550<br>Priere de ne pas repondre =
+a cet envoi automatique.<br><br>=0A=
+              Cordialement,<br>=0A=
+              <strong>WEBANK</strong>
+
+

@@ -1,0 +1,169 @@
+Return-Path: <bounce+32641+218+7220260+11723282@lists.riscv.org>
+Delivered-To: contact@aymenrachdi.xyz
+Received: from mail.aymenrachdi.xyz
+	by mail.aymenrachdi.xyz with LMTP
+	id f3C6KtVOO2SPKwAAYytROg
+	(envelope-from <bounce+32641+218+7220260+11723282@lists.riscv.org>)
+	for <contact@aymenrachdi.xyz>; Sat, 15 Apr 2023 21:26:45 -0400
+Received: from localhost (localhost [127.0.0.1])
+	by mail.aymenrachdi.xyz (Postfix) with ESMTP id A8625A3D1D
+	for <contact@aymenrachdi.xyz>; Sat, 15 Apr 2023 21:26:45 -0400 (EDT)
+X-Virus-Scanned: Yes
+Received-SPF: Pass (mailfrom) identity=mailfrom; client-ip=66.175.222.12; helo=mail01.groups.io; envelope-from=bounce+32641+218+7220260+11723282@lists.riscv.org; receiver=<UNKNOWN> 
+Authentication-Results: mail.aymenrachdi.xyz; dmarc=pass (p=none dis=none) header.from=riscv.org
+Authentication-Results: mail.aymenrachdi.xyz;
+	dkim=pass (1024-bit key; unprotected) header.d=lists.riscv.org header.i=@lists.riscv.org header.a=rsa-sha256 header.s=20140610 header.b=baYnZ4SA;
+	dkim-atps=neutral
+Authentication-Results: mail.aymenrachdi.xyz; dmarc=pass (p=none dis=none) header.from=riscv.org
+Received: from mail01.groups.io (web01.groups.io [66.175.222.12])
+	by mail.aymenrachdi.xyz (Postfix) with ESMTP id D29F1A3CFC
+	for <contact@aymenrachdi.xyz>; Sat, 15 Apr 2023 21:26:44 -0400 (EDT)
+X-Received: by 127.0.0.2 with SMTP id VF3CYY7221595x3MWEJTHCq8; Sat, 15 Apr 2023 18:26:38 -0700
+X-Received: from mail-qv1-f46.google.com (mail-qv1-f46.google.com [209.85.219.46])
+ by mx.groups.io with SMTP id smtpd.web11.9188.1681478414050262962
+ for <allmem@lists.riscv.org>;
+ Fri, 14 Apr 2023 06:20:14 -0700
+X-Received: by mail-qv1-f46.google.com with SMTP id dd8so5223493qvb.13
+        for <allmem@lists.riscv.org>; Fri, 14 Apr 2023 06:20:13 -0700 (PDT)
+X-Gm-Message-State: k1LdNKEPhR2sa4idizlif4Fzx7220260AA=
+X-Google-Smtp-Source: AKy350b/Y8/KbMKp/TsskIoQ4zex2l8z7jOMxbDd1+9OcvA81T0tSUkJKzmEfxmZY3sdCN/78w66P9uYLA395ozdPxM=
+X-Received: by 2002:a05:6214:410e:b0:5e7:b5c5:5558 with SMTP id
+ kc14-20020a056214410e00b005e7b5c55558mr3114900qvb.44.1681478412736; Fri, 14
+ Apr 2023 06:20:12 -0700 (PDT)
+MIME-Version: 1.0
+From: "Rafael Sene" <rafael@riscv.org>
+Date: Fri, 14 Apr 2023 10:19:36 -0300
+Message-ID: <CABRvp9JXatf0qJ0GJb_D=vic-XEfV8VbHuwTFN8rnULZTq3PwQ@mail.gmail.com>
+Subject: [allmem] RISC-V Technical Sessions | Recording Available
+To: allmem@lists.riscv.org
+Precedence: Bulk
+List-Unsubscribe: <mailto:allmem+unsubscribe@lists.riscv.org>
+List-Subscribe: <mailto:allmem+subscribe@lists.riscv.org>
+List-Help: <mailto:allmem+help@lists.riscv.org>
+Sender: allmem@lists.riscv.org
+List-Id: <allmem.lists.riscv.org>
+Mailing-List: list allmem@lists.riscv.org; contact allmem+owner@lists.riscv.org
+Delivered-To: mailing list allmem@lists.riscv.org
+List-Post: <mailto:allmem@lists.riscv.org>
+Content-Type: multipart/alternative; boundary="0000000000007d2e5805f94bb3c0"
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
+ d=lists.riscv.org; q=dns/txt; s=20140610; t=1681608398;
+ bh=zSSFZmqd/dNPl5StrxCirO9vZuJSNjUdIWnPRGnzz/g=;
+ h=Content-Type:Date:From:Subject:To;
+ b=baYnZ4SAGq/O5mqWSgufMwAesVZQuJyC7HwQq9c7VEsf1pOovOiYnMD+X5P53sU6nTp
+ nR/xT7dFBMMazZlJZfK89u8B4D/RZAJWoCxM5M6dH4Bmd1+bLibzcl9iaE1XLCyhJf+Kl
+ GyvgOel/UCmJGyZeLCu7TMJkORPZWSfliIw=
+
+--0000000000007d2e5805f94bb3c0
+Content-Type: text/plain; charset="UTF-8"
+
+Dear members,
+
+We are pleased to inform you that the recording of the latest session, *"Using
+Template Repo to Setup/Run RISC-V Arch Test Suite under RHEL/Ubuntu"* is now
+available <https://sites.google.com/riscv.org/riscv-technical-sessions/home>
+[1] in the Past Sessions section.
+
+The session was filled with engaging questions and fruitful discussions. We
+would like to extend our gratitude to all participants for their valuable
+contributions!
+
+[1] - https://sites.google.com/riscv.org/riscv-technical-sessions/home
+
+-- 
+Obrigado | Thank You
+*Rafael Peria de Sene*
+Technical Program Manager, RISC-V
+Phone: +55 19 98153 9778
+E-mail: rafael@riscv.org
+*RISC-V Summit Europe 2023* <https://riscv-europe.org/>
+
+
+-=-=-=-=-=-=-=-=-=-=-=-
+Links: You receive all messages sent to this group.
+View/Reply Online (#218): https://lists.riscv.org/g/allmem/message/218
+Mute This Topic: https://lists.riscv.org/mt/98262001/7220260
+Group Owner: allmem+owner@lists.riscv.org
+Unsubscribe: https://lists.riscv.org/g/allmem/unsub [contact@aymenrachdi.xyz]
+-=-=-=-=-=-=-=-=-=-=-=-
+
+
+
+--0000000000007d2e5805f94bb3c0
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Dear members,<br><br>We are pleased to inform you that the=
+ recording of the latest session, <b>&quot;Using Template Repo to Setup/Run=
+ RISC-V Arch Test Suite under RHEL/Ubuntu&quot;</b> is <a href=3D"https://s=
+ites.google.com/riscv.org/riscv-technical-sessions/home">now available</a> =
+[1] in the Past Sessions section.<br><br>The session was filled with engagi=
+ng questions and fruitful discussions. We would like to extend our gratitud=
+e to all participants for their valuable contributions!<br><br>[1] - <a hre=
+f=3D"https://sites.google.com/riscv.org/riscv-technical-sessions/home">http=
+s://sites.google.com/riscv.org/riscv-technical-sessions/home</a><br clear=
+=3D"all"><div><br></div><span class=3D"gmail_signature_prefix">-- </span><b=
+r><div dir=3D"ltr" class=3D"gmail_signature" data-smartmail=3D"gmail_signat=
+ure"><div dir=3D"ltr"><div><span style=3D"font-family:verdana,sans-serif"><=
+span style=3D"color:rgb(102,102,102)">Obrigado | Thank You</span></span></d=
+iv><div><span style=3D"font-family:verdana,sans-serif"><span style=3D"color=
+:rgb(61,133,198)"><b>Rafael Peria de Sene</b></span></span></div><div><span=
+ style=3D"font-family:verdana,sans-serif"><span style=3D"color:rgb(102,102,=
+102)">Technical Program Manager, RISC-V</span></span></div><div><span style=
+=3D"font-family:verdana,sans-serif"><span style=3D"color:rgb(61,133,198)">P=
+hone: </span><span style=3D"color:rgb(102,102,102)">+55 19 98153 9778</span=
+></span></div><span style=3D"font-family:verdana,sans-serif"><span style=3D=
+"color:rgb(61,133,198)">E-mail:</span> <span style=3D"color:rgb(102,102,102=
+)"><a href=3D"mailto:rafael@riscv.org" target=3D"_blank">rafael@riscv.org</=
+a><br><a href=3D"https://riscv-europe.org/" target=3D"_blank"><b>RISC-V Sum=
+mit Europe 2023</b></a></span></span></div></div></div>
+
+
+<div width=3D"1" style=3D"color:white;clear:both">_._,_._,_</div>
+<hr>
+
+
+Links:<p>
+
+
+ =20
+    You receive all messages sent to this group.
+ =20
+ =20
+
+
+<p>
+<a target=3D"_blank" href=3D"https://lists.riscv.org/g/allmem/message/218">=
+View/Reply Online (#218)</a> |
+
+
+  <a target=3D"_blank" href=3D"mailto:rafael@riscv.org?subject=3DPrivate:%2=
+0Re:%20%5Ballmem%5D%20RISC-V%20Technical%20Sessions%20%7C%20Recording%20Ava=
+ilable">Reply To Sender</a>
+ =20
+    | <a target=3D"_blank" href=3D"mailto:allmem@lists.riscv.org?subject=3D=
+Re:%20%5Ballmem%5D%20RISC-V%20Technical%20Sessions%20%7C%20Recording%20Avai=
+lable">Reply To Group</a>
+ =20
+
+|
+
+  <a target=3D"_blank" href=3D"https://lists.riscv.org/mt/98262001/7220260"=
+>Mute This Topic</a>
+
+| <a href=3D"https://lists.riscv.org/g/allmem/post">New Topic</a><br>
+
+
+
+
+<a href=3D"https://lists.riscv.org/g/allmem/editsub/7220260">Your Subscript=
+ion</a> |
+<a href=3D"mailto:allmem+owner@lists.riscv.org">Contact Group Owner</a> |
+
+<a href=3D"https://lists.riscv.org/g/allmem/unsub">Unsubscribe</a>
+
+ [contact@aymenrachdi.xyz]<br>
+<div width=3D"1" style=3D"color:white;clear:both">_._,_._,_</div>
+
+
+--0000000000007d2e5805f94bb3c0--

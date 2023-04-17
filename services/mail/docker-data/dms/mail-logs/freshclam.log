@@ -1,0 +1,42 @@
+Sun Apr 16 00:00:01 2023 -> --------------------------------------
+Sun Apr 16 00:00:01 2023 -> ClamAV update process started at Sun Apr 16 00:00:01 2023
+Sun Apr 16 00:00:01 2023 -> daily database available for update (local version: 26868, remote version: 26876)
+Sun Apr 16 00:00:06 2023 -> Testing database: '/var/lib/clamav/tmp.1f66a2bc29/clamav-6a5e822f900f74b4cd741b4f775afca0.tmp-daily.cld' ...
+Sun Apr 16 00:00:16 2023 -> Database test passed.
+Sun Apr 16 00:00:16 2023 -> daily.cld updated (version: 26876, sigs: 2030172, f-level: 90, builder: raynman)
+Sun Apr 16 00:00:16 2023 -> main.cvd database is up-to-date (version: 62, sigs: 6647427, f-level: 90, builder: sigmgr)
+Sun Apr 16 00:00:16 2023 -> bytecode.cvd database is up-to-date (version: 334, sigs: 91, f-level: 90, builder: anvilleg)
+Sun Apr 16 00:00:16 2023 -> Clamd successfully notified about the update.
+Sun Apr 16 06:00:02 2023 -> --------------------------------------
+Sun Apr 16 06:00:02 2023 -> ClamAV update process started at Sun Apr 16 06:00:02 2023
+Sun Apr 16 06:00:02 2023 -> daily database available for update (local version: 26876, remote version: 26877)
+Sun Apr 16 06:00:03 2023 -> Testing database: '/var/lib/clamav/tmp.6a0ab0a037/clamav-21c45f5e4bb29cd71575fa61474f3863.tmp-daily.cld' ...
+Sun Apr 16 06:00:12 2023 -> Database test passed.
+Sun Apr 16 06:00:12 2023 -> daily.cld updated (version: 26877, sigs: 2030192, f-level: 90, builder: raynman)
+Sun Apr 16 06:00:12 2023 -> main.cvd database is up-to-date (version: 62, sigs: 6647427, f-level: 90, builder: sigmgr)
+Sun Apr 16 06:00:12 2023 -> bytecode.cvd database is up-to-date (version: 334, sigs: 91, f-level: 90, builder: anvilleg)
+Sun Apr 16 06:00:12 2023 -> Clamd successfully notified about the update.
+Sun Apr 16 12:00:01 2023 -> --------------------------------------
+Sun Apr 16 12:00:01 2023 -> ClamAV update process started at Sun Apr 16 12:00:01 2023
+Sun Apr 16 12:00:01 2023 -> daily.cld database is up-to-date (version: 26877, sigs: 2030192, f-level: 90, builder: raynman)
+Sun Apr 16 12:00:01 2023 -> main.cvd database is up-to-date (version: 62, sigs: 6647427, f-level: 90, builder: sigmgr)
+Sun Apr 16 12:00:01 2023 -> bytecode.cvd database is up-to-date (version: 334, sigs: 91, f-level: 90, builder: anvilleg)
+Sun Apr 16 18:00:01 2023 -> --------------------------------------
+Sun Apr 16 18:00:01 2023 -> ClamAV update process started at Sun Apr 16 18:00:01 2023
+Sun Apr 16 18:00:01 2023 -> daily.cld database is up-to-date (version: 26877, sigs: 2030192, f-level: 90, builder: raynman)
+Sun Apr 16 18:00:01 2023 -> main.cvd database is up-to-date (version: 62, sigs: 6647427, f-level: 90, builder: sigmgr)
+Sun Apr 16 18:00:01 2023 -> bytecode.cvd database is up-to-date (version: 334, sigs: 91, f-level: 90, builder: anvilleg)
+Mon Apr 17 00:00:01 2023 -> --------------------------------------
+Mon Apr 17 00:00:01 2023 -> ClamAV update process started at Mon Apr 17 00:00:01 2023
+Mon Apr 17 00:00:01 2023 -> daily.cld database is up-to-date (version: 26877, sigs: 2030192, f-level: 90, builder: raynman)
+Mon Apr 17 00:00:01 2023 -> main.cvd database is up-to-date (version: 62, sigs: 6647427, f-level: 90, builder: sigmgr)
+Mon Apr 17 00:00:01 2023 -> bytecode.cvd database is up-to-date (version: 334, sigs: 91, f-level: 90, builder: anvilleg)
+Mon Apr 17 06:00:01 2023 -> --------------------------------------
+Mon Apr 17 06:00:01 2023 -> ClamAV update process started at Mon Apr 17 06:00:01 2023
+Mon Apr 17 06:00:01 2023 -> daily database available for update (local version: 26877, remote version: 26878)
+Mon Apr 17 06:00:03 2023 -> Testing database: '/var/lib/clamav/tmp.77aa767e31/clamav-f3f65763ca14fc297415442628965ddc.tmp-daily.cld' ...
+Mon Apr 17 06:00:12 2023 -> Database test passed.
+Mon Apr 17 06:00:12 2023 -> daily.cld updated (version: 26878, sigs: 2030207, f-level: 90, builder: raynman)
+Mon Apr 17 06:00:12 2023 -> main.cvd database is up-to-date (version: 62, sigs: 6647427, f-level: 90, builder: sigmgr)
+Mon Apr 17 06:00:12 2023 -> bytecode.cvd database is up-to-date (version: 334, sigs: 91, f-level: 90, builder: anvilleg)
+Mon Apr 17 06:00:12 2023 -> Clamd successfully notified about the update.

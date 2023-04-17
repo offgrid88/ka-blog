@@ -1,0 +1,60 @@
+{% include 'header.html'%}
+<body>
+  
+
+
+        <!-- site content
+        ================================================== -->
+        <div class="s-content">
+            
+            <div class="masonry-wrap">
+
+                <div class="masonry">
+    
+                    <div class="grid-sizer"></div>
+                    <!-- article list -->
+                    {% for post in posts: %}
+                    <article class="masonry__brick entry format-standard animate-this">
+                            
+                      
+        
+                        <div class="entry__text">
+                            <div class="entry__header">
+    
+                                <h2 class="entry__title"><a href="/fullpost?postId={{ post['_id'] }}">{{ post['title'] }}</a></h2>
+                                
+                                 <div class="entry__meta">
+                                    <li class="author">By <a href="#0">{{ post['author'] }}</a></li>
+                                    <span class="entry__meta-date">
+                                        <a href="single-standard.html">{{ post['created_at'] }}</a>
+                                    </span>
+                                </div> 
+                            
+                            </div>
+                           
+                        </div>
+        
+                    </article> <!-- article list -->
+                    {% endfor %}
+                </div> <!-- end masonry -->
+
+            </div> <!-- end masonry-wrap -->
+
+            <div class="row">
+                <div class="column large-full">
+                    <nav class="pgn">
+                        <ul>
+                            <li><a class="pgn__prev" href="#0">Prev</a></li>
+                            <li><a class="pgn__num" href="#0">1</a></li>
+                            <li><span class="pgn__num current">2</span></li>
+                            <li><a class="pgn__next" href="#0">Next</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+        </div> <!-- end s-content -->
+
+
+        {% include 'footer.html'%}
+</body>

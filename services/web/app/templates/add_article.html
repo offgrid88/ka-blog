@@ -1,0 +1,106 @@
+
+{% include 'header.html'%}
+<!-- Include stylesheet -->
+<link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+<!-- Include the Quill library -->
+<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+
+        <!-- site content
+        ================================================== -->
+        <div class="s-content content">
+            <main class="row content__page">
+                
+                <section class="column large-full entry format-standard">
+
+                    <div class="media-wrap">
+                        <div class="content__page-header">
+                            <h4 text-align=center class="display-1">
+                                Create article
+                            </h4>
+                        </div> <!-- end content__page-header -->
+                       
+                          
+                          
+                     
+                   <p>
+                <!-- Create the editor container -->
+               
+               
+                <div class="container-xl" id="elemento">
+                <input type="text" id=title class="inputp" placeholder="Title">
+                <input type="text" id=author class="inputp" placeholder="Author">
+              </div>
+               
+               
+            
+     <div class="editor-container" id="editor">
+        <p>Hello Friend!</p>
+        <p>If you are the owner, start pouring some knowledge, if not <strong>get lost !</strong> </p>
+        <p><br></p>
+      </div>
+     
+        <button type="submit" id="submit" class="bn54">
+          <span  class="bn54span">submit</span>
+        </button>
+   
+
+      <!-- Initialize Quill editor -->
+      <script>
+        var toolbarOptions = [
+  ['bold', 'italic', 'underline', 'strike'],        // toggled buttons
+  ['blockquote', 'code-block'],
+
+  [{ 'header': 1 }, { 'header': 2 }],               // custom button values
+  [{ 'list': 'ordered'}, { 'list': 'bullet' }],
+  [{ 'script': 'sub'}, { 'script': 'super' }],      // superscript/subscript
+  [{ 'indent': '-1'}, { 'indent': '+1' }],          // outdent/indent
+  [{ 'direction': 'rtl' }],                         // text direction
+
+  [{ 'size': ['small', false, 'large', 'huge'] }],  // custom dropdown
+  [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
+
+  [{ 'color': [] }, { 'background': [] }],          // dropdown with defaults from theme
+  [{ 'font': [] }],
+  [{ 'align': [] }],
+
+  ['clean']                                         // remove formatting button
+];
+
+        var quill = new Quill('#editor', {
+          modules: {
+    toolbar:  toolbarOptions
+  },
+  theme: 'snow'  
+});
+
+
+        document.getElementById("submit").onclick =  async() => {
+          const title = document.getElementById("title").value; 
+          const author = document.getElementById("author").value; 
+          const content =  quill.root.innerHTML;
+          const doc_dict = {title,author,content} 
+          const full_doc = JSON.stringify(doc_dict);
+           console.log(full_doc)
+            fetch("/add_article", {
+                method: 'POST',
+                headers: {
+                    "Content-Type": "application/json; charset=UTF-8"
+                },
+                body: full_doc
+            })
+
+        }
+      </script>
+ <!-- Create the editor container -->
+   </p>                               
+                    </div>
+
+                </section>
+
+            </main>
+
+        </div> <!-- end s-content -->
+
+        {% include 'footer.html'%}
+
+</body>

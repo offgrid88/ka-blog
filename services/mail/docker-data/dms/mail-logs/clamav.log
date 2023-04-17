@@ -1,0 +1,202 @@
+Sat Apr 15 19:43:58 2023 -> +++ Started at Sat Apr 15 19:43:58 2023
+Sat Apr 15 19:43:58 2023 -> Received 0 file descriptor(s) from systemd.
+Sat Apr 15 19:43:58 2023 -> clamd daemon 0.103.8 (OS: linux-gnu, ARCH: x86_64, CPU: x86_64)
+Sat Apr 15 19:43:58 2023 -> Log file size limited to 4294967295 bytes.
+Sat Apr 15 19:43:58 2023 -> Reading databases from /var/lib/clamav
+Sat Apr 15 19:43:58 2023 -> Not loading PUA signatures.
+Sat Apr 15 19:43:58 2023 -> Bytecode: Security mode set to "TrustSigned".
+Sat Apr 15 19:44:26 2023 -> Loaded 8660653 signatures.
+Sat Apr 15 19:44:32 2023 -> LOCAL: Unix socket file /var/run/clamav/clamd.ctl
+Sat Apr 15 19:44:32 2023 -> LOCAL: Setting connection queue length to 15
+Sat Apr 15 19:44:32 2023 -> Limits: Global time limit set to 120000 milliseconds.
+Sat Apr 15 19:44:32 2023 -> Limits: Global size limit set to 104857600 bytes.
+Sat Apr 15 19:44:32 2023 -> Limits: File size limit set to 26214400 bytes.
+Sat Apr 15 19:44:32 2023 -> Limits: Recursion level limit set to 16.
+Sat Apr 15 19:44:32 2023 -> Limits: Files limit set to 10000.
+Sat Apr 15 19:44:32 2023 -> Limits: MaxEmbeddedPE limit set to 10485760 bytes.
+Sat Apr 15 19:44:32 2023 -> Limits: MaxHTMLNormalize limit set to 10485760 bytes.
+Sat Apr 15 19:44:32 2023 -> Limits: MaxHTMLNoTags limit set to 2097152 bytes.
+Sat Apr 15 19:44:32 2023 -> Limits: MaxScriptNormalize limit set to 5242880 bytes.
+Sat Apr 15 19:44:32 2023 -> Limits: MaxZipTypeRcg limit set to 1048576 bytes.
+Sat Apr 15 19:44:32 2023 -> Limits: MaxPartitions limit set to 50.
+Sat Apr 15 19:44:32 2023 -> Limits: MaxIconsPE limit set to 100.
+Sat Apr 15 19:44:32 2023 -> Limits: MaxRecHWP3 limit set to 16.
+Sat Apr 15 19:44:32 2023 -> Limits: PCREMatchLimit limit set to 10000.
+Sat Apr 15 19:44:32 2023 -> Limits: PCRERecMatchLimit limit set to 5000.
+Sat Apr 15 19:44:32 2023 -> Limits: PCREMaxFileSize limit set to 26214400.
+Sat Apr 15 19:44:32 2023 -> Archive support enabled.
+Sat Apr 15 19:44:32 2023 -> AlertExceedsMax heuristic detection disabled.
+Sat Apr 15 19:44:32 2023 -> Heuristic alerts enabled.
+Sat Apr 15 19:44:32 2023 -> Portable Executable support enabled.
+Sat Apr 15 19:44:32 2023 -> ELF support enabled.
+Sat Apr 15 19:44:32 2023 -> Mail files support enabled.
+Sat Apr 15 19:44:32 2023 -> OLE2 support enabled.
+Sat Apr 15 19:44:32 2023 -> PDF support enabled.
+Sat Apr 15 19:44:32 2023 -> SWF support enabled.
+Sat Apr 15 19:44:32 2023 -> HTML support enabled.
+Sat Apr 15 19:44:32 2023 -> XMLDOCS support enabled.
+Sat Apr 15 19:44:32 2023 -> HWP3 support enabled.
+Sat Apr 15 19:44:32 2023 -> Self checking every 3600 seconds.
+Sat Apr 15 19:45:09 2023 -> --- Stopped at Sat Apr 15 19:45:09 2023
+Sat Apr 15 19:45:09 2023 -> Socket file removed.
+Sat Apr 15 19:47:38 2023 -> +++ Started at Sat Apr 15 19:47:38 2023
+Sat Apr 15 19:47:38 2023 -> Received 0 file descriptor(s) from systemd.
+Sat Apr 15 19:47:38 2023 -> clamd daemon 0.103.8 (OS: linux-gnu, ARCH: x86_64, CPU: x86_64)
+Sat Apr 15 19:47:38 2023 -> Log file size limited to 4294967295 bytes.
+Sat Apr 15 19:47:38 2023 -> Reading databases from /var/lib/clamav
+Sat Apr 15 19:47:38 2023 -> Not loading PUA signatures.
+Sat Apr 15 19:47:38 2023 -> Bytecode: Security mode set to "TrustSigned".
+Sat Apr 15 19:48:05 2023 -> Loaded 8660653 signatures.
+Sat Apr 15 19:48:11 2023 -> LOCAL: Unix socket file /var/run/clamav/clamd.ctl
+Sat Apr 15 19:48:11 2023 -> LOCAL: Setting connection queue length to 15
+Sat Apr 15 19:48:11 2023 -> Limits: Global time limit set to 120000 milliseconds.
+Sat Apr 15 19:48:11 2023 -> Limits: Global size limit set to 104857600 bytes.
+Sat Apr 15 19:48:11 2023 -> Limits: File size limit set to 26214400 bytes.
+Sat Apr 15 19:48:11 2023 -> Limits: Recursion level limit set to 16.
+Sat Apr 15 19:48:11 2023 -> Limits: Files limit set to 10000.
+Sat Apr 15 19:48:11 2023 -> Limits: MaxEmbeddedPE limit set to 10485760 bytes.
+Sat Apr 15 19:48:11 2023 -> Limits: MaxHTMLNormalize limit set to 10485760 bytes.
+Sat Apr 15 19:48:11 2023 -> Limits: MaxHTMLNoTags limit set to 2097152 bytes.
+Sat Apr 15 19:48:11 2023 -> Limits: MaxScriptNormalize limit set to 5242880 bytes.
+Sat Apr 15 19:48:11 2023 -> Limits: MaxZipTypeRcg limit set to 1048576 bytes.
+Sat Apr 15 19:48:11 2023 -> Limits: MaxPartitions limit set to 50.
+Sat Apr 15 19:48:11 2023 -> Limits: MaxIconsPE limit set to 100.
+Sat Apr 15 19:48:11 2023 -> Limits: MaxRecHWP3 limit set to 16.
+Sat Apr 15 19:48:11 2023 -> Limits: PCREMatchLimit limit set to 10000.
+Sat Apr 15 19:48:11 2023 -> Limits: PCRERecMatchLimit limit set to 5000.
+Sat Apr 15 19:48:11 2023 -> Limits: PCREMaxFileSize limit set to 26214400.
+Sat Apr 15 19:48:11 2023 -> Archive support enabled.
+Sat Apr 15 19:48:11 2023 -> AlertExceedsMax heuristic detection disabled.
+Sat Apr 15 19:48:11 2023 -> Heuristic alerts enabled.
+Sat Apr 15 19:48:11 2023 -> Portable Executable support enabled.
+Sat Apr 15 19:48:11 2023 -> ELF support enabled.
+Sat Apr 15 19:48:11 2023 -> Mail files support enabled.
+Sat Apr 15 19:48:11 2023 -> OLE2 support enabled.
+Sat Apr 15 19:48:11 2023 -> PDF support enabled.
+Sat Apr 15 19:48:11 2023 -> SWF support enabled.
+Sat Apr 15 19:48:11 2023 -> HTML support enabled.
+Sat Apr 15 19:48:11 2023 -> XMLDOCS support enabled.
+Sat Apr 15 19:48:11 2023 -> HWP3 support enabled.
+Sat Apr 15 19:48:11 2023 -> Self checking every 3600 seconds.
+Sat Apr 15 21:25:54 2023 -> SelfCheck: Database status OK.
+Sat Apr 15 22:26:45 2023 -> SelfCheck: Database status OK.
+Sat Apr 15 23:26:45 2023 -> SelfCheck: Database status OK.
+Sun Apr 16 00:00:16 2023 -> Reading databases from /var/lib/clamav
+Sun Apr 16 00:00:45 2023 -> Database correctly reloaded (8662090 signatures)
+Sun Apr 16 00:00:45 2023 -> Activating the newly loaded database...
+Sun Apr 16 01:01:19 2023 -> SelfCheck: Database status OK.
+Sun Apr 16 02:52:40 2023 -> SelfCheck: Database status OK.
+Sun Apr 16 03:52:40 2023 -> SelfCheck: Database status OK.
+Sun Apr 16 04:52:40 2023 -> SelfCheck: Database status OK.
+Sun Apr 16 05:52:40 2023 -> SelfCheck: Database status OK.
+Sun Apr 16 06:00:12 2023 -> Reading databases from /var/lib/clamav
+Sun Apr 16 06:00:39 2023 -> Database correctly reloaded (8662110 signatures)
+Sun Apr 16 06:00:39 2023 -> Activating the newly loaded database...
+Sun Apr 16 07:01:06 2023 -> SelfCheck: Database status OK.
+Sun Apr 16 08:01:06 2023 -> SelfCheck: Database status OK.
+Sun Apr 16 09:01:06 2023 -> SelfCheck: Database status OK.
+Sun Apr 16 10:01:06 2023 -> SelfCheck: Database status OK.
+Sun Apr 16 11:01:06 2023 -> SelfCheck: Database status OK.
+Sun Apr 16 12:01:06 2023 -> SelfCheck: Database status OK.
+Sun Apr 16 13:01:06 2023 -> SelfCheck: Database status OK.
+Sun Apr 16 14:01:06 2023 -> SelfCheck: Database status OK.
+Sun Apr 16 15:01:07 2023 -> SelfCheck: Database status OK.
+Sun Apr 16 16:01:07 2023 -> SelfCheck: Database status OK.
+Sun Apr 16 17:01:07 2023 -> SelfCheck: Database status OK.
+Sun Apr 16 18:01:07 2023 -> SelfCheck: Database status OK.
+Sun Apr 16 19:01:07 2023 -> SelfCheck: Database status OK.
+Sun Apr 16 20:01:07 2023 -> SelfCheck: Database status OK.
+Sun Apr 16 21:01:07 2023 -> SelfCheck: Database status OK.
+Sun Apr 16 22:01:07 2023 -> SelfCheck: Database status OK.
+Sun Apr 16 23:01:07 2023 -> SelfCheck: Database status OK.
+Mon Apr 17 00:01:07 2023 -> SelfCheck: Database status OK.
+Mon Apr 17 01:01:07 2023 -> SelfCheck: Database status OK.
+Mon Apr 17 02:01:07 2023 -> SelfCheck: Database status OK.
+Mon Apr 17 03:01:07 2023 -> SelfCheck: Database status OK.
+Mon Apr 17 03:50:19 2023 -> --- Stopped at Mon Apr 17 03:50:19 2023
+Mon Apr 17 03:50:19 2023 -> Socket file removed.
+Mon Apr 17 03:59:39 2023 -> +++ Started at Mon Apr 17 03:59:39 2023
+Mon Apr 17 03:59:39 2023 -> Received 0 file descriptor(s) from systemd.
+Mon Apr 17 03:59:39 2023 -> clamd daemon 0.103.8 (OS: linux-gnu, ARCH: x86_64, CPU: x86_64)
+Mon Apr 17 03:59:39 2023 -> Log file size limited to 4294967295 bytes.
+Mon Apr 17 03:59:39 2023 -> Reading databases from /var/lib/clamav
+Mon Apr 17 03:59:39 2023 -> Not loading PUA signatures.
+Mon Apr 17 03:59:39 2023 -> Bytecode: Security mode set to "TrustSigned".
+Mon Apr 17 04:00:02 2023 -> Loaded 8662110 signatures.
+Mon Apr 17 04:00:06 2023 -> LOCAL: Unix socket file /var/run/clamav/clamd.ctl
+Mon Apr 17 04:00:06 2023 -> LOCAL: Setting connection queue length to 15
+Mon Apr 17 04:00:06 2023 -> Limits: Global time limit set to 120000 milliseconds.
+Mon Apr 17 04:00:06 2023 -> Limits: Global size limit set to 104857600 bytes.
+Mon Apr 17 04:00:06 2023 -> Limits: File size limit set to 26214400 bytes.
+Mon Apr 17 04:00:06 2023 -> Limits: Recursion level limit set to 16.
+Mon Apr 17 04:00:06 2023 -> Limits: Files limit set to 10000.
+Mon Apr 17 04:00:06 2023 -> Limits: MaxEmbeddedPE limit set to 10485760 bytes.
+Mon Apr 17 04:00:06 2023 -> Limits: MaxHTMLNormalize limit set to 10485760 bytes.
+Mon Apr 17 04:00:06 2023 -> Limits: MaxHTMLNoTags limit set to 2097152 bytes.
+Mon Apr 17 04:00:06 2023 -> Limits: MaxScriptNormalize limit set to 5242880 bytes.
+Mon Apr 17 04:00:06 2023 -> Limits: MaxZipTypeRcg limit set to 1048576 bytes.
+Mon Apr 17 04:00:06 2023 -> Limits: MaxPartitions limit set to 50.
+Mon Apr 17 04:00:06 2023 -> Limits: MaxIconsPE limit set to 100.
+Mon Apr 17 04:00:06 2023 -> Limits: MaxRecHWP3 limit set to 16.
+Mon Apr 17 04:00:06 2023 -> Limits: PCREMatchLimit limit set to 10000.
+Mon Apr 17 04:00:06 2023 -> Limits: PCRERecMatchLimit limit set to 5000.
+Mon Apr 17 04:00:06 2023 -> Limits: PCREMaxFileSize limit set to 26214400.
+Mon Apr 17 04:00:06 2023 -> Archive support enabled.
+Mon Apr 17 04:00:06 2023 -> AlertExceedsMax heuristic detection disabled.
+Mon Apr 17 04:00:06 2023 -> Heuristic alerts enabled.
+Mon Apr 17 04:00:06 2023 -> Portable Executable support enabled.
+Mon Apr 17 04:00:06 2023 -> ELF support enabled.
+Mon Apr 17 04:00:06 2023 -> Mail files support enabled.
+Mon Apr 17 04:00:06 2023 -> OLE2 support enabled.
+Mon Apr 17 04:00:06 2023 -> PDF support enabled.
+Mon Apr 17 04:00:06 2023 -> SWF support enabled.
+Mon Apr 17 04:00:06 2023 -> HTML support enabled.
+Mon Apr 17 04:00:06 2023 -> XMLDOCS support enabled.
+Mon Apr 17 04:00:06 2023 -> HWP3 support enabled.
+Mon Apr 17 04:00:06 2023 -> Self checking every 3600 seconds.
+Mon Apr 17 05:00:46 2023 -> SelfCheck: Database status OK.
+Mon Apr 17 05:07:02 2023 -> --- Stopped at Mon Apr 17 05:07:02 2023
+Mon Apr 17 05:07:02 2023 -> Socket file removed.
+Mon Apr 17 05:07:47 2023 -> +++ Started at Mon Apr 17 05:07:47 2023
+Mon Apr 17 05:07:47 2023 -> Received 0 file descriptor(s) from systemd.
+Mon Apr 17 05:07:47 2023 -> clamd daemon 0.103.8 (OS: linux-gnu, ARCH: x86_64, CPU: x86_64)
+Mon Apr 17 05:07:47 2023 -> Log file size limited to 4294967295 bytes.
+Mon Apr 17 05:07:47 2023 -> Reading databases from /var/lib/clamav
+Mon Apr 17 05:07:47 2023 -> Not loading PUA signatures.
+Mon Apr 17 05:07:47 2023 -> Bytecode: Security mode set to "TrustSigned".
+Mon Apr 17 05:08:08 2023 -> Loaded 8662110 signatures.
+Mon Apr 17 05:08:13 2023 -> LOCAL: Unix socket file /var/run/clamav/clamd.ctl
+Mon Apr 17 05:08:13 2023 -> LOCAL: Setting connection queue length to 15
+Mon Apr 17 05:08:13 2023 -> Limits: Global time limit set to 120000 milliseconds.
+Mon Apr 17 05:08:13 2023 -> Limits: Global size limit set to 104857600 bytes.
+Mon Apr 17 05:08:13 2023 -> Limits: File size limit set to 26214400 bytes.
+Mon Apr 17 05:08:13 2023 -> Limits: Recursion level limit set to 16.
+Mon Apr 17 05:08:13 2023 -> Limits: Files limit set to 10000.
+Mon Apr 17 05:08:13 2023 -> Limits: MaxEmbeddedPE limit set to 10485760 bytes.
+Mon Apr 17 05:08:13 2023 -> Limits: MaxHTMLNormalize limit set to 10485760 bytes.
+Mon Apr 17 05:08:13 2023 -> Limits: MaxHTMLNoTags limit set to 2097152 bytes.
+Mon Apr 17 05:08:13 2023 -> Limits: MaxScriptNormalize limit set to 5242880 bytes.
+Mon Apr 17 05:08:13 2023 -> Limits: MaxZipTypeRcg limit set to 1048576 bytes.
+Mon Apr 17 05:08:13 2023 -> Limits: MaxPartitions limit set to 50.
+Mon Apr 17 05:08:13 2023 -> Limits: MaxIconsPE limit set to 100.
+Mon Apr 17 05:08:13 2023 -> Limits: MaxRecHWP3 limit set to 16.
+Mon Apr 17 05:08:13 2023 -> Limits: PCREMatchLimit limit set to 10000.
+Mon Apr 17 05:08:13 2023 -> Limits: PCRERecMatchLimit limit set to 5000.
+Mon Apr 17 05:08:13 2023 -> Limits: PCREMaxFileSize limit set to 26214400.
+Mon Apr 17 05:08:13 2023 -> Archive support enabled.
+Mon Apr 17 05:08:13 2023 -> AlertExceedsMax heuristic detection disabled.
+Mon Apr 17 05:08:13 2023 -> Heuristic alerts enabled.
+Mon Apr 17 05:08:13 2023 -> Portable Executable support enabled.
+Mon Apr 17 05:08:13 2023 -> ELF support enabled.
+Mon Apr 17 05:08:13 2023 -> Mail files support enabled.
+Mon Apr 17 05:08:13 2023 -> OLE2 support enabled.
+Mon Apr 17 05:08:13 2023 -> PDF support enabled.
+Mon Apr 17 05:08:13 2023 -> SWF support enabled.
+Mon Apr 17 05:08:13 2023 -> HTML support enabled.
+Mon Apr 17 05:08:13 2023 -> XMLDOCS support enabled.
+Mon Apr 17 05:08:13 2023 -> HWP3 support enabled.
+Mon Apr 17 05:08:13 2023 -> Self checking every 3600 seconds.
+Mon Apr 17 06:00:12 2023 -> Reading databases from /var/lib/clamav
+Mon Apr 17 06:00:39 2023 -> Database correctly reloaded (8662125 signatures)
+Mon Apr 17 06:00:39 2023 -> Activating the newly loaded database...
+Mon Apr 17 07:01:08 2023 -> SelfCheck: Database status OK.

@@ -1,0 +1,58 @@
+Return-Path: <webank@webank.com.tn>
+Delivered-To: contact@aymenrachdi.xyz
+Received: from mail.aymenrachdi.xyz
+	by mail.aymenrachdi.xyz with LMTP
+	id wDiLFyiNO2QcmgAAYytROg
+	(envelope-from <webank@webank.com.tn>)
+	for <contact@aymenrachdi.xyz>; Sun, 16 Apr 2023 01:52:40 -0400
+Received: from localhost (localhost [127.0.0.1])
+	by mail.aymenrachdi.xyz (Postfix) with ESMTP id 5F7AEA3D1F
+	for <contact@aymenrachdi.xyz>; Sun, 16 Apr 2023 01:52:40 -0400 (EDT)
+X-Virus-Scanned: Yes
+Received-SPF: Pass (mailfrom) identity=mailfrom; client-ip=41.224.6.186; helo=smtp1.attijaribank.com.tn; envelope-from=webank@webank.com.tn; receiver=<UNKNOWN> 
+Authentication-Results: mail.aymenrachdi.xyz; dmarc=none (p=none dis=none) header.from=webank.com.tn
+Authentication-Results: mail.aymenrachdi.xyz; dmarc=none (p=none dis=none) header.from=webank.com.tn
+Received: from smtp1.attijaribank.com.tn (smtp1.attijaribank.com.tn [41.224.6.186])
+	by mail.aymenrachdi.xyz (Postfix) with ESMTP id E400CA3D1E
+	for <contact@aymenrachdi.xyz>; Sun, 16 Apr 2023 01:52:38 -0400 (EDT)
+X-AuditID: ac1e042f-d87ff7000000e20e-5b-6438fe901afb
+Received: from SRV-P-EXCH03.bank-sud.tn (SRV-P-EXCH03.bank-sud.tn [172.28.14.141])
+	(using TLS with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits))
+	(Client did not present a certificate)
+	by smtp1.attijaribank.com.tn (smtp.attijaribank.com.tn) with SMTP id 35.66.57870.09EF8346; Fri, 14 Apr 2023 08:19:44 +0100 (WAT)
+Received: from 172.28.14.143 (172.28.28.12) by srv-p-exch03.bank-sud.tn
+ (172.28.14.143) with Microsoft SMTP Server id 15.1.2507.23; Fri, 14 Apr 2023
+ 08:19:44 +0100
+From: <webank@webank.com.tn>
+To: <contact@aymenrachdi.xyz>
+Subject: WEBANK
+Content-Type: text/html; charset="UTF-8"
+MIME-Version: 1.0
+Message-ID: <a33094a1-9bb8-4e98-8206-d7b111b60f43@SRV-P-EXCH03.bank-sud.tn>
+Date: Fri, 14 Apr 2023 08:19:44 +0100
+Content-Transfer-Encoding: quoted-printable
+X-Brightmail-Tracker: H4sIAAAAAAAAA+NgFvrDJMWRmVeSWpSXmKPExsWyRoavV3fCP4sUg/5VuhY3v6U5MHqsmtzP
+	FMAYxWWTkpqTWZZapG+XwJVxYuo79oLtbBUH5h1hbGCcx9rFyMkhIWAi0TFtA1MXIxeHkMBh
+	Jonjk3azQzjLGSX2/DgP5HBwsAnISDz8KADSICIgK7H3+152EFtYgF/i/LQTYDazgIbEgjv7
+	GEFsXgFBiZMzn7BA2N4SLXv3s4HYQgKKEmcnXWYBGckioCpx+zUfRKu2xLKFr5knMPLMQjJp
+	FpJJs5CULWBkXsUoWZxbUmCol1hSkpmVWJSZlJiXrZecn6tXkreJERQmciz6OxinzPE9xCjA
+	wajEwxuQbZMkxJpYVlyZe4hRgoNZSYT3h4tpihBvSmJlVWpRfnxRaU5q8SFGaQ4WJXHeT9nq
+	KUIC6YklqdmpqQWpRTBZJg5OqQZG/i9J0myRLOlve7jT9tz+c5Q9SmHD8cXsuRNvs/e3fhBR
+	TnUV9+q6w5feHf3nU8k3rwWn7txJ658n5JZlocfmNM/dPjGu9syj7xXPNk6Mbd+zb93xj60l
+	+vJZHz+XeNtdybtv+3LC1I2LBU+v9vF6tMTKIWVR8axHKbtD1gobr7Rq9zglnVWtxFKckWio
+	xVxUnAgAfm28qQ8CAAA=
+
+<img src=3D"https://www.webank.com.tn/assets/images/jpg/header_mail.jpg" />=
+ <br><br>Mme/Mr AYMEN RACHDI,<br> Votre compte Webank  00135 0070822721 en =
+DINAR TUNISIEN vient d'enregistrer l'(les) operation(s) creditrice(s) super=
+ieure(s) a 10 TND suivantes :<br>  Le 14/04/2023 08:16:06, credit de 200 TN=
+D VIREMENT RECU COMPENSATION <br> Si vous voulez modifier ou supprimer cett=
+e alerte rendez-vous sur votre espace client Webank rubrique Alertes.<br> L=
+'equipe Webank vous remercie pour votre confiance.<br> Si vous avez des que=
+stions, lancez le chat en ligne, ou contactez notre service client du lundi=
+ au samedi de 8h a 20h au numero vert 80 101 550<br>Priere de ne pas repond=
+re a cet envoi automatique.<br><br>=0A=
+              Cordialement,<br>=0A=
+              <strong>WEBANK</strong>
+
+
