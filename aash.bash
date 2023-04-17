@@ -1,1 +1,1 @@
-rsync -rtvzP /home/offgrid8/ka-blog/ offgrid8@91.208.197.214:/home/offgrid8/ka-blog
+rsync -rtvzP --exclude  'apacheconf/apache2' --exclude '.git' --exclude 'database'  --exclude 'venv' --exclude '__pycache__'  /home/offgrid8/ka-blog/ offgrid8@107.175.76.231:/home/offgrid8/ka-blog

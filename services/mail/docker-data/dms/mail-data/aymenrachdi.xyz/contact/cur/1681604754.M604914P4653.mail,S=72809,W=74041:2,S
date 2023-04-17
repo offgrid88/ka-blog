@@ -1,0 +1,1232 @@
+Return-Path: <bounce+836a9e.6b179-contact=aymenrachdi.xyz@mostaql.com>
+Delivered-To: contact@aymenrachdi.xyz
+Received: from mail.aymenrachdi.xyz
+	by mail.aymenrachdi.xyz with LMTP
+	id +qHNI5JAO2QtEgAAYytROg
+	(envelope-from <bounce+836a9e.6b179-contact=aymenrachdi.xyz@mostaql.com>)
+	for <contact@aymenrachdi.xyz>; Sat, 15 Apr 2023 20:25:54 -0400
+Received: from localhost (localhost [127.0.0.1])
+	by mail.aymenrachdi.xyz (Postfix) with ESMTP id 884E4A3D07
+	for <contact@aymenrachdi.xyz>; Sat, 15 Apr 2023 20:25:54 -0400 (EDT)
+X-Virus-Scanned: Yes
+Received-SPF: Pass (mailfrom) identity=mailfrom; client-ip=23.253.183.171; helo=mail-183-171.mailgun.info; envelope-from=bounce+836a9e.6b179-contact=aymenrachdi.xyz@mostaql.com; receiver=<UNKNOWN> 
+Authentication-Results: mail.aymenrachdi.xyz; dmarc=none (p=none dis=none) header.from=mostaql.com
+Authentication-Results: mail.aymenrachdi.xyz;
+	dkim=pass (1024-bit key; unprotected) header.d=mostaql.com header.i=@mostaql.com header.a=rsa-sha256 header.s=mx header.b=BX9AdtW5;
+	dkim-atps=neutral
+Authentication-Results: mail.aymenrachdi.xyz; dmarc=none (p=none dis=none) header.from=mostaql.com
+Received: from mail-183-171.mailgun.info (mail-183-171.mailgun.info [23.253.183.171])
+	by mail.aymenrachdi.xyz (Postfix) with ESMTP id E3D0CA3D00
+	for <contact@aymenrachdi.xyz>; Sat, 15 Apr 2023 20:25:53 -0400 (EDT)
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mostaql.com;
+ q=dns/txt; s=mx; t=1681604747; x=1681611947; h=Content-Transfer-Encoding:
+ Content-Type: Message-Id: To: To: From: From: Subject: Subject: Mime-Version:
+ Date: Sender: Sender; bh=eixXNUfVGpT0W2ZihNYRm/QitQB8hW9BoIZsgrcu0Pk=;
+ b=BX9AdtW5MZe79AjwbeWldMCUB+2PA6RP2vvFun40orTGpK+2CNx0YfobKTyrhVLQPzpYeLB7a0aYulYPly0sy3agXJSL7NJHf9pgD9/hzq2wtgsHRdBpxPZxfIIi3MG/PMXjtyTPyjUF1sXU/Bq+i3OMgjY3PoYFu9CrNmizuLk=
+X-Mailgun-Sending-Ip: 23.253.183.171
+X-Mailgun-Sid: WyIzMWM3MyIsImNvbnRhY3RAYXltZW5yYWNoZGkueHl6IiwiNmIxNzkiXQ==
+Received: from <unknown> (<unknown> []) by aa87dbe614a1 with HTTP id
+ 643b259569d4fd8de46b4118; Sat, 15 Apr 2023 22:30:44 GMT
+X-Mailgun-Batch-Id: 643b25946ca08a2cd996ade3
+Sender: website@mostaql.com
+Date: Sat, 15 Apr 2023 22:30:44 +0000
+Mime-Version: 1.0
+Subject: =?UTF-8?b?2YXYtNin2LHZiti5INio2LHZhdis2KnYjCDYqti32YjZitixINin2YTZhdmI?=
+ =?UTF-8?b?2KfZgti5INmI2KfZhNiq2LfYqNmK2YLYp9iq?=
+From: Mostaql <website@mostaql.com>
+To: =?utf-8?b?2KPZitmF2YYg2LHYp9i02K/Zig==?= <contact@aymenrachdi.xyz>
+Message-Id: <20230415223044.77dcd90d4e799377@mostaql.com>
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml">
+<head>
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8=
+">
+</head>
+<body style=3D"box-sizing: border-box; font-family: -apple-system, BlinkMac=
+SystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color =
+Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; direction: rtl; background-col=
+or: #ffffff; color: #262626; height: 100%; hyphens: auto; line-height: 1.8;=
+ margin: 0; -moz-hyphens: auto; -ms-word-break: break-all; width: 100% !imp=
+ortant; -webkit-hyphens: auto; -webkit-text-size-adjust: none; word-break: =
+break-word;">
+    <style>
+        @media  only screen and (max-width: 600px) {
+            .inner-body {
+                width: 100% !important;
+            }
+
+            .footer {
+                width: 100% !important;
+            }
+        }
+
+        @media  only screen and (max-width: 500px) {
+            .button {
+                width: 100% !important;
+            }
+        }
+    </style>
+
+    <table class=3D"wrapper" width=3D"100%" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation" style=3D"box-sizing: border-box; font-family: =
+-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sa=
+ns-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; backgro=
+und-color: #fff; margin: 0; padding: 0; width: 100%; -premailer-cellpadding=
+: 0; -premailer-cellspacing: 0; -premailer-width: 100%;">
+        <tr>
+            <td align=3D"center" style=3D"box-sizing: border-box; font-fami=
+ly: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial=
+, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">
+                <table class=3D"content" width=3D"100%" cellpadding=3D"0" c=
+ellspacing=3D"0" role=3D"presentation" style=3D"box-sizing: border-box; fon=
+t-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,=
+ Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol=
+'; margin: 0; padding: 0; width: 100%; -premailer-cellpadding: 0; -premaile=
+r-cellspacing: 0; -premailer-width: 100%;">
+                    <tr>
+    <td class=3D"header" style=3D"box-sizing: border-box; font-family: -app=
+le-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-s=
+erif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; padding: 15=
+px 0; text-align: center;">
+        <a href=3D"https://mostaql.com" style=3D"box-sizing: border-box; fo=
+nt-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica=
+, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbo=
+l'; color: #bbbfc3; font-size: 19px; font-weight: bold; text-decoration: no=
+ne; text-shadow: 0 1px 0 white;">
+            <img src=3D"https://mostaql.hsoubcdn.com/public/assets/images/c=
+ustom/logo-cb.png" class=3D"header-logo" alt=3D"=D9=85=D8=B3=D8=AA=D9=82=D9=
+=84" style=3D"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', R=
+oboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',=
+ 'Segoe UI Symbol'; box-sizing: border-box; border: 0; outline: none; text-=
+decoration: none; max-width: 200px; max-height: 44px;">
+        </a>
+    </td>
+</tr>
+
+
+                    <!-- Email Body -->
+                    <tr>
+                        <td class=3D"body" width=3D"100%" cellpadding=3D"0"=
+ cellspacing=3D"0" style=3D"box-sizing: border-box; font-family: -apple-sys=
+tem, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, =
+'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; background-color:=
+ #FFFFFF; border-bottom: 1px solid #EDEFF2; border-top: 1px solid #EDEFF2; =
+margin: 0; padding: 0; width: 100%; -premailer-cellpadding: 0; -premailer-c=
+ellspacing: 0; -premailer-width: 100%;">
+                            <table class=3D"inner-body" align=3D"center" wi=
+dth=3D"570" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" style=
+=3D"box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont,=
+ 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Se=
+goe UI Emoji', 'Segoe UI Symbol'; background-color: #FFFFFF; margin: 0 auto=
+; padding: 0; width: 100%; max-width: 570px; -premailer-cellpadding: 0; -pr=
+emailer-cellspacing: 0; -premailer-width: 100%;">
+                                <!-- Body content -->
+                                <tr>
+                                    <td class=3D"content-cell" style=3D"box=
+-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe=
+ UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI =
+Emoji', 'Segoe UI Symbol'; padding: 35px 10px;">
+
+                                        <div style=3D"box-sizing: border-bo=
+x; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helv=
+etica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI =
+Symbol'; word-break: break-word; direction: rtl;">
+<p style=3D"box-sizing: border-box; font-family: -apple-system, BlinkMacSys=
+temFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emo=
+ji', 'Segoe UI Emoji', 'Segoe UI Symbol'; text-align: right; color: #262626=
+; font-size: 16px; line-height: 1.55; margin-top: 0;">=D9=85=D8=B1=D8=AD=D8=
+=A8=D8=A7 <bdi style=3D"box-sizing: border-box; font-family: -apple-system,=
+ BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'App=
+le Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">=D8=A3=D9=8A=D9=85=
+=D9=86</bdi>=D8=8C</p>
+<div style=3D"box-sizing: border-box; font-family: -apple-system, BlinkMacS=
+ystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color E=
+moji', 'Segoe UI Emoji', 'Segoe UI Symbol';">
+<p style=3D"box-sizing: border-box; font-family: -apple-system, BlinkMacSys=
+temFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emo=
+ji', 'Segoe UI Emoji', 'Segoe UI Symbol'; text-align: right; color: #262626=
+; font-size: 16px; line-height: 1.55; margin-top: 0;">=D8=A3=D8=B6=D9=8A=D9=
+=81=D8=AA =D8=A7=D9=84=D8=B9=D8=AF=D9=8A=D8=AF =D9=85=D9=86 =D8=A7=D9=84=D9=
+=85=D8=B4=D8=A7=D8=B1=D9=8A=D8=B9 =D8=B0=D8=A7=D8=AA =D8=A7=D9=84=D8=B5=D9=
+=84=D8=A9 =D8=A8=D9=85=D8=AC=D8=A7=D9=84 =D8=AA=D8=AE=D8=B5=D8=B5=D9=83 =D9=
+=88=D9=85=D9=87=D8=A7=D8=B1=D8=A7=D8=AA=D9=83 =D8=B9=D9=84=D9=89 =D9=85=D9=
+=86=D8=B5=D8=A9 =D9=85=D8=B3=D8=AA=D9=82=D9=84 =D8=AE=D9=84=D8=A7=D9=84 =D8=
+=A7=D9=84=D8=A3=D8=B3=D8=A8=D9=88=D8=B9 =D8=A7=D9=84=D9=81=D8=A7=D8=A6=D8=
+=AA=D8=8C =D9=85=D9=86 =D8=A7=D9=84=D9=85=D8=A4=D9=83=D8=AF =D8=A3=D9=86=D9=
+=83 =D8=AA=D8=B1=D8=BA=D8=A8 =D8=A8=D8=AA=D9=82=D8=AF=D9=8A=D9=85 =D8=B9=D8=
+=B1=D9=88=D8=B6=D9=83 =D8=B9=D9=84=D9=8A=D9=87=D8=A7 =D9=84=D8=AA=D8=AD=D8=
+=B5=D9=84 =D8=B9=D9=84=D9=89 =D9=81=D8=B1=D8=B5 =D8=AA=D9=88=D8=B8=D9=8A=D9=
+=81 =D8=AC=D8=AF=D9=8A=D8=AF=D8=A9 =D8=AA=D8=B2=D9=8A=D8=AF =D9=85=D9=86 =
+=D8=AF=D8=AE=D9=84=D9=83.</p>
+<h2 class=3D"email-list__header-title" style=3D"box-sizing: border-box; fon=
+t-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,=
+ Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol=
+'; text-align: right; font-size: 20px; font-weight: 400; margin-top: 20px; =
+margin-bottom: 0;">=D8=A5=D9=84=D9=8A=D9=83 =D8=A2=D8=AE=D8=B1 =D9=85=D8=B4=
+=D8=A7=D8=B1=D9=8A=D8=B9 =D8=A8=D8=B1=D9=85=D8=AC=D8=A9=D8=8C =D8=AA=D8=B7=
+=D9=88=D9=8A=D8=B1 =D8=A7=D9=84=D9=85=D9=88=D8=A7=D9=82=D8=B9 =D9=88=D8=A7=
+=D9=84=D8=AA=D8=B7=D8=A8=D9=8A=D9=82=D8=A7=D8=AA =D8=A7=D9=84=D8=AA=D9=8A =
+=D8=A3=D8=B6=D9=8A=D9=81=D8=AA</h2>
+<table class=3D"email-list" style=3D"box-sizing: border-box; font-family: -=
+apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, san=
+s-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; width: 1=
+00%;">
+<tr>
+<td style=3D"box-sizing: border-box; font-family: -apple-system, BlinkMacSy=
+stemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Em=
+oji', 'Segoe UI Emoji', 'Segoe UI Symbol'; vertical-align: top;">
+<table class=3D"email-list__item-details-table" style=3D"box-sizing: border=
+-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, H=
+elvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe =
+UI Symbol'; margin-top: 15px;">
+<tr>
+<td class=3D"email-list__item-name" style=3D"box-sizing: border-box; font-f=
+amily: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Ar=
+ial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; =
+vertical-align: top;">
+<a class=3D"title-link" href=3D"https://mostaql.com/project/720158-%D8%A5%D=
+9%86%D8%B4%D8%A7%D8%A1-%D8%AA%D8%B7%D8%A8%D9%8A%D9%82-%D9%84%D8%AC%D9%85%D8=
+%B9-%D8%A7%D9%84%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1?utm_source=3Dproject-invitat=
+ions&amp;utm_medium=3Demail&amp;utm_campaign=3Ddevelopment-project-invitati=
+ons" style=3D"box-sizing: border-box; font-family: -apple-system, BlinkMacS=
+ystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color E=
+moji', 'Segoe UI Emoji', 'Segoe UI Symbol'; text-decoration: none; color: #=
+262626; line-height: 22px; font-size: 18px; padding-top: 0;">=D8=A5=D9=86=
+=D8=B4=D8=A7=D8=A1 =D8=AA=D8=B7=D8=A8=D9=8A=D9=82 =D9=84=D8=AC=D9=85=D8=B9 =
+=D8=A7=D9=84=D8=A3=D8=AE=D8=A8=D8=A7=D8=B1</a>
+</td>
+</tr>
+<tr>
+    <td class=3D"email-list__item-text" style=3D"box-sizing: border-box; fo=
+nt-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica=
+, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbo=
+l'; line-height: 22px; font-size: 16px; padding-bottom: 0; color: #262626; =
+vertical-align: top;"><a href=3D"https://mostaql.com/project/720158-%D8%A5%=
+D9%86%D8%B4%D8%A7%D8%A1-%D8%AA%D8%B7%D8%A8%D9%8A%D9%82-%D9%84%D8%AC%D9%85%D=
+8%B9-%D8%A7%D9%84%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1?utm_source=3Dproject-invita=
+tions&amp;utm_medium=3Demail&amp;utm_campaign=3Ddevelopment-project-invitat=
+ions" style=3D"box-sizing: border-box; font-family: -apple-system, BlinkMac=
+SystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color =
+Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; color: #262626; text-decoratio=
+n: none; font-size: 14px;">=D8=A7=D9=84=D9=85=D8=B4=D8=B1=D9=88=D8=B9 =D9=
+=87=D9=88 =D8=B9=D8=A8=D8=A7=D8=B1=D9=87 =D8=B9=D9=86 =D8=A8=D9=86=D8=A7=D8=
+=A1 =D9=85=D9=86=D8=B5=D9=87 =D8=B9=D9=84=D9=89 =D8=A7=D8=AC=D9=87=D8=B2=D8=
+=A9 =D8=A7=D9=84=D8=A7=D9=8A=D9=81=D9=88=D9=86</a></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class=3D"email-list__item-separator" style=3D"box-sizing: border-box; f=
+ont-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetic=
+a, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symb=
+ol'; border-bottom: 1px solid #e2e2e2; padding: 7px 0 8px 0; vertical-align=
+: top;"></td>
+</tr>
+<tr>
+<td style=3D"box-sizing: border-box; font-family: -apple-system, BlinkMacSy=
+stemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Em=
+oji', 'Segoe UI Emoji', 'Segoe UI Symbol'; vertical-align: top;">
+<table class=3D"email-list__item-details-table" style=3D"box-sizing: border=
+-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, H=
+elvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe =
+UI Symbol'; margin-top: 15px;">
+<tr>
+<td class=3D"email-list__item-name" style=3D"box-sizing: border-box; font-f=
+amily: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Ar=
+ial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; =
+vertical-align: top;">
+<a class=3D"title-link" href=3D"https://mostaql.com/project/720165-%D9%85%D=
+8%B7%D9%84%D9%88%D8%A8-%D8%B4%D8%AE%D8%B5-%D8%AE%D8%A8%D9%8A%D8%B1-%D9%81%D=
+9%8A-%D8%A7%D9%83%D9%88%D8%A7%D8%AF-php-%D9%88%D8%B1%D8%A8%D8%B7%D9%87%D8%A=
+7-%D8%A8%D8%A7%D9%84%D9%88%D9%88%D8%B1%D8%AF%D8%A8%D8%B1%D9%8A%D8%B3-%D9%84=
+%D8%A7%D8%B5%D9%84%D8%A7%D8%AD-%D9%85%D8%B4%D9%83%D9%84%D8%A9-%D9%83%D9%88%=
+D8%AF?utm_source=3Dproject-invitations&amp;utm_medium=3Demail&amp;utm_campa=
+ign=3Ddevelopment-project-invitations" style=3D"box-sizing: border-box; fon=
+t-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,=
+ Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol=
+'; text-decoration: none; color: #262626; line-height: 22px; font-size: 18p=
+x; padding-top: 0;">=D9=85=D8=B7=D9=84=D9=88=D8=A8 =D8=B4=D8=AE=D8=B5 =D8=
+=AE=D8=A8=D9=8A=D8=B1 =D9=81=D9=8A  =D8=A7=D9=83=D9=88=D8=A7=D8=AF PHP  =D9=
+=88=D8=B1=D8=A8=D8=B7=D9=87=D8=A7 =D8=A8=D8=A7=D9=84=D9=88=D9=88=D8=B1=D8=
+=AF=D8=A8=D8=B1=D9=8A=D8=B3 =D9=84=D8=A7=D8=B5=D9=84=D8=A7=D8=AD =D9=85=D8=
+=B4=D9=83=D9=84=D8=A9 =D9=83=D9=88=D8=AF</a>
+</td>
+</tr>
+<tr>
+    <td class=3D"email-list__item-text" style=3D"box-sizing: border-box; fo=
+nt-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica=
+, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbo=
+l'; line-height: 22px; font-size: 16px; padding-bottom: 0; color: #262626; =
+vertical-align: top;"><a href=3D"https://mostaql.com/project/720165-%D9%85%=
+D8%B7%D9%84%D9%88%D8%A8-%D8%B4%D8%AE%D8%B5-%D8%AE%D8%A8%D9%8A%D8%B1-%D9%81%=
+D9%8A-%D8%A7%D9%83%D9%88%D8%A7%D8%AF-php-%D9%88%D8%B1%D8%A8%D8%B7%D9%87%D8%=
+A7-%D8%A8%D8%A7%D9%84%D9%88%D9%88%D8%B1%D8%AF%D8%A8%D8%B1%D9%8A%D8%B3-%D9%8=
+4%D8%A7%D8%B5%D9%84%D8%A7%D8%AD-%D9%85%D8%B4%D9%83%D9%84%D8%A9-%D9%83%D9%88=
+%D8%AF?utm_source=3Dproject-invitations&amp;utm_medium=3Demail&amp;utm_camp=
+aign=3Ddevelopment-project-invitations" style=3D"box-sizing: border-box; fo=
+nt-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica=
+, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbo=
+l'; color: #262626; text-decoration: none; font-size: 14px;">=D9=84=D8=AF=
+=D9=8A =D9=83=D9=88=D8=AF PHP =D9=8A=D9=82=D9=88=D9=85 =D8=A8=D8=B9=D9=85=
+=D9=84=D9=8A=D8=A7=D8=AA =D8=AA=D8=B1=D8=A8=D8=B7 =D8=A7=D9=84=D9=88=D8=B1=
+=D8=AF=D8=A8=D8=B1=D9=8A=D8=B3 =D8=A8=D8=A8=D8=B1=D9=86=D8=A7=D9=85=D8=AC =
+=D9=8A=D8=B1=D8=B3=D9=84 =D8=B9=D9=85=D9=84=D9=8A=D8=A7=D8=AA =D9=86=D8=B4=
+=D8=B1 =D9=88=D9=83=D8=AB=D9=8A=D8=B1 =D9=85=D9=86 =D8=A7=D9=84=D8=B9=D9=85=
+=D9=84=D9=8A=D8=A7=D8=AA =D8=AA=D8=B8=D9=84 =D9=85=D9=81=D8=AA=D9=88=D8=AD=
+=D9=87 =D8=A7=D8=AD=D8=AA=D8=A7=D8=AC =D8=B4=D8=AE=D8=B5 =D9=8A=D9=82=D9=88=
+=D9=85 =D8=A8=D8=B6=D8=A8=D8=B7 =D9=87=D8=B0=D9=87 =D8=A7=D9=84=D9=85=D8=B4=
+=D9=83=D9=84=D8=A9 =D9=88=D9=8A=D8=AC=D8=B9=D9=84 =D8=A7=D9=84=D8=B9=D9=85=
+=D9=84=D9=8A=D8=A7=D8=AA =D8=AA=D8=BA=D9=84=D9=82 =D8=A8=D8=B9=D8=AF =D8=AA=
+=D9=86=D9=81=D9=8A=D8=B0=D9=87=D8=A7 =D9=88=D9=84=D8=A7...</a></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class=3D"email-list__item-separator" style=3D"box-sizing: border-box; f=
+ont-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetic=
+a, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symb=
+ol'; border-bottom: 1px solid #e2e2e2; padding: 7px 0 8px 0; vertical-align=
+: top;"></td>
+</tr>
+<tr>
+<td style=3D"box-sizing: border-box; font-family: -apple-system, BlinkMacSy=
+stemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Em=
+oji', 'Segoe UI Emoji', 'Segoe UI Symbol'; vertical-align: top;">
+<table class=3D"email-list__item-details-table" style=3D"box-sizing: border=
+-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, H=
+elvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe =
+UI Symbol'; margin-top: 15px;">
+<tr>
+<td class=3D"email-list__item-name" style=3D"box-sizing: border-box; font-f=
+amily: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Ar=
+ial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; =
+vertical-align: top;">
+<a class=3D"title-link" href=3D"https://mostaql.com/project/720175-%D9%85%D=
+8%B7%D9%84%D9%88%D8%A8-%D9%85%D8%A8%D8%B1%D9%85%D8%AC-backend-%D8%A8%D8%A7%=
+D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85-php-symphony-%D9%84%D8%B9%D9%85%D9%84-%=
+D8%A5%D8%B6%D8%A7%D9%81%D8%A7%D8%AA-%D8%B9%D9%84%D9%89-%D8%AB%D9%8A%D9%85?u=
+tm_source=3Dproject-invitations&amp;utm_medium=3Demail&amp;utm_campaign=3Dd=
+evelopment-project-invitations" style=3D"box-sizing: border-box; font-famil=
+y: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial,=
+ sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; text=
+-decoration: none; color: #262626; line-height: 22px; font-size: 18px; padd=
+ing-top: 0;">=D9=85=D8=B7=D9=84=D9=88=D8=A8 =D9=85=D8=A8=D8=B1=D9=85=D8=AC =
+backend =D8=A8=D8=A7=D8=B3=D8=AA=D8=AE=D8=AF=D8=A7=D9=85 php symphony =D9=
+=84=D8=B9=D9=85=D9=84 =D8=A5=D8=B6=D8=A7=D9=81=D8=A7=D8=AA =D8=B9=D9=84=D9=
+=89 =D8=AB=D9=8A=D9=85</a>
+</td>
+</tr>
+<tr>
+    <td class=3D"email-list__item-text" style=3D"box-sizing: border-box; fo=
+nt-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica=
+, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbo=
+l'; line-height: 22px; font-size: 16px; padding-bottom: 0; color: #262626; =
+vertical-align: top;"><a href=3D"https://mostaql.com/project/720175-%D9%85%=
+D8%B7%D9%84%D9%88%D8%A8-%D9%85%D8%A8%D8%B1%D9%85%D8%AC-backend-%D8%A8%D8%A7=
+%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85-php-symphony-%D9%84%D8%B9%D9%85%D9%84-=
+%D8%A5%D8%B6%D8%A7%D9%81%D8%A7%D8%AA-%D8%B9%D9%84%D9%89-%D8%AB%D9%8A%D9%85?=
+utm_source=3Dproject-invitations&amp;utm_medium=3Demail&amp;utm_campaign=3D=
+development-project-invitations" style=3D"box-sizing: border-box; font-fami=
+ly: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial=
+, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; col=
+or: #262626; text-decoration: none; font-size: 14px;">=D8=A7=D9=84=D8=B3=D9=
+=84=D8=A7=D9=85 =D8=B9=D9=84=D9=8A=D9=83=D9=85. =D9=83=D9=85=D8=A7 =D9=88=
+=D8=A7=D8=B6=D8=AD =D9=85=D9=86 =D8=A7=D9=84=D8=B9=D9=86=D9=88=D8=A7=D9=86 =
+=D9=85=D8=AD=D8=AA=D8=A7=D8=AC =D9=85=D8=A8=D8=B1=D9=85=D8=AC backend =D8=
+=B9=D9=86=D8=AF=D9=87 =D8=AE=D8=A8=D8=B1=D9=87 =D9=81=D9=8A =D9=81=D8=B1=D9=
+=8A=D9=85=D9=88=D8=B1=D9=83 php symphony. =D9=84=D8=B9=D9=85=D9=84 =D8=A5=
+=D8=B6=D8=A7=D9=81=D9=8A=D8=AA=D9=8A=D9=86 =D8=B9=D9=84=D9=8A theme =D8=AC=
+=D8=A7=D9=87=D8=B2 =D9=88=D8=B4=D8=BA=D8=A7=D9=84 . =D8=A3=D8=B1=D8=AC=D9=
+=88 =D9=85=D9=86 =D9=8A=D9=82=D8=AF=D9=85 =D8=B9=D8=B1=D8=B6=D9=87 =D8=A7=
+=D9=86 =D9=8A=D9=83=D9=88=D9=86 =D9=84=D8=AF=D9=8A=D9=87 =D8=AE=D8=A8=D8=B1=
+=2E..</a></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class=3D"email-list__item-separator" style=3D"box-sizing: border-box; f=
+ont-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetic=
+a, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symb=
+ol'; border-bottom: 1px solid #e2e2e2; padding: 7px 0 8px 0; vertical-align=
+: top;"></td>
+</tr>
+<tr>
+<td style=3D"box-sizing: border-box; font-family: -apple-system, BlinkMacSy=
+stemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Em=
+oji', 'Segoe UI Emoji', 'Segoe UI Symbol'; vertical-align: top;">
+<table class=3D"email-list__item-details-table" style=3D"box-sizing: border=
+-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, H=
+elvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe =
+UI Symbol'; margin-top: 15px;">
+<tr>
+<td class=3D"email-list__item-name" style=3D"box-sizing: border-box; font-f=
+amily: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Ar=
+ial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; =
+vertical-align: top;">
+<a class=3D"title-link" href=3D"https://mostaql.com/project/720162-%D8%AA%D=
+8%B7%D9%88%D9%8A%D8%B1-%D9%86%D8%B8%D8%A7%D9%85-%D8%A5%D8%AF%D8%A7%D8%B1%D8=
+%A9-%D8%A7%D9%84%D9%85%D8%AC%D9%84%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D9%84%D9%=
+85%D9%8A%D8%A9-ojs?utm_source=3Dproject-invitations&amp;utm_medium=3Demail&=
+amp;utm_campaign=3Ddevelopment-project-invitations" style=3D"box-sizing: bo=
+rder-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Robot=
+o, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Se=
+goe UI Symbol'; text-decoration: none; color: #262626; line-height: 22px; f=
+ont-size: 18px; padding-top: 0;">=D8=AA=D8=B7=D9=88=D9=8A=D8=B1 =D9=86=D8=
+=B8=D8=A7=D9=85 =D8=A5=D8=AF=D8=A7=D8=B1=D8=A9 =D8=A7=D9=84=D9=85=D8=AC=D9=
+=84=D8=A7=D8=AA =D8=A7=D9=84=D8=B9=D9=84=D9=85=D9=8A=D8=A9 OJS</a>
+</td>
+</tr>
+<tr>
+    <td class=3D"email-list__item-text" style=3D"box-sizing: border-box; fo=
+nt-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica=
+, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbo=
+l'; line-height: 22px; font-size: 16px; padding-bottom: 0; color: #262626; =
+vertical-align: top;"><a href=3D"https://mostaql.com/project/720162-%D8%AA%=
+D8%B7%D9%88%D9%8A%D8%B1-%D9%86%D8%B8%D8%A7%D9%85-%D8%A5%D8%AF%D8%A7%D8%B1%D=
+8%A9-%D8%A7%D9%84%D9%85%D8%AC%D9%84%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D9%84%D9=
+%85%D9%8A%D8%A9-ojs?utm_source=3Dproject-invitations&amp;utm_medium=3Demail=
+&amp;utm_campaign=3Ddevelopment-project-invitations" style=3D"box-sizing: b=
+order-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Robo=
+to, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'S=
+egoe UI Symbol'; color: #262626; text-decoration: none; font-size: 14px;">=
+=D8=AA=D8=B7=D9=88=D9=8A=D8=B1 =D9=86=D8=B8=D8=A7=D9=85 =D8=A7=D8=AF=D8=A7=
+=D8=B1=D8=A9 =D8=A7=D9=84=D9=85=D8=AC=D9=84=D8=A7=D8=AA =D8=A7=D9=84=D9=85=
+=D9=81=D8=AA=D9=88=D8=AD OJS 1-=D8=A7=D8=B6=D8=A7=D9=81=D8=A9 =D8=A8=D9=84=
+=D8=A7=D9=83=D9=86 =D9=84=D9=84=D9=85=D8=B5=D8=A7=D8=AF=D9=82=D8=A9 =D8=A7=
+=D9=84=D8=AB=D9=86=D8=A7=D8=A6=D9=8A=D8=A9 2FA =D9=88=D9=81=D9=82 =D8=A7=D8=
+=B1=D8=B3=D8=A7=D9=84 =D9=83=D9=88=D8=AF =D8=A7=D9=84=D9=89 =D8=A7=D9=84=D8=
+=A7=D9=8A=D9=85=D9=8A=D9=84 =D8=A7=D9=88 =D8=B1=D9=82=D9=85 =D8=A7=D9=84=D9=
+=87=D8=A7=D8=AA=D9=81 =D9=88=D9=88=D9=81=D9=82 =D8=A7=D8=AF=D8=AE=D8=A7=D9=
+=84 =D8=B1=D9=85=D8=B2 =D9=85=D9=86 =D9=83=D9=88=D9=83=D9=84 =D8=A7=D8=AB=
+=D9=86=D8=AA=D9=83=D9=8A=D8=AA =D9=88=D8=BA=D9=8A=D8=B1=D9=87=D8=A7 =D9=85=
+=D9=86 =D9=88=D8=B3=D8=A7=D8=A6=D9=84 ...</a></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class=3D"email-list__item-separator" style=3D"box-sizing: border-box; f=
+ont-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetic=
+a, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symb=
+ol'; border-bottom: 1px solid #e2e2e2; padding: 7px 0 8px 0; vertical-align=
+: top;"></td>
+</tr>
+<tr>
+<td style=3D"box-sizing: border-box; font-family: -apple-system, BlinkMacSy=
+stemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Em=
+oji', 'Segoe UI Emoji', 'Segoe UI Symbol'; vertical-align: top;">
+<table class=3D"email-list__item-details-table" style=3D"box-sizing: border=
+-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, H=
+elvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe =
+UI Symbol'; margin-top: 15px;">
+<tr>
+<td class=3D"email-list__item-name" style=3D"box-sizing: border-box; font-f=
+amily: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Ar=
+ial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; =
+vertical-align: top;">
+<a class=3D"title-link" href=3D"https://mostaql.com/project/694522-%D8%AD%D=
+9%84-%D9%85%D8%B4%D9%83%D9%84%D9%87-%D8%A8%D8%B7%D8%A6-web-api-net-core-6?u=
+tm_source=3Dproject-invitations&amp;utm_medium=3Demail&amp;utm_campaign=3Dd=
+evelopment-project-invitations" style=3D"box-sizing: border-box; font-famil=
+y: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial,=
+ sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; text=
+-decoration: none; color: #262626; line-height: 22px; font-size: 18px; padd=
+ing-top: 0;">=D8=AD=D9=84 =D9=85=D8=B4=D9=83=D9=84=D9=87 =D8=A8=D8=B7=D8=A6=
+ web api .net core 6</a>
+</td>
+</tr>
+<tr>
+    <td class=3D"email-list__item-text" style=3D"box-sizing: border-box; fo=
+nt-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica=
+, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbo=
+l'; line-height: 22px; font-size: 16px; padding-bottom: 0; color: #262626; =
+vertical-align: top;"><a href=3D"https://mostaql.com/project/694522-%D8%AD%=
+D9%84-%D9%85%D8%B4%D9%83%D9%84%D9%87-%D8%A8%D8%B7%D8%A6-web-api-net-core-6?=
+utm_source=3Dproject-invitations&amp;utm_medium=3Demail&amp;utm_campaign=3D=
+development-project-invitations" style=3D"box-sizing: border-box; font-fami=
+ly: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial=
+, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; col=
+or: #262626; text-decoration: none; font-size: 14px;">=D8=AD=D9=84 =D9=85=
+=D8=B4=D9=83=D9=84=D9=87 =D8=A8=D8=B7=D8=A6 web api .net core 6 =D8=B9=D9=
+=86=D8=AF=D9=8A =D9=86=D8=B8=D8=A7=D9=85 =D9=85=D8=A8=D9=86=D9=8A =D9=88=D8=
+=AC=D8=A7=D9=87=D8=B2 =D9=81=D9=8A =D9=85=D8=B4=D9=83=D9=84=D9=87 =D9=81=D9=
+=8A =D8=A7=D9=88=D9=84 =D8=B7=D9=84=D8=A8 =D8=A8=D8=B7=D8=A6 =D8=A8=D9=8A=
+=D9=86 API =D9=88=D8=A8=D9=8A=D9=86 =D9=81=D8=B1=D9=88=D9=86=D8=AA =D9=8A=
+=D8=B5=D9=84 =D8=A7=D9=84=D9=89 30-40 =D8=AB=D8=A7=D9=86=D9=8A=D8=A9 =D8=A7=
+=D9=84=D9=85=D8=B7=D9=84=D9=88=D8=A8 =D8=AA=D9=82=D9=84=D9=8A=D9=84 =D8=A7=
+=D9=84=D9=8A 1-3 =D8=AB=D9=88=D8=A7=D9=86=D9=8A. =D8=AD=D8=AA=D9=8A =D9=84=
+=D9=88 =D9=85=D9=86 =D9=86=D9=81=D8=B3 ...</a></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class=3D"email-list__item-separator" style=3D"box-sizing: border-box; f=
+ont-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetic=
+a, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symb=
+ol'; border-bottom: 1px solid #e2e2e2; padding: 7px 0 8px 0; vertical-align=
+: top;"></td>
+</tr>
+<tr>
+<td style=3D"box-sizing: border-box; font-family: -apple-system, BlinkMacSy=
+stemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Em=
+oji', 'Segoe UI Emoji', 'Segoe UI Symbol'; vertical-align: top;">
+<table class=3D"email-list__item-details-table" style=3D"box-sizing: border=
+-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, H=
+elvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe =
+UI Symbol'; margin-top: 15px;">
+<tr>
+<td class=3D"email-list__item-name" style=3D"box-sizing: border-box; font-f=
+amily: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Ar=
+ial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; =
+vertical-align: top;">
+<a class=3D"title-link" href=3D"https://mostaql.com/project/720151-%D8%A7%D=
+9%86%D8%B4%D8%A7%D8%A1-%D9%88%D8%AA%D8%B4%D8%BA%D9%8A%D9%84-%D9%86%D8%B8%D8=
+%A7%D9%85-%D8%A7%D9%88%D8%AF%D9%88-%D9%84%D9%84%D9%85%D8%AD%D8%A7%D8%B3%D8%=
+A8%D8%A9-%D9%84%D9%84%D8%B4%D8%B1%D9%83%D8%A9?utm_source=3Dproject-invitati=
+ons&amp;utm_medium=3Demail&amp;utm_campaign=3Ddevelopment-project-invitatio=
+ns" style=3D"box-sizing: border-box; font-family: -apple-system, BlinkMacSy=
+stemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Em=
+oji', 'Segoe UI Emoji', 'Segoe UI Symbol'; text-decoration: none; color: #2=
+62626; line-height: 22px; font-size: 18px; padding-top: 0;">=D8=A7=D9=86=D8=
+=B4=D8=A7=D8=A1 =D9=88=D8=AA=D8=B4=D8=BA=D9=8A=D9=84 =D9=86=D8=B8=D8=A7=D9=
+=85 =D8=A7=D9=88=D8=AF=D9=88 =D9=84=D9=84=D9=85=D8=AD=D8=A7=D8=B3=D8=A8=D8=
+=A9 =D9=84=D9=84=D8=B4=D8=B1=D9=83=D8=A9</a>
+</td>
+</tr>
+<tr>
+    <td class=3D"email-list__item-text" style=3D"box-sizing: border-box; fo=
+nt-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica=
+, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbo=
+l'; line-height: 22px; font-size: 16px; padding-bottom: 0; color: #262626; =
+vertical-align: top;"><a href=3D"https://mostaql.com/project/720151-%D8%A7%=
+D9%86%D8%B4%D8%A7%D8%A1-%D9%88%D8%AA%D8%B4%D8%BA%D9%8A%D9%84-%D9%86%D8%B8%D=
+8%A7%D9%85-%D8%A7%D9%88%D8%AF%D9%88-%D9%84%D9%84%D9%85%D8%AD%D8%A7%D8%B3%D8=
+%A8%D8%A9-%D9%84%D9%84%D8%B4%D8%B1%D9%83%D8%A9?utm_source=3Dproject-invitat=
+ions&amp;utm_medium=3Demail&amp;utm_campaign=3Ddevelopment-project-invitati=
+ons" style=3D"box-sizing: border-box; font-family: -apple-system, BlinkMacS=
+ystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color E=
+moji', 'Segoe UI Emoji', 'Segoe UI Symbol'; color: #262626; text-decoration=
+: none; font-size: 14px;">=D8=A7=D9=84=D8=B3=D9=84=D8=A7=D9=85 =D8=B9=D9=84=
+=D9=8A=D9=83=D9=85 =D8=AA=D8=AD=D9=8A=D8=A9 =D8=B7=D9=8A=D8=A8=D8=A9 =D9=86=
+=D8=AD=D9=86 =D8=B4=D8=B1=D9=83=D8=A9 =D9=84=D8=A3=D8=B9=D9=85=D8=A7=D9=84 =
+=D8=A7=D9=84=D8=AF=D9=8A=D9=83=D9=88=D8=B1 =D9=86=D8=B1=D8=BA=D8=A8 =D8=A8=
+=D8=A5=D9=86=D8=B4=D8=A7=D8=A1 =D9=86=D8=B8=D8=A7=D9=85 ODOO =D8=A7=D9=84=
+=D9=85=D8=AD=D8=A7=D8=B3=D8=A8=D9=8A =D8=B3=D9=8A=D8=AA=D9=85 =D8=AF=D9=81=
+=D8=B9 =D8=B1=D8=B3=D9=88=D9=85 =D8=A7=D9=84=D9=84=D9=8A=D8=B3=D9=86 =D9=85=
+=D9=86 =D8=AD=D8=B3=D8=A7=D8=A8=D9=86=D8=A7 =D9=88 =D9=86=D8=B7=D9=84=D8=A8=
+ =D8=B4=D8=AE=D8=B5 =D9=84=D8=AA=D9=88=D9=81=D9=8A=D8=B1 =D8=A7=D9=84=D8=AF=
+=D8=B9=D9=85 =D9=85=D9=86 =D8=A7=D9=84=D8=A8=D8=AF=D8=A7=D9=8A=D8=A9 =D9=88=
+ =D8=A7=D8=AF=D8=AE=D8=A7=D9=84 =D8=A7=D9=84=D9=85=D8=B9=D9=84=D9=88=D9=85=
+=D8=A7...</a></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class=3D"email-list__item-separator" style=3D"box-sizing: border-box; f=
+ont-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetic=
+a, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symb=
+ol'; border-bottom: 1px solid #e2e2e2; padding: 7px 0 8px 0; vertical-align=
+: top;"></td>
+</tr>
+<tr>
+<td style=3D"box-sizing: border-box; font-family: -apple-system, BlinkMacSy=
+stemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Em=
+oji', 'Segoe UI Emoji', 'Segoe UI Symbol'; vertical-align: top;">
+<table class=3D"email-list__item-details-table" style=3D"box-sizing: border=
+-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, H=
+elvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe =
+UI Symbol'; margin-top: 15px;">
+<tr>
+<td class=3D"email-list__item-name" style=3D"box-sizing: border-box; font-f=
+amily: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Ar=
+ial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; =
+vertical-align: top;">
+<a class=3D"title-link" href=3D"https://mostaql.com/project/720128-%D8%A5%D=
+9%86%D8%B4%D8%A7%D8%A1-%D8%AF%D8%A7%D8%B4-%D8%A8%D9%88%D8%B1%D8%AF-%D8%B9%D=
+9%84%D9%89-%D9%85%D9%84%D9%81-%D8%A7%D9%83%D8%B3%D9%84?utm_source=3Dproject=
+-invitations&amp;utm_medium=3Demail&amp;utm_campaign=3Ddevelopment-project-=
+invitations" style=3D"box-sizing: border-box; font-family: -apple-system, B=
+linkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple=
+ Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; text-decoration: none; =
+color: #262626; line-height: 22px; font-size: 18px; padding-top: 0;">=D8=A5=
+=D9=86=D8=B4=D8=A7=D8=A1 =D8=AF=D8=A7=D8=B4 =D8=A8=D9=88=D8=B1=D8=AF =D8=B9=
+=D9=84=D9=89 =D9=85=D9=84=D9=81 =D8=A7=D9=83=D8=B3=D9=84</a>
+</td>
+</tr>
+<tr>
+    <td class=3D"email-list__item-text" style=3D"box-sizing: border-box; fo=
+nt-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica=
+, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbo=
+l'; line-height: 22px; font-size: 16px; padding-bottom: 0; color: #262626; =
+vertical-align: top;"><a href=3D"https://mostaql.com/project/720128-%D8%A5%=
+D9%86%D8%B4%D8%A7%D8%A1-%D8%AF%D8%A7%D8%B4-%D8%A8%D9%88%D8%B1%D8%AF-%D8%B9%=
+D9%84%D9%89-%D9%85%D9%84%D9%81-%D8%A7%D9%83%D8%B3%D9%84?utm_source=3Dprojec=
+t-invitations&amp;utm_medium=3Demail&amp;utm_campaign=3Ddevelopment-project=
+-invitations" style=3D"box-sizing: border-box; font-family: -apple-system, =
+BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Appl=
+e Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; color: #262626; text-d=
+ecoration: none; font-size: 14px;">=D9=84=D8=AF=D9=8A =D9=85=D9=84=D9=81 =
+=D8=A7=D9=83=D8=B3=D9=84 =D9=8A=D8=AD=D8=AA=D9=88=D9=8A =D8=B9=D9=84=D9=89 =
+=D9=85=D8=B9=D9=84=D9=88=D9=85=D8=A7=D8=AA =D9=88=D9=85=D8=AD=D8=AA=D8=A7=
+=D8=AC =D8=B4=D8=AE=D8=B5 =D9=85=D8=AA=D8=AE=D8=B5=D8=B5 =D8=A8=D8=A5=D9=86=
+=D8=B4=D8=A7=D8=A1 =D8=AF=D8=A7=D8=B4 =D8=A8=D9=88=D8=B1=D8=AF =D8=AA=D9=81=
+=D8=A7=D8=B9=D9=84=D9=8A =D8=A8=D8=AA=D8=B5=D9=85=D9=8A=D9=85 =D8=A7=D8=AD=
+=D8=AA=D8=B1=D8=A7=D9=81=D9=8A. =D9=83=D9=85=D8=A7 =D8=A7=D8=B1=D8=AC=D9=88=
+ =D9=85=D9=86 =D8=A7=D9=84=D9=85=D8=B3=D8=AA=D9=82=D9=84=D9=8A=D9=86 =D8=A7=
+=D9=84=D8=B1=D8=A7=D8=BA=D8=A8=D9=8A=D9=86 =D8=A8=D8=AA=D8=B2=D9=88=D9=8A=
+=D8=AF=D9=8A =D8=A8=D9=86=D9=85=D9=88=D8=B0=D8=AC =D9=85=D9=86 =D8=B9=D9=85=
+=D9=84=D9=87 =D9=88=D9=84=D9=8A=D8=B3 =D8=B9=D9=85=D9=84 =D8=A7=D8=B9=D8=AC=
+=D8=A8=D9=87 =D8=A7=D9=88 =D9=8A...</a></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class=3D"email-list__item-separator" style=3D"box-sizing: border-box; f=
+ont-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetic=
+a, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symb=
+ol'; border-bottom: 1px solid #e2e2e2; padding: 7px 0 8px 0; vertical-align=
+: top;"></td>
+</tr>
+<tr>
+<td style=3D"box-sizing: border-box; font-family: -apple-system, BlinkMacSy=
+stemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Em=
+oji', 'Segoe UI Emoji', 'Segoe UI Symbol'; vertical-align: top;">
+<table class=3D"email-list__item-details-table" style=3D"box-sizing: border=
+-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, H=
+elvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe =
+UI Symbol'; margin-top: 15px;">
+<tr>
+<td class=3D"email-list__item-name" style=3D"box-sizing: border-box; font-f=
+amily: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Ar=
+ial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; =
+vertical-align: top;">
+<a class=3D"title-link" href=3D"https://mostaql.com/project/720120-%D9%85%D=
+8%B7%D9%84%D9%88%D8%A8-%D8%A5%D9%86%D8%B4%D8%A7%D8%A1-%D8%A8%D8%B1%D9%86%D8=
+%A7%D9%85%D8%AC-%D9%82%D8%B1%D8%B9%D8%A9-%D8%B9%D8%B4%D9%88%D8%A7%D8%A6%D9%=
+8A%D8%A9?utm_source=3Dproject-invitations&amp;utm_medium=3Demail&amp;utm_ca=
+mpaign=3Ddevelopment-project-invitations" style=3D"box-sizing: border-box; =
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helveti=
+ca, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Sym=
+bol'; text-decoration: none; color: #262626; line-height: 22px; font-size: =
+18px; padding-top: 0;">=D9=85=D8=B7=D9=84=D9=88=D8=A8 =D8=A5=D9=86=D8=B4=D8=
+=A7=D8=A1 =D8=A8=D8=B1=D9=86=D8=A7=D9=85=D8=AC =D9=82=D8=B1=D8=B9=D8=A9 =D8=
+=B9=D8=B4=D9=88=D8=A7=D8=A6=D9=8A=D8=A9</a>
+</td>
+</tr>
+<tr>
+    <td class=3D"email-list__item-text" style=3D"box-sizing: border-box; fo=
+nt-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica=
+, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbo=
+l'; line-height: 22px; font-size: 16px; padding-bottom: 0; color: #262626; =
+vertical-align: top;"><a href=3D"https://mostaql.com/project/720120-%D9%85%=
+D8%B7%D9%84%D9%88%D8%A8-%D8%A5%D9%86%D8%B4%D8%A7%D8%A1-%D8%A8%D8%B1%D9%86%D=
+8%A7%D9%85%D8%AC-%D9%82%D8%B1%D8%B9%D8%A9-%D8%B9%D8%B4%D9%88%D8%A7%D8%A6%D9=
+%8A%D8%A9?utm_source=3Dproject-invitations&amp;utm_medium=3Demail&amp;utm_c=
+ampaign=3Ddevelopment-project-invitations" style=3D"box-sizing: border-box;=
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvet=
+ica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Sy=
+mbol'; color: #262626; text-decoration: none; font-size: 14px;">=D8=B7=D9=
+=84=D8=A8 =D8=AA=D8=B5=D9=85=D9=8A=D9=85 =D8=A8=D8=B1=D9=86=D8=A7=D9=85=D8=
+=AC =D8=B3=D8=AD=D8=A8 =D9=82=D8=B1=D8=B9=D8=A9 =D8=B9=D8=B4=D9=88=D8=A7=D8=
+=A6=D9=8A=D8=A9 =D8=B9=D9=86=D8=AF=D9=8A =D8=A7=D8=B1=D9=82=D8=A7=D9=85 =D9=
+=85=D8=AB=D9=84=D8=A7 =D8=AA=D8=A8=D8=AF=D8=A7=D8=A1 =D9=85=D9=86 1 =D8=A7=
+=D9=84=D9=89 1000 =D9=88=D8=B9=D9=86=D8=AF=D9=8A =D8=A7=D8=B3=D9=85=D8=A7=
+=D8=A1 =D8=A7=D8=B4=D8=AE=D8=A7=D8=B5 =D8=B9=D8=AF=D8=AF=D9=87=D9=85 1000 =
+=D8=B4=D8=AE=D8=B5 =D8=A7=D8=B1=D9=8A=D8=AF =D8=AA=D9=88=D8=B2=D9=8A=D8=B9 =
+=D8=A7=D9=84=D8=A7=D8=B1=D9=82=D8=A7=D9=85 =D8=B9=D8=B4=D9=88=D8=A7=D8=A6=
+=D9=8A=D8=A7 =D8=B9=D9=84=D9=8A=D9=87=D9=85</a></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class=3D"email-list__item-separator" style=3D"box-sizing: border-box; f=
+ont-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetic=
+a, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symb=
+ol'; border-bottom: 1px solid #e2e2e2; padding: 7px 0 8px 0; vertical-align=
+: top;"></td>
+</tr>
+<tr>
+<td style=3D"box-sizing: border-box; font-family: -apple-system, BlinkMacSy=
+stemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Em=
+oji', 'Segoe UI Emoji', 'Segoe UI Symbol'; vertical-align: top;">
+<table class=3D"email-list__item-details-table" style=3D"box-sizing: border=
+-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, H=
+elvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe =
+UI Symbol'; margin-top: 15px;">
+<tr>
+<td class=3D"email-list__item-name" style=3D"box-sizing: border-box; font-f=
+amily: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Ar=
+ial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; =
+vertical-align: top;">
+<a class=3D"title-link" href=3D"https://mostaql.com/project/701501-%D9%85%D=
+8%B7%D9%84%D9%88%D8%A8-%D8%AA%D8%B5%D9%85%D9%8A%D9%85-%D9%85%D9%88%D9%82%D8=
+%B9-%D9%85%D9%86-%D8%AA%D8%B7%D8%A8%D9%8A%D9%82-%D9%88%D9%8A%D8%A8-%D8%A7%D=
+9%84%D9%89-%D9%85%D9%88%D9%82%D8%B9-%D9%84%D8%A7%D9%86%D8%AC%D9%84%D9%8A%D8=
+%B1?utm_source=3Dproject-invitations&amp;utm_medium=3Demail&amp;utm_campaig=
+n=3Ddevelopment-project-invitations" style=3D"box-sizing: border-box; font-=
+family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, A=
+rial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';=
+ text-decoration: none; color: #262626; line-height: 22px; font-size: 18px;=
+ padding-top: 0;">=D9=85=D8=B7=D9=84=D9=88=D8=A8 =D8=AA=D8=B5=D9=85=D9=8A=
+=D9=85 =D9=85=D9=88=D9=82=D8=B9 =D9=85=D9=86 =D8=AA=D8=B7=D8=A8=D9=8A=D9=82=
+ =D9=88=D9=8A=D8=A8 =D8=A7=D9=84=D9=89 =D9=85=D9=88=D9=82=D8=B9 =D9=84=D8=
+=A7=D9=86=D8=AC=D9=84=D9=8A=D8=B1</a>
+</td>
+</tr>
+<tr>
+    <td class=3D"email-list__item-text" style=3D"box-sizing: border-box; fo=
+nt-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica=
+, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbo=
+l'; line-height: 22px; font-size: 16px; padding-bottom: 0; color: #262626; =
+vertical-align: top;"><a href=3D"https://mostaql.com/project/701501-%D9%85%=
+D8%B7%D9%84%D9%88%D8%A8-%D8%AA%D8%B5%D9%85%D9%8A%D9%85-%D9%85%D9%88%D9%82%D=
+8%B9-%D9%85%D9%86-%D8%AA%D8%B7%D8%A8%D9%8A%D9%82-%D9%88%D9%8A%D8%A8-%D8%A7%=
+D9%84%D9%89-%D9%85%D9%88%D9%82%D8%B9-%D9%84%D8%A7%D9%86%D8%AC%D9%84%D9%8A%D=
+8%B1?utm_source=3Dproject-invitations&amp;utm_medium=3Demail&amp;utm_campai=
+gn=3Ddevelopment-project-invitations" style=3D"box-sizing: border-box; font=
+-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, =
+Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'=
+; color: #262626; text-decoration: none; font-size: 14px;">=D8=B9=D9=86=D8=
+=AF=D9=89 =D9=85=D9=88=D9=82=D8=B9 =D8=B9=D8=A8=D8=A7=D8=B1=D9=87 =D8=B9=D9=
+=86 =D8=AA=D8=B7=D9=8A=D8=A8=D9=82 =D9=88=D9=8A=D8=A8 =D9=8A=D9=81=D8=AA=D8=
+=AD =D8=A8=D8=A7=D9=84=D9=85=D8=AA=D8=B5=D9=81=D8=AD =D9=83=D8=A7=D9=86=D9=
+=87 =D8=AA=D8=B7=D8=A8=D9=8A=D9=82 =D8=A7=D8=AD=D8=AA=D8=A7=D8=AC =D8=A7=D9=
+=84=D9=89 =D8=B9=D9=85=D9=84 =D8=AA=D8=B7=D8=A8=D9=8A=D9=82 =D8=A7=D9=84=D9=
+=88=D9=8A=D8=A8 =D9=85=D9=88=D9=82=D8=B9 =D9=84=D8=A7=D9=86=D8=AC=D9=84=D9=
+=8A=D8=B1 =D9=8A=D9=83=D9=88=D9=86 =D8=B1=D9=88=D8=A7=D8=A8=D8=B7 =D9=85=D8=
+=B7=D9=84=D9=88=D8=A8 =D9=85=D8=A8=D8=B1=D9=85=D8=AC =D8=A8=D8=A7=D9=83 =D8=
+=A7=D9=86=D8=AF =D9=88=D9=81=D8=B1=D9=88=D9=86=D8=AA =D8=A7=D9=86=D8=AF =D9=
+=88=D9=84=D8=AF=D9=8A=D9=87 =D8=AE=D8=A8=D8=B1=D9=87 api =D9=84=D8=B9=D9=85=
+=D9=84 =D8=A7=D9=84=D9=85=D9=88=D9=82...</a></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class=3D"email-list__item-separator" style=3D"box-sizing: border-box; f=
+ont-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetic=
+a, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symb=
+ol'; border-bottom: 1px solid #e2e2e2; padding: 7px 0 8px 0; vertical-align=
+: top;"></td>
+</tr>
+<tr>
+<td style=3D"box-sizing: border-box; font-family: -apple-system, BlinkMacSy=
+stemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Em=
+oji', 'Segoe UI Emoji', 'Segoe UI Symbol'; vertical-align: top;">
+<table class=3D"email-list__item-details-table" style=3D"box-sizing: border=
+-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, H=
+elvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe =
+UI Symbol'; margin-top: 15px;">
+<tr>
+<td class=3D"email-list__item-name" style=3D"box-sizing: border-box; font-f=
+amily: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Ar=
+ial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; =
+vertical-align: top;">
+<a class=3D"title-link" href=3D"https://mostaql.com/project/720104-%D8%AA%D=
+8%B5%D9%85%D9%8A%D9%85-%D9%88%D8%A8%D8%B1%D9%85%D8%AC%D8%A9-%D8%AA%D8%B7%D8=
+%A8%D9%8A%D9%82-%D9%85%D9%86-%D8%A7%D9%84%D8%B5%D9%81%D8%B1?utm_source=3Dpr=
+oject-invitations&amp;utm_medium=3Demail&amp;utm_campaign=3Ddevelopment-pro=
+ject-invitations" style=3D"box-sizing: border-box; font-family: -apple-syst=
+em, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, '=
+Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; text-decoration: n=
+one; color: #262626; line-height: 22px; font-size: 18px; padding-top: 0;">=
+=D8=AA=D8=B5=D9=85=D9=8A=D9=85 =D9=88=D8=A8=D8=B1=D9=85=D8=AC=D8=A9 =D8=AA=
+=D8=B7=D8=A8=D9=8A=D9=82 =D9=85=D9=86 =D8=A7=D9=84=D8=B5=D9=81=D8=B1</a>
+</td>
+</tr>
+<tr>
+    <td class=3D"email-list__item-text" style=3D"box-sizing: border-box; fo=
+nt-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica=
+, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbo=
+l'; line-height: 22px; font-size: 16px; padding-bottom: 0; color: #262626; =
+vertical-align: top;"><a href=3D"https://mostaql.com/project/720104-%D8%AA%=
+D8%B5%D9%85%D9%8A%D9%85-%D9%88%D8%A8%D8%B1%D9%85%D8%AC%D8%A9-%D8%AA%D8%B7%D=
+8%A8%D9%8A%D9%82-%D9%85%D9%86-%D8%A7%D9%84%D8%B5%D9%81%D8%B1?utm_source=3Dp=
+roject-invitations&amp;utm_medium=3Demail&amp;utm_campaign=3Ddevelopment-pr=
+oject-invitations" style=3D"box-sizing: border-box; font-family: -apple-sys=
+tem, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, =
+'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; color: #262626; t=
+ext-decoration: none; font-size: 14px;">=D8=A7=D9=84=D8=B3=D9=84=D8=A7=D9=
+=85 =D8=B9=D9=84=D9=8A=D9=83=D9=85 =D8=A7=D9=84=D8=B1=D8=AC=D8=A7=D8=A1 =D9=
+=82=D8=B1=D8=A7=D8=A1=D8=A9 =D8=A7=D9=84=D9=88=D8=B5=D9=81 =D9=83=D8=A7=D9=
+=85=D9=84 =D9=84=D8=AF=D9=8A=D9=86=D8=A7 =D9=81=D9=83=D8=B1=D8=A9 =D8=AA=D8=
+=B7=D8=A8=D9=8A=D9=82 =D9=88 =D9=86=D8=AD=D8=AA=D8=A7=D8=AC =D8=B9=D9=85=D9=
+=84 =D8=A7=D9=84=D8=A2=D8=AA=D9=8A : =D8=AA=D8=B5=D9=85=D9=8A=D9=85 =D8=AA=
+=D8=AC=D8=B1=D8=A8=D8=A9 =D9=85=D8=B3=D8=AA=D8=AE=D8=AF=D9=85 =D9=83=D8=A7=
+=D9=85=D9=84=D8=A9 =D9=88 =D8=A8=D8=B1=D9=85=D8=AC=D8=A9 =D8=A7=D9=84=D8=AA=
+=D8=B7=D8=A8=D9=8A=D9=82 =D9=85=D9=86 ( =D8=A7=D9=84=D8=B5=D9=81=D8=B1 ) =
+=D8=A7=D9=84=D8=AA=D8=B7=D8=A8=D9=8A=D9=82 =D9=8A=D9=83=D9=88=D9=86 =D9=86=
+=D9=81=D8=B3 =D8=AA=D8=B5=D9=85=D9=8A=D9=85 =D8=AA=D8=AC=D8=B1=D8=A8=D8=A9 =
+=D8=A7=D9=84=D9=85...</a></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class=3D"email-list__item-separator" style=3D"box-sizing: border-box; f=
+ont-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetic=
+a, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symb=
+ol'; border-bottom: 1px solid #e2e2e2; padding: 7px 0 8px 0; vertical-align=
+: top;"></td>
+</tr>
+<tr>
+<td style=3D"box-sizing: border-box; font-family: -apple-system, BlinkMacSy=
+stemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Em=
+oji', 'Segoe UI Emoji', 'Segoe UI Symbol'; vertical-align: top;">
+<table class=3D"email-list__item-details-table" style=3D"box-sizing: border=
+-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, H=
+elvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe =
+UI Symbol'; margin-top: 15px;">
+<tr>
+<td class=3D"email-list__item-name" style=3D"box-sizing: border-box; font-f=
+amily: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Ar=
+ial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; =
+vertical-align: top;">
+<a class=3D"title-link" href=3D"https://mostaql.com/project/720102-%D9%85%D=
+8%B7%D9%84%D9%88%D8%A8-%D8%A8%D9%86%D8%A7%D8%A1-%D9%86%D8%B8%D8%A7%D9%85-er=
+p-%D9%85%D8%AA%D9%83%D8%A7%D9%85%D9%84-%D9%8A%D8%B1%D8%A8%D8%B7-%D9%85%D8%B=
+9-%D8%A7%D9%84%D8%B2%D9%83%D8%A7%D8%A9-%D9%88%D8%A7%D9%84%D8%AF%D8%AE%D9%84=
+-%D9%84%D9%84%D8%AE%D8%A8%D8%B1%D8%A7%D8%A1-%D9%81%D9%82%D8%B7?utm_source=
+=3Dproject-invitations&amp;utm_medium=3Demail&amp;utm_campaign=3Ddevelopmen=
+t-project-invitations" style=3D"box-sizing: border-box; font-family: -apple=
+-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-ser=
+if, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; text-decorati=
+on: none; color: #262626; line-height: 22px; font-size: 18px; padding-top: =
+0;">=D9=85=D8=B7=D9=84=D9=88=D8=A8 =D8=A8=D9=86=D8=A7=D8=A1 =D9=86=D8=B8=D8=
+=A7=D9=85 erp =D9=85=D8=AA=D9=83=D8=A7=D9=85=D9=84 =D9=8A=D8=B1=D8=A8=D8=B7=
+ =D9=85=D8=B9 =D8=A7=D9=84=D8=B2=D9=83=D8=A7=D8=A9 =D9=88=D8=A7=D9=84=D8=AF=
+=D8=AE=D9=84 - =D9=84=D9=84=D8=AE=D8=A8=D8=B1=D8=A7=D8=A1 =D9=81=D9=82=D8=
+=B7</a>
+</td>
+</tr>
+<tr>
+    <td class=3D"email-list__item-text" style=3D"box-sizing: border-box; fo=
+nt-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica=
+, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbo=
+l'; line-height: 22px; font-size: 16px; padding-bottom: 0; color: #262626; =
+vertical-align: top;"><a href=3D"https://mostaql.com/project/720102-%D9%85%=
+D8%B7%D9%84%D9%88%D8%A8-%D8%A8%D9%86%D8%A7%D8%A1-%D9%86%D8%B8%D8%A7%D9%85-e=
+rp-%D9%85%D8%AA%D9%83%D8%A7%D9%85%D9%84-%D9%8A%D8%B1%D8%A8%D8%B7-%D9%85%D8%=
+B9-%D8%A7%D9%84%D8%B2%D9%83%D8%A7%D8%A9-%D9%88%D8%A7%D9%84%D8%AF%D8%AE%D9%8=
+4-%D9%84%D9%84%D8%AE%D8%A8%D8%B1%D8%A7%D8%A1-%D9%81%D9%82%D8%B7?utm_source=
+=3Dproject-invitations&amp;utm_medium=3Demail&amp;utm_campaign=3Ddevelopmen=
+t-project-invitations" style=3D"box-sizing: border-box; font-family: -apple=
+-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-ser=
+if, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; color: #26262=
+6; text-decoration: none; font-size: 14px;">=D8=AA=D8=B5=D9=85=D9=8A=D9=85 =
+=D9=88=D8=A7=D8=AC=D9=87=D8=A9 =D8=A7=D9=84=D9=85=D8=B3=D8=AA=D8=AE=D8=AF=
+=D9=85 =D8=A8=D8=AF=D8=B9=D9=85 =D9=84=D9=84=D8=BA=D8=A9 =D8=A7=D9=84=D8=B9=
+=D8=B1=D8=A8=D9=8A=D8=A9: =D8=AA=D8=B5=D9=85=D9=8A=D9=85 =D9=88=D8=A7=D8=AC=
+=D9=87=D8=A9 =D8=B3=D9=87=D9=84=D8=A9 =D8=A7=D9=84=D8=A7=D8=B3=D8=AA=D8=AE=
+=D8=AF=D8=A7=D9=85 =D9=88=D8=AA=D8=B9=D8=AF=D8=AF =D8=A7=D9=84=D9=84=D8=BA=
+=D8=A7=D8=AA (=D8=A8=D9=85=D8=A7 =D9=81=D9=8A =D8=B0=D9=84=D9=83 =D8=A7=D9=
+=84=D8=B9=D8=B1=D8=A8=D9=8A=D8=A9) =D9=84=D8=AC=D9=85=D9=8A=D8=B9 =D8=A7=D9=
+=84=D9=88=D8=AD=D8=AF=D8=A7=D8=AA =D9=88=D8=A7=D9=84=D8=A3=D9=86=D8=B8=D9=
+=85=D8=A9 =D8=A7=D9=84=D9=81=D8=B1=D8=B9=D9=8A=D8=A9. =D8=AF=D8=B9=D9=85 =
+=D8=A7=D9=84=D8=B9=D9=85=D9=84 =D8=A3=D9=88=D9=86=D9=84=D8=A7=D9=8A=D9=86 =
+=D9=88=D8=A3=D9=88=D9=81=D9=84=D8=A7=D9=8A=D9=86:...</a></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class=3D"email-list__item-separator" style=3D"box-sizing: border-box; f=
+ont-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetic=
+a, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symb=
+ol'; border-bottom: 1px solid #e2e2e2; padding: 7px 0 8px 0; vertical-align=
+: top;"></td>
+</tr>
+<tr>
+<td style=3D"box-sizing: border-box; font-family: -apple-system, BlinkMacSy=
+stemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Em=
+oji', 'Segoe UI Emoji', 'Segoe UI Symbol'; vertical-align: top;">
+<table class=3D"email-list__item-details-table" style=3D"box-sizing: border=
+-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, H=
+elvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe =
+UI Symbol'; margin-top: 15px;">
+<tr>
+<td class=3D"email-list__item-name" style=3D"box-sizing: border-box; font-f=
+amily: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Ar=
+ial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; =
+vertical-align: top;">
+<a class=3D"title-link" href=3D"https://mostaql.com/project/720099-%D9%85%D=
+8%B7%D9%84%D9%88%D8%A8-%D8%A5%D9%86%D8%B4%D8%A7%D8%A1-%D8%AA%D8%B7%D8%A8%D9=
+%8A%D9%82-%D8%AA%D8%A7%D9%83%D8%B3%D9%8A?utm_source=3Dproject-invitations&a=
+mp;utm_medium=3Demail&amp;utm_campaign=3Ddevelopment-project-invitations" s=
+tyle=3D"box-sizing: border-box; font-family: -apple-system, BlinkMacSystemF=
+ont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji',=
+ 'Segoe UI Emoji', 'Segoe UI Symbol'; text-decoration: none; color: #262626=
+; line-height: 22px; font-size: 18px; padding-top: 0;">=D9=85=D8=B7=D9=84=
+=D9=88=D8=A8 =D8=A5=D9=86=D8=B4=D8=A7=D8=A1 =D8=AA=D8=B7=D8=A8=D9=8A=D9=82 =
+=D8=AA=D8=A7=D9=83=D8=B3=D9=8A</a>
+</td>
+</tr>
+<tr>
+    <td class=3D"email-list__item-text" style=3D"box-sizing: border-box; fo=
+nt-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica=
+, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbo=
+l'; line-height: 22px; font-size: 16px; padding-bottom: 0; color: #262626; =
+vertical-align: top;"><a href=3D"https://mostaql.com/project/720099-%D9%85%=
+D8%B7%D9%84%D9%88%D8%A8-%D8%A5%D9%86%D8%B4%D8%A7%D8%A1-%D8%AA%D8%B7%D8%A8%D=
+9%8A%D9%82-%D8%AA%D8%A7%D9%83%D8%B3%D9%8A?utm_source=3Dproject-invitations&=
+amp;utm_medium=3Demail&amp;utm_campaign=3Ddevelopment-project-invitations" =
+style=3D"box-sizing: border-box; font-family: -apple-system, BlinkMacSystem=
+Font, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji'=
+, 'Segoe UI Emoji', 'Segoe UI Symbol'; color: #262626; text-decoration: non=
+e; font-size: 14px;">=D9=84=D8=AF=D9=8A =D8=B1=D8=BA=D8=A8=D8=A9 =D8=A8=D8=
+=A5=D9=86=D8=B4=D8=A7=D8=A1 =D8=AA=D8=B7=D8=A8=D9=8A=D9=82 =D8=AA=D8=A7=D9=
+=83=D8=B3=D9=8A =D9=85=D8=B4=D8=A7=D8=A8=D9=87 =D9=84=D9=83=D8=B1=D9=8A=D9=
+=85 =D9=88=D8=A3=D9=88=D8=A8=D8=B1</a></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class=3D"email-list__item-separator" style=3D"box-sizing: border-box; f=
+ont-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetic=
+a, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symb=
+ol'; border-bottom: 1px solid #e2e2e2; padding: 7px 0 8px 0; vertical-align=
+: top;"></td>
+</tr>
+<tr>
+<td style=3D"box-sizing: border-box; font-family: -apple-system, BlinkMacSy=
+stemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Em=
+oji', 'Segoe UI Emoji', 'Segoe UI Symbol'; vertical-align: top;">
+<table class=3D"email-list__item-details-table" style=3D"box-sizing: border=
+-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, H=
+elvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe =
+UI Symbol'; margin-top: 15px;">
+<tr>
+<td class=3D"email-list__item-name" style=3D"box-sizing: border-box; font-f=
+amily: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Ar=
+ial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; =
+vertical-align: top;">
+<a class=3D"title-link" href=3D"https://mostaql.com/project/720091-%D8%A5%D=
+9%86%D8%B4%D8%A7%D8%A1-%D9%88%D8%AA%D8%B7%D9%88%D9%8A%D8%B1-%D9%85%D9%86%D8=
+%B5%D8%A9-%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9-%D8%AA%D8%=
+B9%D9%84%D9%8A%D9%85%D9%8A%D8%A9-%D9%88%D8%AA%D8%B7%D8%A8%D9%8A%D9%82-%D8%A=
+C%D9%88%D8%A7%D9%84?utm_source=3Dproject-invitations&amp;utm_medium=3Demail=
+&amp;utm_campaign=3Ddevelopment-project-invitations" style=3D"box-sizing: b=
+order-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Robo=
+to, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'S=
+egoe UI Symbol'; text-decoration: none; color: #262626; line-height: 22px; =
+font-size: 18px; padding-top: 0;">=D8=A5=D9=86=D8=B4=D8=A7=D8=A1 =D9=88=D8=
+=AA=D8=B7=D9=88=D9=8A=D8=B1 =D9=85=D9=86=D8=B5=D8=A9 =D8=A7=D9=84=D9=83=D8=
+=AA=D8=B1=D9=88=D9=86=D9=8A=D8=A9 =D8=AA=D8=B9=D9=84=D9=8A=D9=85=D9=8A=D8=
+=A9 =D9=88=D8=AA=D8=B7=D8=A8=D9=8A=D9=82 =D8=AC=D9=88=D8=A7=D9=84</a>
+</td>
+</tr>
+<tr>
+    <td class=3D"email-list__item-text" style=3D"box-sizing: border-box; fo=
+nt-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica=
+, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbo=
+l'; line-height: 22px; font-size: 16px; padding-bottom: 0; color: #262626; =
+vertical-align: top;"><a href=3D"https://mostaql.com/project/720091-%D8%A5%=
+D9%86%D8%B4%D8%A7%D8%A1-%D9%88%D8%AA%D8%B7%D9%88%D9%8A%D8%B1-%D9%85%D9%86%D=
+8%B5%D8%A9-%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9-%D8%AA%D8=
+%B9%D9%84%D9%8A%D9%85%D9%8A%D8%A9-%D9%88%D8%AA%D8%B7%D8%A8%D9%8A%D9%82-%D8%=
+AC%D9%88%D8%A7%D9%84?utm_source=3Dproject-invitations&amp;utm_medium=3Demai=
+l&amp;utm_campaign=3Ddevelopment-project-invitations" style=3D"box-sizing: =
+border-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Rob=
+oto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', '=
+Segoe UI Symbol'; color: #262626; text-decoration: none; font-size: 14px;">=
+=D8=A5=D9=86=D8=B4=D8=A7=D8=A1 =D9=88=D8=AA=D8=B7=D9=88=D9=8A=D8=B1 =D9=85=
+=D9=86=D8=B5=D8=A9 =D8=A7=D9=84=D9=83=D8=AA=D8=B1=D9=88=D9=86=D9=8A=D8=A9 =
+=D8=AA=D8=B9=D9=84=D9=8A=D9=85=D9=8A=D8=A9 =D9=88 =D8=AA=D8=B7=D8=A8=D9=8A=
+=D9=82 =D8=AC=D9=88=D8=A7=D9=84</a></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class=3D"email-list__item-separator" style=3D"box-sizing: border-box; f=
+ont-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetic=
+a, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symb=
+ol'; border-bottom: 1px solid #e2e2e2; padding: 7px 0 8px 0; vertical-align=
+: top;"></td>
+</tr>
+<tr>
+<td style=3D"box-sizing: border-box; font-family: -apple-system, BlinkMacSy=
+stemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Em=
+oji', 'Segoe UI Emoji', 'Segoe UI Symbol'; vertical-align: top;">
+<table class=3D"email-list__item-details-table" style=3D"box-sizing: border=
+-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, H=
+elvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe =
+UI Symbol'; margin-top: 15px;">
+<tr>
+<td class=3D"email-list__item-name" style=3D"box-sizing: border-box; font-f=
+amily: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Ar=
+ial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; =
+vertical-align: top;">
+<a class=3D"title-link" href=3D"https://mostaql.com/project/667534-%D8%AA%D=
+8%B5%D9%85%D9%8A%D9%85-%D9%85%D9%88%D9%82%D8%B9-%D9%83%D8%A8%D9%8A%D8%B1?ut=
+m_source=3Dproject-invitations&amp;utm_medium=3Demail&amp;utm_campaign=3Dde=
+velopment-project-invitations" style=3D"box-sizing: border-box; font-family=
+: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, =
+sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; text-=
+decoration: none; color: #262626; line-height: 22px; font-size: 18px; paddi=
+ng-top: 0;">=D8=AA=D8=B5=D9=85=D9=8A=D9=85 =D9=85=D9=88=D9=82=D8=B9 =D9=83=
+=D8=A8=D9=8A=D8=B1</a>
+</td>
+</tr>
+<tr>
+    <td class=3D"email-list__item-text" style=3D"box-sizing: border-box; fo=
+nt-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica=
+, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbo=
+l'; line-height: 22px; font-size: 16px; padding-bottom: 0; color: #262626; =
+vertical-align: top;"><a href=3D"https://mostaql.com/project/667534-%D8%AA%=
+D8%B5%D9%85%D9%8A%D9%85-%D9%85%D9%88%D9%82%D8%B9-%D9%83%D8%A8%D9%8A%D8%B1?u=
+tm_source=3Dproject-invitations&amp;utm_medium=3Demail&amp;utm_campaign=3Dd=
+evelopment-project-invitations" style=3D"box-sizing: border-box; font-famil=
+y: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial,=
+ sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; colo=
+r: #262626; text-decoration: none; font-size: 14px;">=D8=A7=D9=84=D8=B3=D9=
+=84=D8=A7=D9=85 =D8=B9=D9=84=D9=8A=D9=83=D9=85 =D8=A7=D8=A8=D8=AD=D8=AB =D8=
+=B9=D9=86 =D9=85=D8=B3=D8=AA=D9=82=D9=84 =D9=8A=D8=A8=D8=B1=D9=85=D8=AC =D9=
+=84=D9=8A =D9=85=D9=88=D9=82=D8=B9 =D8=B4=D8=A8=D9=8A=D9=87=D9=87 =D8=A8=D9=
+=85=D9=88=D9=82=D8=B9 coinfarm =D9=87=D8=B0=D8=A7 =D8=A7=D9=84=D9=85=D9=88=
+=D9=82=D8=B9 =D8=A8=D8=A7=D9=84=D9=84=D8=BA=D8=A9 =D8=A7=D9=84=D8=A7=D9=86=
+=D8=AC=D9=84=D9=8A=D8=B2=D9=8A=D8=A9 =D9=88=D9=84=D9=83=D9=86 =D8=A7=D8=B1=
+=D9=8A=D8=AF =D8=B9=D9=85=D9=84=D9=87 =D8=A8=D8=A7=D9=84=D9=84=D8=BA=D8=A9 =
+=D8=A7=D9=84=D8=B9=D8=B1=D8=A8=D9=8A=D8=A9 </a></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class=3D"email-list__item-separator" style=3D"box-sizing: border-box; f=
+ont-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetic=
+a, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symb=
+ol'; border-bottom: 1px solid #e2e2e2; padding: 7px 0 8px 0; vertical-align=
+: top;"></td>
+</tr>
+<tr>
+<td style=3D"box-sizing: border-box; font-family: -apple-system, BlinkMacSy=
+stemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Em=
+oji', 'Segoe UI Emoji', 'Segoe UI Symbol'; vertical-align: top;">
+<table class=3D"email-list__item-details-table" style=3D"box-sizing: border=
+-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, H=
+elvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe =
+UI Symbol'; margin-top: 15px;">
+<tr>
+<td class=3D"email-list__item-name" style=3D"box-sizing: border-box; font-f=
+amily: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Ar=
+ial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; =
+vertical-align: top;">
+<a class=3D"title-link" href=3D"https://mostaql.com/project/718085-%D8%AA%D=
+8%B9%D8%AF%D9%8A%D9%84-%D8%B1%D9%82%D9%85-%D9%88%D8%A7%D8%AA%D8%B3-%D8%A7%D=
+8%A8-%D9%81%D9%8A-%D9%85%D9%88%D9%82%D8%B9-%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D=
+9%88%D9%86%D9%8A?utm_source=3Dproject-invitations&amp;utm_medium=3Demail&am=
+p;utm_campaign=3Ddevelopment-project-invitations" style=3D"box-sizing: bord=
+er-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,=
+ Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Sego=
+e UI Symbol'; text-decoration: none; color: #262626; line-height: 22px; fon=
+t-size: 18px; padding-top: 0;">=D8=AA=D8=B9=D8=AF=D9=8A=D9=84 =D8=B1=D9=82=
+=D9=85 =D9=88=D8=A7=D8=AA=D8=B3 =D8=A7=D8=A8 =D9=81=D9=8A =D9=85=D9=88=D9=
+=82=D8=B9 =D8=A7=D9=84=D9=83=D8=AA=D8=B1=D9=88=D9=86=D9=8A</a>
+</td>
+</tr>
+<tr>
+    <td class=3D"email-list__item-text" style=3D"box-sizing: border-box; fo=
+nt-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica=
+, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbo=
+l'; line-height: 22px; font-size: 16px; padding-bottom: 0; color: #262626; =
+vertical-align: top;"><a href=3D"https://mostaql.com/project/718085-%D8%AA%=
+D8%B9%D8%AF%D9%8A%D9%84-%D8%B1%D9%82%D9%85-%D9%88%D8%A7%D8%AA%D8%B3-%D8%A7%=
+D8%A8-%D9%81%D9%8A-%D9%85%D9%88%D9%82%D8%B9-%D8%A7%D9%84%D9%83%D8%AA%D8%B1%=
+D9%88%D9%86%D9%8A?utm_source=3Dproject-invitations&amp;utm_medium=3Demail&a=
+mp;utm_campaign=3Ddevelopment-project-invitations" style=3D"box-sizing: bor=
+der-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto=
+, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Seg=
+oe UI Symbol'; color: #262626; text-decoration: none; font-size: 14px;">=D8=
+=A7=D9=84=D8=B3=D9=84=D8=A7=D9=85 =D8=B9=D9=84=D9=8A=D9=83=D9=85 =D8=B9=D9=
+=86=D8=AF=D9=8A =D8=B5=D9=81=D8=AD=D8=A9 =D9=85=D9=88=D9=82=D8=B9 =D9=88=D9=
+=81=D9=8A=D9=87=D8=A7 =D8=B1=D8=A7=D8=A8=D8=B7 =D9=85=D8=A8=D8=A7=D8=B4=D8=
+=B1 =D8=A7=D9=84=D9=89 =D9=85=D8=AD=D8=A7=D8=AF=D8=AB=D8=A9 =D9=88=D8=A7=D8=
+=AA=D8=B3 =D8=A7=D8=A8 =D8=A7=D8=AD=D8=AA=D8=A7=D8=AC =D8=AA=D8=BA=D9=8A=D9=
+=8A=D8=B1 =D8=B1=D9=82=D9=85 =D8=A7=D9=84=D9=88=D8=A7=D8=AA=D8=B3 =D8=A7=D9=
+=84=D9=85=D8=B1=D8=AA=D8=A8=D8=B7 =D8=A8=D8=A7=D9=84=D8=B5=D9=81=D8=AD=D8=
+=A9 =D9=81=D9=82=D8=B7 =D8=B4=D9=83=D8=B1=D8=A7</a></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class=3D"email-list__item-separator" style=3D"box-sizing: border-box; f=
+ont-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetic=
+a, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symb=
+ol'; border-bottom: 1px solid #e2e2e2; padding: 7px 0 8px 0; vertical-align=
+: top;"></td>
+</tr>
+<tr>
+<td style=3D"box-sizing: border-box; font-family: -apple-system, BlinkMacSy=
+stemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Em=
+oji', 'Segoe UI Emoji', 'Segoe UI Symbol'; vertical-align: top;">
+<table class=3D"email-list__item-details-table" style=3D"box-sizing: border=
+-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, H=
+elvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe =
+UI Symbol'; margin-top: 15px;">
+<tr>
+<td class=3D"email-list__item-name" style=3D"box-sizing: border-box; font-f=
+amily: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Ar=
+ial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; =
+vertical-align: top;">
+<a class=3D"title-link" href=3D"https://mostaql.com/project/720058-%D9%85%D=
+8%B7%D9%84%D9%88%D8%A8-%D8%AA%D8%B5%D9%85%D9%8A%D9%85-%D9%85%D9%88%D9%82%D8=
+%B9-%D9%88%D9%8A%D8%A8-%D9%8A%D8%B9%D8%AA%D9%85%D8%AF-%D8%B9%D9%84%D9%89-%D=
+8%A8%D9%8A%D9%86%D8%A7%D9%86%D8%B3?utm_source=3Dproject-invitations&amp;utm=
+_medium=3Demail&amp;utm_campaign=3Ddevelopment-project-invitations" style=
+=3D"box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont,=
+ 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Se=
+goe UI Emoji', 'Segoe UI Symbol'; text-decoration: none; color: #262626; li=
+ne-height: 22px; font-size: 18px; padding-top: 0;">=D9=85=D8=B7=D9=84=D9=88=
+=D8=A8 =D8=AA=D8=B5=D9=85=D9=8A=D9=85 =D9=85=D9=88=D9=82=D8=B9 =D9=88=D9=8A=
+=D8=A8 =D9=8A=D8=B9=D8=AA=D9=85=D8=AF =D8=B9=D9=84=D9=89 =D8=A8=D9=8A=D9=86=
+=D8=A7=D9=86=D8=B3</a>
+</td>
+</tr>
+<tr>
+    <td class=3D"email-list__item-text" style=3D"box-sizing: border-box; fo=
+nt-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica=
+, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbo=
+l'; line-height: 22px; font-size: 16px; padding-bottom: 0; color: #262626; =
+vertical-align: top;"><a href=3D"https://mostaql.com/project/720058-%D9%85%=
+D8%B7%D9%84%D9%88%D8%A8-%D8%AA%D8%B5%D9%85%D9%8A%D9%85-%D9%85%D9%88%D9%82%D=
+8%B9-%D9%88%D9%8A%D8%A8-%D9%8A%D8%B9%D8%AA%D9%85%D8%AF-%D8%B9%D9%84%D9%89-%=
+D8%A8%D9%8A%D9%86%D8%A7%D9%86%D8%B3?utm_source=3Dproject-invitations&amp;ut=
+m_medium=3Demail&amp;utm_campaign=3Ddevelopment-project-invitations" style=
+=3D"box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont,=
+ 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Se=
+goe UI Emoji', 'Segoe UI Symbol'; color: #262626; text-decoration: none; fo=
+nt-size: 14px;">=D8=A7=D9=84=D8=B3=D9=84=D8=A7=D9=85 =D8=B9=D9=84=D9=8A=D9=
+=83=D9=85 =D8=A7=D8=AD=D8=AA=D8=A7=D8=AC =D9=85=D9=88=D9=82=D8=B9 =D9=8A=D9=
+=83=D9=88=D9=86 =D9=85=D8=AB=D9=84 =D8=A7=D9=84=D9=85=D8=AB=D8=A7=D9=84 =D8=
+=A7=D9=84=D8=AA=D8=A7=D9=84=D9=8A : =D9=81=D9=83=D8=B1=D8=A9 =D8=A7=D9=84=
+=D9=85=D9=88=D9=82=D8=B9: =D8=A3=D9=88=D9=84=D8=A7 =D9=84=D8=A7=D8=B2=D9=85=
+ =D8=AA=D8=B3=D8=AC=D9=8A=D9=84 =D8=A7=D9=84=D8=B9=D8=B6=D9=88 =D9=81=D9=8A=
+ =D8=A7=D9=84=D9=85=D9=88=D9=82=D8=B9 =D9=84=D9=83=D9=8A =D9=8A=D8=AF=D8=AE=
+=D9=84 =D9=84=D9=84=D9=88=D8=AD=D8=A9 =D8=A7=D9=84=D8=AA=D8=AD=D9=83=D9=85 =
+=D8=A7=D9=84=D8=AE=D8=A7=D8=B5=D8=A9 =D8=A8=D9=87 =D8=A7=D9=84=D9=85=D8=B9=
+=D9=84=D9=88=D9=85=D8=A7=D8=AA =D8=A7=D9=84=D8=AA=D9=8A =D8=B3=D9=8A=D8=AF=
+=D8=AE=D9=84=D9=87=D8=A7 =D9=84=D9=84=D8=AA=D8=B3=D8=AC=D9=8A=D9=84 =D9=87=
+=D9=8A ...</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p class=3D"outro" style=3D"box-sizing: border-box; font-family: -apple-sys=
+tem, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, =
+'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; text-align: right=
+; color: #262626; font-size: 16px; line-height: 1.55; margin-top: revert;">=
+ =D8=A3=D8=B5=D8=AD=D8=A7=D8=A8 =D8=A7=D9=84=D9=85=D8=B4=D8=A7=D8=B1=D9=8A=
+=D8=B9 =D9=81=D9=8A =D8=A7=D9=86=D8=AA=D8=B8=D8=A7=D8=B1=D9=83=D8=8C =D9=82=
+=D8=AF=D9=91=D9=85 =D8=B9=D8=B1=D9=88=D8=B6=D9=83 =D8=A7=D9=84=D8=A2=D9=86!=
+</p>
+</div>
+</div>
+<table class=3D"action" align=3D"center" width=3D"100%" cellpadding=3D"0" c=
+ellspacing=3D"0" role=3D"presentation" style=3D"box-sizing: border-box; fon=
+t-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,=
+ Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol=
+'; margin: 30px auto; padding: 0; text-align: center; width: 100%; -premail=
+er-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%;">
+    <tr>
+        <td align=3D"center" style=3D"box-sizing: border-box; font-family: =
+-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sa=
+ns-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">
+            <table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" role=3D"presentation" style=3D"box-sizing: border-box; font-family:=
+ -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, s=
+ans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">
+                <tr>
+                    <td align=3D"center" style=3D"box-sizing: border-box; f=
+ont-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetic=
+a, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symb=
+ol';">
+                        <table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation" style=3D"box-sizing: border-box; font-family: =
+-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sa=
+ns-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';">
+                            <tr>
+                                <td style=3D"box-sizing: border-box; font-f=
+amily: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Ar=
+ial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';"=
+>
+                                    <a href=3D"https://mostaql.com/projects=
+/development?utm_source=3Dproject-invitations&amp;utm_medium=3Demail&amp;ut=
+m_campaign=3Ddevelopment-project-invitations" class=3D"button button-primar=
+y" target=3D"_blank" style=3D"box-sizing: border-box; font-family: -apple-s=
+ystem, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif=
+, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; color: #FFF; di=
+splay: inline-block; text-decoration: none; -webkit-text-size-adjust: none;=
+ font-size: 16px; background-color: #3490dc; border-top: 10px solid #3490dc=
+; border-right: 18px solid #3490dc; border-bottom: 10px solid #3490dc; bord=
+er-left: 18px solid #3490dc;">=D8=AA=D8=B5=D9=81=D8=AD =D8=A3=D8=AD=D8=AF=
+=D8=AB =D8=A7=D9=84=D9=85=D8=B4=D8=A7=D8=B1=D9=8A=D8=B9</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+
+
+										<p style=3D"box-sizing: border-box; font-family: -apple-system, B=
+linkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple=
+ Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; text-align: right; colo=
+r: #262626; line-height: 1.55; margin-top: 0; font-size: 16px; font-weight:=
+ normal; margin: 0 0 10px; padding: 0; direction: rtl;">
+											=D8=AA=D8=AD=D8=AA=D8=A7=D8=AC =D9=84=D9=85=D8=B3=D8=A7=D8=B9=D8=
+=AF=D8=A9=D8=9F =D9=84=D8=A7 =D8=AA=D8=AA=D8=B1=D8=AF=D8=AF =D9=81=D9=8A =
+=D8=A7=D9=84=D8=AA=D9=88=D8=A7=D8=B5=D9=84 =D9=85=D8=B9=D9=86=D8=A7 =D8=A8=
+=D8=A7=D9=84=D8=B1=D8=AF =D8=B9=D9=84=D9=89 =D9=87=D8=B0=D9=87 =D8=A7=D9=84=
+=D8=B1=D8=B3=D8=A7=D9=84=D8=A9.
+										</p>
+										<br>
+										<p style=3D"box-sizing: border-box; font-family: -apple-system, B=
+linkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple=
+ Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; text-align: right; colo=
+r: #262626; line-height: 1.55; margin-top: 0; font-size: 16px; font-weight:=
+ normal; margin: 0 0 10px; padding: 0; direction: rtl;">
+											=D8=A3=D8=B7=D9=8A=D8=A8 =D8=A7=D9=84=D8=AA=D8=AD=D9=8A=D8=A7=D8=
+=AA=D8=8C<br>=D9=81=D8=B1=D9=8A=D9=82 =D9=85=D8=B3=D8=AA=D9=82=D9=84<br>
+											<a href=3D"https://mostaql.com" style=3D"box-sizing: border-box;=
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvet=
+ica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Sy=
+mbol'; text-decoration: none; font-size: 100%; color: #348eda; margin: 0; p=
+adding: 0; direction: rtl;">https://mostaql.com</a>
+										</p>
+
+
+                                       =20
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                   =20
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
