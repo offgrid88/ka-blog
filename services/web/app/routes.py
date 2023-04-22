@@ -28,7 +28,7 @@ password= urllib.parse.quote_plus(os.environ.get("MONGO_PWD"))
 
 username = urllib.parse.quote_plus(os.environ.get("USER_NAME"))
 
-db= MongoClient('localhost', 27017, username=username, password=password,authSource="offgrid8_db")
+db= MongoClient('localhost', 27018, username=username, password=password,authSource="offgrid8_db")
 mydb=db.offgrid8_db
 def databaseUsers():
     return mydb.users

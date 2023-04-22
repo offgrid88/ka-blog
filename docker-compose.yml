@@ -2,24 +2,37 @@ version: "3.8"
 
 services:
   offgrid8_db:
-    image: mongo
+    image: mongo:latest
+    command: mongod --port 27018
     restart: unless-stopped
-    env_file: ./.env
+    env_file: ./services/db/.env.db
     environment:
       - MONGO_INITDB_ROOT_USERNAME=$MONGODB_USER
       - MONGO_INITDB_ROOT_PASSWORD=$MONGODB_PASSWORD
     ports:
-      - $MONGODB_LOCAL_PORT:$MONGODB_DOCKER_PORT
+      - 27018:27018
     volumes:
       - ./database:/data/db
+
   web:
-    build: ./services/web
-    command: python3 wsgi.py
-    volumes:
-      - ./services/web/:/usr/src/app/
-    ports:
-      - 5000:5000
+    build:
+      context: ./services/web
+      dockerfile: Dockerfile
+    command: gunicorn --config gunicorn_config.py wsgi:app
+    #command: python3 wsgi.py
+    expose:
+      - 5000
     env_file:
       - ./.env
+    depends_on:
+      - offgrid8_db
+  nginx:
+    build: ./services/nginx
+    ports:
+      - 1337:80
+    depends_on:
+      - web
+
+
 volumes:
   database:
