@@ -1,6 +1,30 @@
 version: "3.8"
 
 services:
+  radicale:
+    image: tomsquest/docker-radicale
+    container_name: radicale
+    expose:
+      - 5232
+    init: true
+    read_only: true
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    cap_add:
+      - SETUID
+      - SETGID
+      - CHOWN
+      - KILL
+    healthcheck:
+      test: curl -f http://127.0.0.1:5232 || exit 1
+      interval: 30s
+      retries: 3
+    restart: unless-stopped
+    volumes:
+      - ./data:/data
+
   offgrid8_db:
     image: mongo:latest
     command: mongod --port 27018
@@ -29,9 +53,10 @@ services:
   nginx:
     build: ./services/nginx
     ports:
-      - 1337:80
+      - 80:80
     depends_on:
       - web
+      - radicale
 
 
 volumes:
