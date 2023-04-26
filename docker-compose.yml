@@ -63,7 +63,7 @@ services:
       - ./data/certbot/www:/var/www/certbot
     depends_on:
       - web
-      - radicalei
+      - radicale
   certbot:
     image: certbot/certbot
     volumes:
