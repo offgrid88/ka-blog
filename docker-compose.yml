@@ -59,8 +59,9 @@ services:
       - 80:80
       - 443:443
     volumes:
+      - ./services/nginx/conf.d:/etc/nginx/conf.d
       - ./data_certbot/certbot/conf:/etc/letsencrypt
-      - ./data_certbot/certbot/www:/var/www/certbot
+      - ./services/nginx/log/nginx:/var/log/nginx/
     depends_on:
       - web
       - radicale

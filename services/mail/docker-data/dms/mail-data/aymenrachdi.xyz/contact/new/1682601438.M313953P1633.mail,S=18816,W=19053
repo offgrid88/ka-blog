@@ -1,0 +1,237 @@
+Return-Path: <bounces+17931162-2201-contact=aymenrachdi.xyz@em6110.eff.org>
+Delivered-To: contact@aymenrachdi.xyz
+Received: from mail.aymenrachdi.xyz
+	by mail.aymenrachdi.xyz with LMTP
+	id 3qSUEt51SmRhBgAAYytROg
+	(envelope-from <bounces+17931162-2201-contact=aymenrachdi.xyz@em6110.eff.org>)
+	for <contact@aymenrachdi.xyz>; Thu, 27 Apr 2023 09:17:18 -0400
+Received: from localhost (localhost [127.0.0.1])
+	by mail.aymenrachdi.xyz (Postfix) with ESMTP id 44388A3E01
+	for <contact@aymenrachdi.xyz>; Thu, 27 Apr 2023 09:17:18 -0400 (EDT)
+X-Virus-Scanned: Yes
+Received-SPF: Pass (mailfrom) identity=mailfrom; client-ip=159.183.195.169; helo=wfbtcpxw.outbound-mail.sendgrid.net; envelope-from=bounces+17931162-2201-contact=aymenrachdi.xyz@em6110.eff.org; receiver=<UNKNOWN> 
+Authentication-Results: mail.aymenrachdi.xyz; dmarc=pass (p=none dis=none) header.from=eff.org
+Authentication-Results: mail.aymenrachdi.xyz;
+	dkim=pass (1024-bit key; unprotected) header.d=eff.org header.i=@eff.org header.a=rsa-sha256 header.s=s1 header.b=mmagjmvI;
+	dkim-atps=neutral
+Authentication-Results: mail.aymenrachdi.xyz; dmarc=pass (p=none dis=none) header.from=eff.org
+Received: from wfbtcpxw.outbound-mail.sendgrid.net (wfbtcpxw.outbound-mail.sendgrid.net [159.183.195.169])
+	by mail.aymenrachdi.xyz (Postfix) with ESMTPS id 33428A3D1E
+	for <contact@aymenrachdi.xyz>; Thu, 27 Apr 2023 09:17:16 -0400 (EDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=eff.org;
+	h=mime-version:from:subject:content-type:to:cc:content-type:from:
+	subject:to;
+	s=s1; bh=43A1/CRMLSwDvVeCKKQFWoImR0FlK4Ti/08FPfUrVgg=;
+	b=mmagjmvIbIdrDWKQvhP2hRuLQ7nfMpdP3ePxm90J4UbQQtOog2d5CeTTn1hxS7EyMsF0
+	VYXDAD4DKnNc31tKOUhICWJTbScP7Z6SP7a0N2g1HqPYabCQKQz5HFZcIsyTydYwVN5uik
+	n8RJIiGV+V/O1PlPiPj7MwDdXozsWnDaM=
+Received: by filterdrecv-7946957d94-p4pjg with SMTP id filterdrecv-7946957d94-p4pjg-1-644A75D5-49
+        2023-04-27 13:17:09.877352883 +0000 UTC m=+172320.001551092
+Received: from supporters.eff.org (unknown)
+	by geopod-ismtpd-4 (SG)
+	with ESMTP id hlIxt1LsSOGXb9AzLpIHpg
+	for <contact@aymenrachdi.xyz>;
+	Thu, 27 Apr 2023 13:17:09.823 +0000 (UTC)
+MIME-Version: 1.0
+From: Aaron Jue <membership@eff.org>
+Subject: Please Confirm Your EFF Subscription
+Date: Thu, 27 Apr 2023 13:17:09 +0000 (UTC)
+Content-Type: multipart/alternative;
+ boundary="=_baa041e15500820e16987e3b5198ccd7"
+Message-ID: <hlIxt1LsSOGXb9AzLpIHpg@geopod-ismtpd-4>
+X-SG-EID: 
+ =?us-ascii?Q?zIUj=2FIh3sLJ84Q5Jn543IFxCCe699375e4mbZl30T=2FG4Nwl1dYS2IceNGCWlgX?=
+ =?us-ascii?Q?88r0GDUonGCSSOUKQMdQOaIjulCgMODYovx3LHr?=
+ =?us-ascii?Q?g8NePV8w=2FXkFlDVaqIwAX5jEis3a3fvEpT59frR?=
+ =?us-ascii?Q?ltKv8dvpGN3BQp109LUPjGDMAu1JeasIRL0ZaEd?=
+ =?us-ascii?Q?4BpgH1+KKO9J92UbgNiDs1gZtvDYke6mKyLmuZU?=
+ =?us-ascii?Q?z2a9PExz3oxTLPKt66Raa24kANJaaqZbyt6D65?=
+To: "contact@aymenrachdi.xyz" <contact@aymenrachdi.xyz>
+X-Entity-ID: fKKOADgzEjoSvlpPMQGwqg==
+
+--=_baa041e15500820e16987e3b5198ccd7
+Content-Transfer-Encoding: 8bit
+Content-Type: text/plain; charset=utf-8
+
+Hi there,
+
+It looks like you signed up for the Electronic Frontier Foundation (EFF) mailing list while using our free Certbot tool—thanks! Before you get your first message, we need you to confirm your email address.
+
+CLICK THIS LINK TO CONFIRM YOUR EMAIL:
+
+https://supporters.eff.org/subscription-confirmation/certbot?cid1=4780592&cs=c12447a400bdb618fb7dc01fe2567ae9_1682601429_672
+
+If you don't confirm your email, you won't be subscribed to our email list. It's that simple.
+
+EFF is a nonprofit, non-governmental organization that focuses on how new technologies affect your rights. We’ve been fighting for digital freedom for over 30 years!  In our occasional newsletter, you'll learn about free speech, privacy, innovation, and the law. Discover more at https://eff.org/about.
+
+You can also follow our work here:
+
+How to Fix the Internet: https://www.eff.org/podcast
+Facebook: https://www.facebook.com/eff
+Instagram: https://www.instagram.com/efforg
+LinkedIn: https://linkedin.com/company/eff
+Mastodon: https://mastodon.social/@eff
+Twitter: https://twitter.com/eff
+
+Thanks for your interest in digital rights,
+
+Gennie Gebhart
+EFF Activism Director
+
+P.S. You can support free public interest technology like Certbot and more. Donate today: https://supporters.eff.org/donate/certbot-welcome
+
+Activism | Impact Litigation | Technology
+
+This newsletter is printed from 100% recycled electrons.
+815 Eddy Street, San Francisco, CA 94109 United States
+EFF appreciates your support and respects your PRIVACY [1]. UNSUBSCRIBE OR CHANGE YOUR EMAIL PREFERENCES [2] 815 Eddy Street
+San Francisco, CA 94109-7701
+United States
+ Links: ------ [1] http://www.eff.org/policy [2] https://supporters.eff.org/update-your-preferences?cid1=4780592&amp;cs=c12447a400bdb618fb7dc01fe2567ae9_1682601429_672
+--=_baa041e15500820e16987e3b5198ccd7
+Content-Transfer-Encoding: 7bit
+Content-Type: text/html; charset=us-ascii
+
+<style type="text/css"> @media only screen and (max-width: 480px) {
+    body {
+      margin: 0;
+      min-width: 100% !important;
+      width: 100% !important;
+      -webkit-text-size-adjust: none !important;
+      -ms-text-size-adjust: none !important;
+    }
+    table,
+    td,
+    p,
+    a,
+    li
+    {
+      -webkit-text-size-adjust: none !important;
+      -ms-text-size-adjust: none !important;
+    }
+
+    .newsletter-header {
+      height: auto;
+    }
+    .newsletter-header .newsletter-logo {
+      padding-left: 15px !important;
+    }
+
+    .newsletter-header h4 {
+      font-size: 16px;
+      padding-right: 15px;
+    }
+
+    .newsletter-container {
+      max-width: 480px !important;
+    }
+    .newsletter-main {
+      margin: 0 auto;
+    }
+    .newsletter-main td {
+      padding: 15px !important;
+    }
+    .newsletter-footer {
+      max-width: 480px !important;
+    }
+
+    .newsletter-footer td {
+      padding: 15px !important;
+    }
+
+  }
+</style>
+<center style="background-color: #BBC2C3; margin: 0 auto; width: 100%;">
+<h6 style="display:block;font-family:'Lato','Trebuchet MS',sans-serif;font-size:12px;line-height:150%;margin-bottom:20px;padding-top:20px;text-align:center;word-break:break-word"><a href="" style="color:#2B2B2B;font-family:'Lato','Trebuchet MS',sans-serif;text-decoration:underline">This is a friendly message from the Electronic Frontier Foundation.</a></h6>
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="newsletter-container" height="100%" style="background-color:#FFFFFF;border-collapse:collapse!important;margin:0 auto;max-width:600px;width:95%;color:#000;font-family:'Lato','Trebuchet MS',sans-serif;background:#FFF;border-spacing:0!important;table-layout:fixed!important;mso-table-lspace:0!important;mso-table-rspace:0!important;border:none!important;padding:0;height:100%" width="600">
+	<tbody>
+		<tr>
+			<td align="left" style="mso-line-height-rule:exactly;:;color:#000;font-family:'Lato','Trebuchet MS',sans-serif;mso-table-lspace:0!important;mso-table-rspace:0!important;border:none!important;padding:0" valign="top">
+			<table background="none" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" class="header-table" style="border-collapse:collapse!important;max-width:600px;color:#000;font-family:'Lato','Trebuchet MS',sans-serif;background:#FFF;border-spacing:0!important;table-layout:fixed!important;margin:0 auto;mso-table-lspace:0!important;mso-table-rspace:0!important;border:none!important;padding:0;background-color:#FFF;border-bottom:0;border-top:0;height:80px;width:100%" width="100%">
+				<tbody>
+					<tr class="newsletter-header" style="background-color:#FFF;border-bottom:0;border-top:0;display:inline-block;height:131px">
+						<td align="left" valign="top" style="color:#000;font-family:'Lato','Trebuchet MS',sans-serif;mso-table-lspace:0!important;mso-table-rspace:0!important;border:none!important;padding:0"><a href="" style="color:#ec1e1e;font-family:'Lato','Trebuchet MS',sans-serif;text-decoration:underline"><img alt="EFF logo" border="0" class="newsletter-logo" src="https://eff.org/files/2018/06/14/eff_monogram-primary-red.png" style="width:100%;padding-bottom:10px;padding-left:55px;padding-right:calc(1px + 5vw);padding-top:30px;max-width:270px;border:0;height:auto;text-decoration:none;-ms-interpolation-mode:bicubic" /></a></td>
+					</tr>
+				</tbody>
+			</table>
+			<!-- body main content -->
+
+			<table align="left" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" class="newsletter-main" style="border-collapse:collapse!important;margin-bottom:30px;:;color:#000;font-family:'Lato','Trebuchet MS',sans-serif;background:#FFF;border-spacing:0!important;table-layout:fixed!important;margin:0 auto 60px;mso-table-lspace:0!important;mso-table-rspace:0!important;border:none!important;padding:0;background-color:#FFF;border-bottom:0;border-top:0" width="100%">
+				<tbody>
+					<tr>
+						<td style="padding-left:calc(1px + 5vw);padding-right:calc(1px + 5vw);color:#000;font-family:'Lato','Trebuchet MS',sans-serif;mso-table-lspace:0!important;mso-table-rspace:0!important;border:none!important;padding:0 55px" valign="top">
+						<p style="margin:0 0 10px;padding:0;font-family:'Lato','Trebuchet MS',sans-serif;font-size:16px;line-height:150%;color:#000"><a href="http://supporters.eff.org/donate/certbot-welcome" style="color:#ec1e1e;font-family:'Lato','Trebuchet MS',sans-serif;text-decoration:underline"><img alt="Certbot" src="https://www.eff.org/files/2017/12/29/certbot_header.png" style="height:auto;max-width:490px;width:100%;border:0;text-decoration:none;-ms-interpolation-mode:bicubic" /></a></p>
+
+						<h2 style="color:#000;font-family:'Lato','Trebuchet MS',sans-serif;font-size:24px;font-style:normal;font-weight:800;line-height:120%;margin:15px 0;text-align:left">Hi there,</h2>
+
+						<p style="font-family:'Lato','Trebuchet MS',sans-serif;font-size:16px;line-height:150%;margin:0 0 10px;padding:0;color:#000">It looks like you signed up for the Electronic Frontier Foundation (EFF) mailing list while using our free&nbsp;<a href="https://certbot.eff.org/" style="color:#ec1e1e;font-family:'Lato','Trebuchet MS',sans-serif;text-decoration:underline">Certbot</a> tool&mdash;thanks!&nbsp;Before you get your first&nbsp;message, we need you to confirm your email address.</p>
+
+						<p style="font-family:'Lato','Trebuchet MS',sans-serif;font-size:16px;line-height:150%;margin:0 0 10px;padding:0;color:#000"><strong>Click this link to confirm your email:</strong></p>
+
+						<p style="font-family:'Lato','Trebuchet MS',sans-serif;font-size:16px;line-height:150%;margin:0 0 10px;padding:0;color:#000"><a href="https://supporters.eff.org/subscription-confirmation/certbot?cid1=4780592&amp;cs=c12447a400bdb618fb7dc01fe2567ae9_1682601429_672" style="color:#ec1e1e;font-family:'Lato','Trebuchet MS',sans-serif;text-decoration:underline">https://supporters.eff.org/subscription-confirmation/certbot?cid1=4780592&amp;cs=c12447a400bdb618fb7dc01fe2567ae9_1682601429_672</a></p>
+
+						<p style="font-family:'Lato','Trebuchet MS',sans-serif;font-size:16px;line-height:150%;margin:0 0 10px;padding:0;color:#000">If you don&#39;t confirm your email, you won&#39;t be subscribed to our email list. It&#39;s that simple.</p>
+
+						<p style="font-family:'Lato','Trebuchet MS',sans-serif;font-size:16px;line-height:150%;margin:0 0 10px;padding:0;color:#000">EFF is a nonprofit, non-governmental organization&nbsp;that focuses on how new technologies affect your rights. We&rsquo;ve been fighting for digital freedom for over 30 years!&nbsp; In our occasional newsletter, you&#39;ll learn about free speech, privacy, innovation, and the law. Discover more at <a href="https://www.eff.org/" style="color:#ec1e1e;font-family:'Lato','Trebuchet MS',sans-serif;text-decoration:underline">https://eff.org</a><a href="https://eff.org/about" style="color:#ec1e1e;font-family:'Lato','Trebuchet MS',sans-serif;text-decoration:underline">/about</a>.</p>
+
+						<p style="font-family:'Lato','Trebuchet MS',sans-serif;font-size:16px;line-height:150%;margin:0 0 10px;padding:0;color:#000">You can also follow our work here:</p>
+
+						<p style="font-family:'Lato','Trebuchet MS',sans-serif;font-size:16px;line-height:150%;margin:0 0 10px;padding:0;color:#000"><a href="https://eff.org/podcast" style="color:#ec1e1e;font-family:'Lato','Trebuchet MS',sans-serif;text-decoration:underline">EFF&rsquo;s Podcast: How to Fix the Internet</a><br />
+						<a href="https://www.facebook.com/eff" style="color:#ec1e1e;font-family:'Lato','Trebuchet MS',sans-serif;text-decoration:underline">Facebook</a><br />
+						<a href="https://www.instagram.com/efforg" style="color:#ec1e1e;font-family:'Lato','Trebuchet MS',sans-serif;text-decoration:underline">Instagram</a><br />
+						<a href="https://linkedin.com/company/eff" style="color:#ec1e1e;font-family:'Lato','Trebuchet MS',sans-serif;text-decoration:underline">LinkedIn</a><br />
+						<a href="https://mastodon.social/@eff" style="color:#ec1e1e;font-family:'Lato','Trebuchet MS',sans-serif;text-decoration:underline">Mastodon</a><br />
+						<a href="https://twitter.com/eff" style="color:#ec1e1e;font-family:'Lato','Trebuchet MS',sans-serif;text-decoration:underline">Twitter</a></p>
+
+						<p style="font-family:'Lato','Trebuchet MS',sans-serif;font-size:16px;line-height:150%;margin:0 0 10px;padding:0;color:#000">Thanks for your interest in digital rights,</p>
+
+						<p style="font-family:'Lato','Trebuchet MS',sans-serif;font-size:16px;line-height:150%;margin:0 0 10px;padding:0;color:#000">Gennie Gebhart<br />
+						EFF Activism Director</p>
+
+						<p style="font-family:'Lato','Trebuchet MS',sans-serif;font-size:16px;line-height:150%;margin:0 0 10px;padding:0;color:#000">P.S. You can support free public interest technology like Certbot and more. <a href="https://supporters.eff.org/donate/certbot-welcome" rel="noreferrer noopener" target="_blank" style="color:#ec1e1e;font-family:'Lato','Trebuchet MS',sans-serif;text-decoration:underline">Donate today!</a></p>
+
+						<p style="font-family:'Lato','Trebuchet MS',sans-serif;font-size:16px;line-height:150%;margin:0 0 10px;padding:0;color:#000">&nbsp;</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table bgcolor="#E8ECEB" border="0" class="newsletter-footer" style="border-collapse:collapse!important;:;color:#000;font-family:'Lato','Trebuchet MS',sans-serif;background:#E8ECEB;border-spacing:0!important;table-layout:fixed!important;margin:0 auto;mso-table-lspace:0!important;mso-table-rspace:0!important;border:none!important;padding:0;font-size:14px;display:table;width:100%">
+				<tbody>
+					<tr>
+						<td style="padding-left:calc(1px + 5vw);padding-right:calc(1px + 5vw);color:#464E4E;font-family:'Lato','Trebuchet MS',sans-serif;mso-table-lspace:0!important;mso-table-rspace:0!important;border:none!important;padding:0 55px"><img src="https://eff.org/files/eff-email-footer.png" style="margin-bottom:0;margin-top:20px;max-width:490px;border:0;height:auto;text-decoration:none;width:100%;-ms-interpolation-mode:bicubic" /></td>
+					</tr>
+					<tr>
+						<td style="text-align:center;padding-left:calc(1px + 5vw);padding-right:calc(1px + 5vw);padding-top:30px;color:#464E4E;font-family:'Lato','Trebuchet MS',sans-serif;mso-table-lspace:0!important;mso-table-rspace:0!important;border:none!important;padding:0 55px" width="100%"><a class="button" href="https://supporters.eff.org/donate/certbot-welcome" style="background:#EC1E1E;border:none;border-bottom:5px solid #B80101;color:#FFF;display:inline-block;font-family:'Lato','Trebuchet MS',sans-serif;font-size:18px;font-weight:900;letter-spacing:.5px;margin:1rem auto;padding:8px 30px 5px;text-transform:uppercase;text-decoration:none;cursor:pointer;-moz-appearance:none;-webkit-appearance:none;border-radius:0;text-align:center">Donate</a></td>
+					</tr>
+					<tr>
+						<td style="padding-left:calc(1px + 5vw);padding-right:calc(1px + 5vw);color:#464E4E;font-family:'Lato','Trebuchet MS',sans-serif;mso-table-lspace:0!important;mso-table-rspace:0!important;border:none!important;padding:0 55px">
+						<h3 style="color:#464E4E;font-family:'Lato','Trebuchet MS',sans-serif;font-size:20px;font-style:normal;font-weight:800;line-height:125%;margin-bottom:0;text-align:left">About EFF</h3>
+
+						<p style="font-family:'Lato','Trebuchet MS',sans-serif;font-size:14px;line-height:150%;margin:0 0 10px;padding:0;color:#464E4E;text-align:left">The Electronic Frontier Foundation is the leading nonprofit defending online civil liberties. We promote digital innovation, defend free speech, fight illegal surveillance, and protect rights and freedoms for all as our use of technology grows. Find out more at <a href="https://www.eff.org/" style="color:#ec1e1e;font-family:'Lato','Trebuchet MS',sans-serif;text-decoration:underline;font-weight:400"><strong>https://eff.org</strong></a>.</p>
+						</td>
+					</tr>
+					<tr>
+						<td style="padding-left:calc(1px + 5vw);padding-right:calc(1px + 5vw);color:#464E4E;font-family:'Lato','Trebuchet MS',sans-serif;mso-table-lspace:0!important;mso-table-rspace:0!important;border:none!important;padding:0 55px">
+						<p style="font-family:'Lato','Trebuchet MS',sans-serif;font-size:14px;line-height:150%;margin:0 0 10px;padding:0;color:#464E4E;text-align:left">This newsletter is printed from 100% recycled electrons.<br />
+						EFF appreciates your support and respects your <a href="http://www.eff.org/policy" style="color:#ec1e1e;font-family:'Lato','Trebuchet MS',sans-serif;text-decoration:underline;font-weight:400"><strong>privacy</strong></a>.</p>
+
+						<p style="font-family:'Lato','Trebuchet MS',sans-serif;font-size:14px;line-height:150%;margin:0 0 10px;padding:0;color:#464E4E;text-align:left"><a href="https://supporters.eff.org/update-your-preferences?cid1=4780592&amp;cs=c12447a400bdb618fb7dc01fe2567ae9_1682601429_672" style="color:#ec1e1e;font-family:'Lato','Trebuchet MS',sans-serif;text-decoration:underline;font-weight:400"><strong>Unsubscribe or change your email preferences</strong></a></p>
+
+						<p style="font-family:'Lato','Trebuchet MS',sans-serif;font-size:14px;line-height:150%;margin:0 0 10px;padding:0;color:#464E4E;text-align:left"><div class="location vcard"><span class="adr"><span class="street-address">815 Eddy Street</span><br /><span class="locality">San Francisco</span>, <span class="region">CA</span> <span class="postal-code">94109-7701</span><br /><span class="country-name">United States</span></span></div></p>
+
+						<p style="font-family:'Lato','Trebuchet MS',sans-serif;font-size:14px;line-height:150%;margin:0 0 10px;padding:0;color:#464E4E;text-align:left">&nbsp;</p>
+
+						<p style="font-family:'Lato','Trebuchet MS',sans-serif;font-size:14px;line-height:150%;margin:0 0 10px;padding:0;color:#464E4E;text-align:left">&nbsp;</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+--=_baa041e15500820e16987e3b5198ccd7--
