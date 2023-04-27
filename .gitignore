@@ -5,4 +5,5 @@ database
 services/mail/docker-data/dms/config
 services/mail/docker-data/dms/mail-state
 services/mail/docker-data/certbot
-
+data_certbot
+services/mail/docker-data/dms/mail-logs
