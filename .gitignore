@@ -1,3 +1,5 @@
+services/mail/docker-data
+services/nginx/log
 venv
 __pycache__
 database
