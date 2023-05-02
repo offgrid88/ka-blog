@@ -24,6 +24,8 @@ services:
       - 5000
     env_file:
       - ./.env
+    volumes:
+      - ./services/web:/usr/src/app/
     depends_on:
       - offgrid8_db
   nginx:
