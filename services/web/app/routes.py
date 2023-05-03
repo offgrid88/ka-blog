@@ -53,6 +53,12 @@ def articles():
     print(allPosts)
     return render_template('articles.html', posts = allPosts)
 
+@app.route('/books')
+def books():
+    allPosts = postsDB.find({})
+    print(allPosts)
+    return render_template('articles.html', posts = allPosts)
+
 @app.route('/fullpost', methods=['GET'])
 def showFullPost():
     postId = request.args.get('postId')
@@ -64,25 +70,6 @@ def getCurrentDateTime():
     dt_string = currentDateTime.strftime("%d/%m/%Y %H:%M:%S")
     return dt_string
 
-#Write Post
-
-"""@app.route('/writepost', methods=['GET', 'POST'])
-def writePost():
-
-    if 'name' not in session:
-        return redirect('/login')
-
-    else:
-        userProfile = usersDB.find_one({'username': session['username']})
-        if request.method == 'POST':
-            postInsert = postsDB.insert_one( { 'username': session['username'], 
-                'created_at': getCurrentDateTime(), 'updated_at': None, 'title': request.form['title'],
-                'content': request.form['content'], 'image': request.form['image']} )
-            flash('Post Submitted Successfully')
-            return redirect('/')
-        else:
-            return render_template('writepost.html', userProfile = userProfile)
-"""
 
 
 @app.route('/about')
@@ -110,46 +97,3 @@ def add_article():
         print(inserted_id)
         return render_template('fullpost.html', post = inserted_id)
 
-@app.route("/login", methods=["POST", "GET"])
-def login():
-    message = 'Please login to your account'
-    if "email" in session:
-        return redirect(url_for("logged_in"))
-
-    if request.method == "POST":
-        email = request.form.get("email")
-        password = request.form.get("password")
-
-       
-        email_found = records.find_one({"email": email})
-        if email_found:
-            email_val = email_found['email']
-            passwordcheck = email_found['password']
-            
-            if bcrypt.checkpw(password.encode('utf-8'), passwordcheck):
-                session["email"] = email_val
-                return redirect(url_for('logged_in'))
-            else:
-                if "email" in session:
-                    return redirect(url_for("logged_in"))
-                message = 'Wrong password'
-                return render_template('login.html', message=message)
-        else:
-            message = 'Email not found'
-            return render_template('login.html', message=message)
-    return render_template('login.html', message=message)
-
-
-
-@app.route('/register',methods=["POST", "GET"])
-def register():
-    if request.method == 'GET':
-        return render_template('register.html')
-    else:
-        email = request.form['email']
-        username=request.form['user']
-        password=request.form['password']
-        verif_pass=request.form['verif_pass']
-        print( username, password, verif_pass)
-        return email
-        #return render_template('register.html')

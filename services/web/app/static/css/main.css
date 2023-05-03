@@ -350,11 +350,7 @@ pre {
   font-family: Consolas, "Andale Mono", Courier, "Courier New", monospace;
 }
 
-pre {
-  padding: 2.4rem 3.2rem 3.2rem;
-  background: #efefef;
-  overflow-x: auto;
-}
+
 
 code {
   font-size: 1.4rem;
@@ -2820,7 +2816,7 @@ body.search-is-visible {
 
 .content__page-header {
   text-align: center;
-
+  color: rgba(166, 187, 182, 0.5);
   margin-bottom: 4rem;
 }
 

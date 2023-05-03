@@ -21,8 +21,8 @@ services:
       dockerfile: Dockerfile
     command: gunicorn --config gunicorn_config.py wsgi:app
     #command: python3 wsgi.py
-    expose:
-      - 5000
+    ports:
+      - 5000:5000
     env_file:
       - ./.env
     volumes:
