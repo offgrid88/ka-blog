@@ -2809,7 +2809,7 @@ body.search-is-visible {
 }
 
 .content__page {
-  max-width: 900px;
+  max-width: 100%;
   padding-bottom: 12rem;
 }
 
