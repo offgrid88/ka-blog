@@ -27,8 +27,8 @@ load_dotenv(find_dotenv())
 password= urllib.parse.quote_plus(os.environ.get("MONGO_PWD"))
 
 username = urllib.parse.quote_plus(os.environ.get("USER_NAME"))
-
-db= MongoClient('localhost', 27018, username=username, password=password,authSource="offgrid8_db")
+print(password,username)
+db= MongoClient('offgrid8_db', 27018, username=username, password=password,authSource="admin")
 mydb=db.offgrid8_db
 def databaseUsers():
     return mydb.users

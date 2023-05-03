@@ -6,9 +6,10 @@ services:
     command: mongod --port 27018
     restart: unless-stopped
     env_file: ./services/db/.env.db
-    environment:
-      - MONGO_INITDB_ROOT_USERNAME=$MONGODB_USER
-      - MONGO_INITDB_ROOT_PASSWORD=$MONGODB_PASSWORD
+    #environment:
+    #  - MONGO_INITDB_ROOT_USERNAME=$MONGO_INITDB_ROOT_USERNAME
+    #  - MONGO_INITDB_ROOT_PASSWORD=password
+    #  - MONGO_INITDB_DATABASE=admin
     ports:
       - 27018:27018
     volumes:
