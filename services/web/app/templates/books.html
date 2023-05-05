@@ -1,15 +1,12 @@
+
 {% include 'header.html'%}
-<body>
-
-
-
+<!-- Include stylesheet -->
+<link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+<!-- Include the Quill library -->
+<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
 
         <!-- site content
         ================================================== -->
-
-
-        
-
         <div class="s-content content">
             <main class="row content__page">
                 
@@ -17,40 +14,50 @@
 
                     <div class="media-wrap">
                         <div class="content__page-header">
+                            <p text-align=center class="display-1">
+                                Add a book ....
+                            </p>
                         </div> <!-- end content__page-header -->
                        
+                          
+                          
+                     
+                   <p>
+                <!-- Create the editor container -->
+               
+             
+                  <label for="info">Book Info</label><br>
+                  <input type="text" id="info" name="info"><br>
+                  <label for="title">My thoughts</label><br>
+                  <input type="text" id="thoughts" name="thoughts"><br>
+                  <label for="password">PASSCODE</label><br>
+                  <input type="password" id="password" name="password">
+
+            
+        <button type="submit" id="submit" >
+          <span >submit query</span>
+        </button>
+        <button type="submit" id="submit" >
+            <span >get pass</span>
+          </button>
+
+ <!-- Create the editor container -->
+   </p>                    
+   <hr>           
+   <p text-align=center class="display-1">
+    Books I've Read
+    {% for post in posts: %}
+    {{ book['info'] }}
+    {{ books['thoughts'] }}
+    {% endfor %}
+</p>
                     </div>
 
-                   
-        
-                   
+                </section>
 
-                    <h2></h2>
+            </main>
 
-                    <h1>Add a new book:</h1> 
-                    <form>
-                        <label for="info">Book info</label><br>
-                        <input type="text" id="info" name="info"><br>
-                        <label for="thoughts">My thoughts</label><br>
-                        <input type="text" id="thoughts" name="thoughts">
-                        <label for="password">PASSCODE</label><br>
-                        <input type="password" id="password" name="password">
-
-                        <input type="submit">
-                        </form>
-                        <hr>
-                    <h1>Books I've Read:</h1> 
-                    {% for book in books: %}
-                    <article class="masonry__brick entry format-standard animate-this">
-                            
-                      <p>{{ book['info'] }}</p>
-                      <p>My thoughts</p>
-                      <p>{{ book['thoughts'] }}</p>
-        
-                    {% endfor %}
-
-                    <hr>
-
+        </div> <!-- end s-content -->
 
         {% include 'footer.html'%}
 

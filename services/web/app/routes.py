@@ -36,7 +36,7 @@ def databaseBooks():
 def databaseArticles():
     return mydb.articles
 
-usersDB = databaseBooks()
+booksDB = databaseBooks()
 postsDB = databaseArticles()
 
 @app.route('/')
@@ -55,9 +55,18 @@ def articles():
 
 @app.route('/books')
 def books():
-    allPosts = postsDB.find({})
-    print(allPosts)
-    return render_template('books.html', posts = allPosts)
+
+    if request.method == "GET":
+        
+        return render_template("books.html")
+    else:
+        json = request.json
+        print(json)
+        #if is_user_valid()
+        inserted_id=booksDB.insert_one(json).inserted_id
+        print(inserted_id)
+        return render_template('books.html', post = inserted_id)
+
 
 @app.route('/fullpost', methods=['GET'])
 def showFullPost():
@@ -86,7 +95,6 @@ def is_user_valid(user,passwd):
 
 @app.route('/add_article', methods=["GET", "POST"])
 def add_article():
-
     if request.method == "GET":
         return render_template("add_article.html")
     else:
