@@ -30,13 +30,13 @@ username = urllib.parse.quote_plus(os.environ.get("USER_NAME"))
 print(password,username)
 db= MongoClient('offgrid8_db', 27018, username=username, password=password,authSource="admin")
 mydb=db.offgrid8_db
-def databaseUsers():
-    return mydb.users
+def databaseBooks():
+    return mydb.books
 
 def databaseArticles():
     return mydb.articles
 
-usersDB = databaseUsers()
+usersDB = databaseBooks()
 postsDB = databaseArticles()
 
 @app.route('/')
@@ -57,7 +57,7 @@ def articles():
 def books():
     allPosts = postsDB.find({})
     print(allPosts)
-    return render_template('articles.html', posts = allPosts)
+    return render_template('books.html', posts = allPosts)
 
 @app.route('/fullpost', methods=['GET'])
 def showFullPost():

@@ -1,0 +1,57 @@
+{% include 'header.html'%}
+<body>
+
+
+
+
+        <!-- site content
+        ================================================== -->
+
+
+        
+
+        <div class="s-content content">
+            <main class="row content__page">
+                
+                <section class="column large-full entry format-standard">
+
+                    <div class="media-wrap">
+                        <div class="content__page-header">
+                        </div> <!-- end content__page-header -->
+                       
+                    </div>
+
+                   
+        
+                   
+
+                    <h2></h2>
+
+                    <h1>Add a new book:</h1> 
+                    <form>
+                        <label for="info">Book info</label><br>
+                        <input type="text" id="info" name="info"><br>
+                        <label for="thoughts">My thoughts</label><br>
+                        <input type="text" id="thoughts" name="thoughts">
+                        <label for="password">PASSCODE</label><br>
+                        <input type="password" id="password" name="password">
+
+                        <input type="submit">
+                        </form>
+                        <hr>
+                    <h1>Books I've Read:</h1> 
+                    {% for book in books: %}
+                    <article class="masonry__brick entry format-standard animate-this">
+                            
+                      <p>{{ book['info'] }}</p>
+                      <p>My thoughts</p>
+                      <p>{{ book['thoughts'] }}</p>
+        
+                    {% endfor %}
+
+                    <hr>
+
+
+        {% include 'footer.html'%}
+
+</body>
