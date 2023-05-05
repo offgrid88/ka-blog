@@ -53,12 +53,16 @@ def articles():
     print(allPosts)
     return render_template('articles.html', posts = allPosts)
 
-@app.route('/books')
+@app.route('/books' ,methods=['GET', 'POST'])
 def books():
 
     if request.method == "GET":
+        info = request.form.get('name')
+        thoughts = request.form.get('username')
+        password = request.form.get('password')
+        return f'{info}, {thoughts},{password}'
         
-        return render_template("books.html")
+        #return render_template("books.html")
     else:
         json = request.json
         print(json)
