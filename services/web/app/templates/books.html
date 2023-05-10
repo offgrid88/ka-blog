@@ -31,14 +31,15 @@
 
                   <input type="text" name="info"
                   placeholder="Book info"
-                  value="{{ request.form['title'] }}"></input>  <br>
+                  value="{{ request.form['title'] }}" required ></input>  <br>
                 </div>
 
                 <div class="message form-field">
                   <label for="title">My thoughts</label><br>
-                  <input type="text" name="thoughts"
-                  placeholder="thoughts"
-                  value="{{ request.form['thoughts'] }}"></input>  <br>
+       <textarea name="thoughts" id="cMessage" class="full-width" placeholder="thoughts" value="{{ request.form['thoughts'] }}" required>
+
+    </textarea>
+      <br>
                 </div>
                 
                 <div class="form-field">
@@ -46,7 +47,7 @@
 
                   <input type="password" name="password"
                   placeholder="password"
-                  value="{{ request.form['password'] }}"></input>  <br>
+                  value="{{ request.form['password'] }}" required ></input>  <br>
                 </div>
                    
         <input name="submit" id="submit" class="btn btn--primary btn-wide  " value="submit query" type="submit">

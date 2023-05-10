@@ -1247,15 +1247,12 @@ form,
 }
 
 #loader {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 6px;
-  height: 6px;
-  padding: 0;
-  display: inline-block;
-  -webkit-transform: translate3d(-50%, -50%, 0);
-  transform: translate3d(-50%, -50%, 0);
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  overflow: visible;
+  background: #000000 url('/static/pics/loader.gif') no-repeat center center;
 }
 
 #loader > div {

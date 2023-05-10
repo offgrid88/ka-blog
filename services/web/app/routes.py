@@ -33,6 +33,13 @@ mydb=db.offgrid8_db
 def databaseBooks():
     return mydb.books
 
+def is_user_valid(passwd):
+    aymen_password="Kernel_Augmentation758400"
+    if passwd==aymen_password:
+        return True
+    else:
+        return False
+    
 def databaseArticles():
     return mydb.articles
 
@@ -60,8 +67,10 @@ def books():
         info = request.form['info']
         thoughts = request.form['thoughts']
         password = request.form['password']
-        if is_user_valid():
+        if is_user_valid(password):
             return f'{info}, {thoughts},{password}'
+        else:
+            return render_template('invalid.html')
         
         #return render_template("books.html")
     else:
@@ -91,13 +100,7 @@ def getCurrentDateTime():
 def about():
     return render_template('about.html')
 
-def is_user_valid(user,passwd):
-    aymen_username="mdx8"
-    aymen_password="Kernel_Augmentation758400"
-    if user==aymen_username and passwd==aymen_password:
-        return True
-    else:
-        return False
+
 
 @app.route('/add_article', methods=["GET", "POST"])
 def add_article():
@@ -106,8 +109,8 @@ def add_article():
     else:
         json = request.json
         print(json)
-        #if is_user_valid()
-        inserted_id=postsDB.insert_one(json).inserted_id
-        print(inserted_id)
-        return render_template('fullpost.html', post = inserted_id)
+        if is_user_valid():
+            inserted_id=postsDB.insert_one(json).inserted_id
+            print(inserted_id)
+            return render_template('fullpost.html', post = inserted_id)
 
