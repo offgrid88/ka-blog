@@ -56,20 +56,22 @@ def articles():
 @app.route('/books' ,methods=['GET', 'POST'])
 def books():
 
-    if request.method == "GET":
-        info = request.form.get('name')
-        thoughts = request.form.get('username')
-        password = request.form.get('password')
-        return f'{info}, {thoughts},{password}'
+    if request.method == "POST":
+        info = request.form['info']
+        thoughts = request.form['thoughts']
+        password = request.form['password']
+        if is_user_valid():
+            return f'{info}, {thoughts},{password}'
         
         #return render_template("books.html")
     else:
-        json = request.json
-        print(json)
-        #if is_user_valid()
-        inserted_id=booksDB.insert_one(json).inserted_id
-        print(inserted_id)
-        return render_template('books.html', post = inserted_id)
+        #json = request.json
+        #print(json)
+        ##
+        #inserted_id=booksDB.insert_one(json).inserted_id
+        #print(inserted_id)
+        #return render_template('books.html', post = inserted_id)
+        return render_template('books.html')
 
 
 @app.route('/fullpost', methods=['GET'])

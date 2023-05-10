@@ -24,23 +24,36 @@
                      
                    <p>
                 <!-- Create the editor container -->
-               
-             
-                  <label for="info">Book Info</label><br>
-                  <input type="text" id="info" name="info"><br>
+                <form name="contactForm" id="contactForm" method="post" action="" autocomplete="off" >
+                    <fieldset>
+                        <div class="form-field"> 
+                <label for="info">Book Info</label><br>
+
+                  <input type="text" name="info"
+                  placeholder="Book info"
+                  value="{{ request.form['title'] }}"></input>  <br>
+                </div>
+
+                <div class="message form-field">
                   <label for="title">My thoughts</label><br>
-                  <input type="text" id="thoughts" name="thoughts"><br>
+                  <input type="text" name="thoughts"
+                  placeholder="thoughts"
+                  value="{{ request.form['thoughts'] }}"></input>  <br>
+                </div>
+                
+                <div class="form-field">
                   <label for="password">PASSCODE</label><br>
-                  <input type="password" id="password" name="password">
 
-            
-        <button type="submit" id="submit" >
-          <span >submit query</span>
-        </button>
-        <button type="submit" id="submit" >
-            <span >get pass</span>
-          </button>
+                  <input type="password" name="password"
+                  placeholder="password"
+                  value="{{ request.form['password'] }}"></input>  <br>
+                </div>
+                   
+        <input name="submit" id="submit" class="btn btn--primary btn-wide  " value="submit query" type="submit">
 
+          <input name="submit" id="submit" class="btn btn--primary btn-wide " value="get pass" type="submit">
+        </fieldset>
+        </form>
  <!-- Create the editor container -->
    </p>                    
    <hr>           

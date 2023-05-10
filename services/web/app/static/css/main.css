@@ -1,3 +1,693 @@
+/* ------------------------------------------------------------------- 
+ * ## Spacing 
+ * ------------------------------------------------------------------- */
+ button,
+ .btn {
+     margin-bottom : 1.6rem;
+ }
+ 
+ fieldset {
+     margin-bottom : 1.6rem;
+ }
+ 
+ input,
+ textarea,
+ select,
+ pre,
+ blockquote,
+ figure,
+ table,
+ p,
+ ul,
+ ol,
+ dl,
+ form,
+ .video-container,
+ .ss-custom-select {
+     margin-bottom : 3.2rem;
+ }
+ 
+ 
+ /* ===================================================================
+  * # preloader 
+  *
+  * ------------------------------------------------------------------- */
+ #preloader {
+     position   : fixed;
+     top        : 0;
+     left       : 0;
+     right      : 0;
+     bottom     : 0;
+     background : #ffffff;
+     z-index    : 500;
+     height     : 100vh;
+     width      : 100%;
+     overflow   : hidden;
+ }
+ 
+ .no-js #preloader,
+ .oldie #preloader {
+     display : none;
+ }
+ 
+ #loader {
+     position          : absolute;
+     left              : 50%;
+     top               : 50%;
+     width             : 6px;
+     height            : 6px;
+     padding           : 0;
+     display           : inline-block;
+     -webkit-transform : translate3d(-50%, -50%, 0);
+     transform         : translate3d(-50%, -50%, 0);
+ }
+ 
+ #loader>div {
+     content       : "";
+     background    : #000000;
+     width         : 6px;
+     height        : 6px;
+     position      : absolute;
+     top           : 0;
+     left          : 0;
+     border-radius : 50%;
+ }
+ 
+ #loader>div:nth-of-type(1) {
+     left : 15px;
+ }
+ 
+ #loader>div:nth-of-type(3) {
+     left : -15px;
+ }
+ 
+ /* dots jump */
+ .dots-jump>div {
+     -webkit-animation : dots-jump 1.2s infinite ease;
+     animation         : dots-jump 1.2s infinite ease;
+     animation-delay   : 0.2s;
+ }
+ 
+ .dots-jump>div:nth-of-type(1) {
+     animation-delay : 0.4s;
+ }
+ 
+ .dots-jump>div:nth-of-type(3) {
+     animation-delay : 0s;
+ }
+ 
+ @-webkit-keyframes dots-jump {
+     0% {
+         top : 0;
+     }
+ 
+     40% {
+         top : -6px;
+     }
+ 
+     80% {
+         top : 0;
+     }
+ }
+ 
+ @keyframes dots-jump {
+     0% {
+         top : 0;
+     }
+ 
+     40% {
+         top : -6px;
+     }
+ 
+     80% {
+         top : 0;
+     }
+ }
+ 
+ /* dots fade */
+ .dots-fade>div {
+     -webkit-animation : dots-fade 1.6s infinite ease;
+     animation         : dots-fade 1.6s infinite ease;
+     animation-delay   : 0.4s;
+ }
+ 
+ .dots-fade>div:nth-of-type(1) {
+     animation-delay : 0.8s;
+ }
+ 
+ .dots-fade>div:nth-of-type(3) {
+     animation-delay : 0s;
+ }
+ 
+ @-webkit-keyframes dots-fade {
+     0% {
+         opacity : 1;
+     }
+ 
+     40% {
+         opacity : 0.2;
+     }
+ 
+     80% {
+         opacity : 1;
+     }
+ }
+ 
+ @keyframes dots-fade {
+     0% {
+         opacity : 1;
+     }
+ 
+     40% {
+         opacity : 0.2;
+     }
+ 
+     80% {
+         opacity : 1;
+     }
+ }
+ 
+ /* dots pulse */
+ .dots-pulse>div {
+     -webkit-animation : dots-pulse 1.2s infinite ease;
+     animation         : dots-pulse 1.2s infinite ease;
+     animation-delay   : 0.2s;
+ }
+ 
+ .dots-pulse>div:nth-of-type(1) {
+     animation-delay : 0.4s;
+ }
+ 
+ .dots-pulse>div:nth-of-type(3) {
+     animation-delay : 0s;
+ }
+ 
+ @-webkit-keyframes dots-pulse {
+     0% {
+         -webkit-transform : scale(1);
+         transform         : scale(1);
+     }
+ 
+     40% {
+         -webkit-transform : scale(1.1);
+         transform         : scale(1.3);
+     }
+ 
+     80% {
+         -webkit-transform : scale(1);
+         transform         : scale(1);
+     }
+ }
+ 
+ @keyframes dots-pulse {
+     0% {
+         -webkit-transform : scale(1);
+         transform         : scale(1);
+     }
+ 
+     40% {
+         -webkit-transform : scale(1.1);
+         transform         : scale(1.3);
+     }
+ 
+     80% {
+         -webkit-transform : scale(1);
+         transform         : scale(1);
+     }
+ }
+ 
+ 
+ /* ===================================================================
+  * # forms 
+  *
+  * ------------------------------------------------------------------- */
+ fieldset {
+     border : none;
+ }
+ 
+ input[type="email"],
+ input[type="number"],
+ input[type="search"],
+ input[type="text"],
+ input[type="tel"],
+ input[type="url"],
+ input[type="password"],
+ textarea,
+ select {
+     display       : block;
+     height        : 6.4rem;
+     padding       : 1.6rem 0 1.5rem;
+     border        : 0;
+     outline       : none;
+     color         : #cccccc;
+     font-family   : "IBM Plex Sans", sans-serif;
+     font-size     : 1.6rem;
+     line-height   : 3.2rem;
+     max-width     : 100%;
+     background    : transparent;
+     border-bottom : 1px solid #c3c3c3;
+     transition    : all .3s ease-in-out;
+ }
+ 
+ .ss-custom-select {
+     position : relative;
+     padding  : 0;
+ }
+ 
+ .ss-custom-select select {
+     -webkit-appearance : none;
+     -moz-appearance    : none;
+     appearance         : none;
+     text-indent        : 0.01px;
+     text-overflow      : '';
+     margin             : 0;
+     line-height        : 3rem;
+     vertical-align     : middle;
+ }
+ 
+ .ss-custom-select select option {
+     padding-left  : 2rem;
+     padding-right : 2rem;
+ }
+ 
+ .ss-custom-select select::-ms-expand {
+     display : none;
+ }
+ 
+ .ss-custom-select::after {
+     border-bottom            : 2px solid #000000;
+     border-right             : 2px solid #000000;
+     content                  : '';
+     display                  : block;
+     height                   : 8px;
+     width                    : 8px;
+     margin-top               : -7px;
+     pointer-events           : none;
+     position                 : absolute;
+     right                    : 2.4rem;
+     top                      : 50%;
+     transition               : all 0.15s ease-in-out;
+     -webkit-transform-origin : 66% 66%;
+     transform-origin         : 66% 66%;
+     -webkit-transform        : rotate(45deg);
+     transform                : rotate(45deg);
+ }
+ 
+ textarea {
+     min-height : 25.6rem;
+ }
+ 
+ input[type="email"]:focus,
+ input[type="number"]:focus,
+ input[type="search"]:focus,
+ input[type="text"]:focus,
+ input[type="tel"]:focus,
+ input[type="url"]:focus,
+ input[type="password"]:focus,
+ textarea:focus,
+ select:focus {
+     color         : #b3b3b3;
+     border-bottom : 1px solid #dddddd;
+ }
+ 
+ label,
+ legend {
+     font-family   : "Heebo", sans-serif;
+     font-weight   : 700;
+     font-size     : 1.4rem;
+     margin-bottom : .8rem;
+     line-height   : 1.714;
+     color         : #000000;
+     display       : block;
+ }
+ 
+ input[type="checkbox"],
+ input[type="radio"] {
+     display : inline;
+ }
+ 
+ label>.label-text {
+     display     : inline-block;
+     margin-left : 1rem;
+     font-family : "IBM Plex Sans", sans-serif;
+     line-height : inherit;
+ }
+ 
+ label>input[type="checkbox"],
+ label>input[type="radio"] {
+     margin   : 0;
+     position : relative;
+     top      : .2rem;
+ }
+ 
+ /* ------------------------------------------------------------------- 
+  * ## Style Placeholder Text
+  * ------------------------------------------------------------------- */
+ ::-webkit-input-placeholder {
+     /* WebKit, Blink, Edge */
+     color : #8c8c8c;
+ }
+ 
+ :-moz-placeholder {
+     /* Mozilla Firefox 4 to 18 */
+     color   : #8c8c8c;
+     opacity : 1;
+ }
+ 
+ ::-moz-placeholder {
+     /* Mozilla Firefox 19+ */
+     color   : #8c8c8c;
+     opacity : 1;
+ }
+ 
+ :-ms-input-placeholder {
+     /* Internet Explorer 10-11 */
+     color : #8c8c8c;
+ }
+ 
+ ::-ms-input-placeholder {
+     /* Microsoft Edge */
+     color : #8c8c8c;
+ }
+ 
+ ::placeholder {
+     /* Most modern browsers support this now. */
+     color : #8c8c8c;
+ }
+ 
+ .placeholder {
+     color : #8c8c8c !important;
+ }
+ 
+ /* ------------------------------------------------------------------- 
+  * ## Change Autocomplete styles in Chrome
+  * ------------------------------------------------------------------- */
+ input:-webkit-autofill,
+ input:-webkit-autofill:hover,
+ input:-webkit-autofill:focus input:-webkit-autofill,
+ textarea:-webkit-autofill,
+ textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+ select:-webkit-autofill,
+ select:-webkit-autofill:hover,
+ select:-webkit-autofill:focus {
+     -webkit-text-fill-color : #33998a;
+     transition              : background-color 5000s ease-in-out 0s;
+ }
+ 
+ 
+ /* ===================================================================
+  * # buttons
+  *
+  * ------------------------------------------------------------------- */
+ .btn,
+ button,
+ input[type="submit"],
+ input[type="reset"],
+ input[type="button"] {
+     display                 : inline-block;
+     font-family             : "Heebo", sans-serif;
+     font-weight             : 600;
+     font-size               : 1.3rem;
+     text-transform          : uppercase;
+     letter-spacing          : .5rem;
+     height                  : 6rem;
+     line-height             : 5.6rem;
+     padding                 : 0 3.2rem;
+     margin                  : 0 .4rem 1.6rem 0;
+     color                   : #000000;
+     text-decoration         : none;
+     text-align              : center;
+     white-space             : nowrap;
+     cursor                  : pointer;
+     transition              : all .3s ease-in-out;
+     -webkit-font-smoothing  : antialiased;
+     -moz-osx-font-smoothing : grayscale;
+     background-color        : #d3d3d3;
+     border                  : 0.2rem solid #d3d3d3;
+ }
+ 
+ .btn:hover,
+ button:hover,
+ input[type="submit"]:hover,
+ input[type="reset"]:hover,
+ input[type="button"]:hover,
+ .btn:focus,
+ button:focus,
+ input[type="submit"]:focus,
+ input[type="reset"]:focus,
+ input[type="button"]:focus {
+     background-color : #c3c3c3;
+     border-color     : #c3c3c3;
+     color            : #000000;
+     outline          : 0;
+ }
+ 
+ /* button primary
+  * ------------------------------------------------- */
+ .btn.btn--primary,
+ button.btn--primary,
+ input[type="submit"].btn--primary,
+ input[type="reset"].btn--primary,
+ input[type="button"].btn--primary {
+     background   : #000000;
+     border-color : #000000;
+     color        : #ffffff;
+ }
+ 
+ .btn.btn--primary:hover,
+ button.btn--primary:hover,
+ input[type="submit"].btn--primary:hover,
+ input[type="reset"].btn--primary:hover,
+ input[type="button"].btn--primary:hover,
+ .btn.btn--primary:focus,
+ button.btn--primary:focus,
+ input[type="submit"].btn--primary:focus,
+ input[type="reset"].btn--primary:focus,
+ input[type="button"].btn--primary:focus {
+     background   : #33998a;
+     border-color : #33998a;
+ }
+ 
+ /* button modifiers
+  * ------------------------------------------------- */
+ .btn.full-width,
+ button.full-width {
+     width        : 100%;
+     margin-right : 0;
+ }
+ 
+ .btn--medium,
+ button.btn--medium {
+     height      : 6.4rem !important;
+     line-height : 6rem !important;
+ }
+ 
+ .btn--large,
+ button.btn--large {
+     height      : 6.8rem !important;
+     line-height : 6.4rem !important;
+ }
+ 
+ .btn--stroke,
+ button.btn--stroke {
+     background : transparent !important;
+     border     : 0.2rem solid #000000;
+     color      : #000000;
+ }
+ 
+ .btn--stroke:hover,
+ button.btn--stroke:hover {
+     background : #000000 !important;
+     border     : 0.2rem solid #000000;
+     color      : #ffffff;
+ }
+ 
+ .btn--pill,
+ button.btn--pill {
+     padding-left  : 3.2rem !important;
+     padding-right : 3.2rem !important;
+     border-radius : 1000px !important;
+ }
+ 
+ button::-moz-focus-inner,
+ input::-moz-focus-inner {
+     border  : 0;
+     padding : 0;
+ }
+ 
+ /* ------------------------------------------------------------------- 
+  * ## alert box 
+  * ------------------------------------------------------------------- */
+ .alert-box {
+     padding       : 2.4rem 4rem 2.4rem 3.2rem;
+     position      : relative;
+     margin-bottom : 3.2rem;
+     border-radius : 3px;
+     font-family   : "IBM Plex Sans", sans-serif;
+     font-weight   : 600;
+     font-size     : 1.5rem;
+     line-height   : 1.6;
+ }
+ 
+ .alert-box__close {
+     position : absolute;
+     display  : block;
+     right    : 1.6rem;
+     top      : 1.6rem;
+     cursor   : pointer;
+     width    : 12px;
+     height   : 12px;
+ }
+ 
+ .alert-box__close::before,
+ .alert-box__close::after {
+     content  : '';
+     position : absolute;
+     display  : inline-block;
+     width    : 2px;
+     height   : 12px;
+     top      : 0;
+     left     : 5px;
+ }
+ 
+ .alert-box__close::before {
+     -webkit-transform : rotate(45deg);
+     transform         : rotate(45deg);
+ }
+ 
+ .alert-box__close::after {
+     -webkit-transform : rotate(-45deg);
+     transform         : rotate(-45deg);
+ }
+ 
+ .alert-box--error {
+     background-color : #ffd1d2;
+     color            : #dd4043;
+ }
+ 
+ .alert-box--error .alert-box__close::before,
+ .alert-box--error .alert-box__close::after {
+     background-color : #dd4043;
+ }
+ 
+ .alert-box--success {
+     background-color : #c8e675;
+     color            : #637533;
+ }
+ 
+ .alert-box--success .alert-box__close::before,
+ .alert-box--success .alert-box__close::after {
+     background-color : #637533;
+ }
+ 
+ .alert-box--info {
+     background-color : #d5ebfb;
+     color            : #387fb2;
+ }
+ 
+ .alert-box--info .alert-box__close::before,
+ .alert-box--info .alert-box__close::after {
+     background-color : #387fb2;
+ }
+ 
+ .alert-box--notice {
+     background-color : #fff099;
+     color            : #827217;
+ }
+ 
+ .alert-box--notice .alert-box__close::before,
+ .alert-box--notice .alert-box__close::after {
+     background-color : #827217;
+ }
+ 
+ /* -------------------------------------------------------------------
+  * ## pagination 
+  * ------------------------------------------------------------------- */
+ .pgn {
+     margin     : 3.2rem auto 3.2rem;
+     text-align : center;
+ }
+ 
+ .pgn ul {
+     display     : inline-block;
+     list-style  : none;
+     margin-left : 0;
+     position    : relative;
+     padding     : 0 6rem;
+ }
+ 
+ .pgn ul li {
+     display : inline-block;
+     margin  : 0;
+     padding : 0;
+ }
+ 
+ .pgn__num {
+     font-family : "IBM Plex Sans", sans-serif;
+     font-weight : 600;
+     font-size   : 1.7rem;
+     line-height : 3.2rem;
+     display     : inline-block;
+     padding     : .2rem 1.2rem;
+     height      : 3.6rem;
+     margin      : .2rem .2rem;
+     color       : #000000;
+     transition  : all, .3s, ease-in-out;
+ }
+ 
+ .pgn__num:hover {
+     background : #d3d3d3;
+     color      : #000000;
+ }
+ 
+ .pgn .current,
+ .pgn .current:hover {
+     background-color : #000000;
+     color            : white;
+ }
+ 
+ .pgn .inactive,
+ .pgn .inactive:hover {
+     opacity : 0.4;
+     cursor  : default;
+ }
+ 
+ .pgn__prev,
+ .pgn__next {
+     display             : block;
+     background-repeat   : no-repeat;
+     background-size     : 16px 8px;
+     background-position : center;
+     height              : 3.6rem;
+     width               : 4.8rem;
+     line-height         : 2rem;
+     padding             : 0;
+     margin              : 0;
+     opacity             : 1;
+     font                : 0/0 a;
+     text-shadow         : none;
+     color               : transparent;
+     transition          : all, .2s, ease-in-out;
+     position            : absolute;
+     top                 : 50%;
+     -webkit-transform   : translate(0, -50%);
+     transform           : translate(0, -50%);
+ }
+ 
+
+ 
+ .pgn__prev.inactive,
+ .pgn__next.inactive {
+     opacity : 0.4;
+     cursor  : default;
+ }
+ 
+ .pgn__prev.inactive:hover,
+ .pgn__next.inactive:hover {
+     background-color : transparent;
+ }
+
+
 
 input.inputp {
   color: white;
@@ -788,7 +1478,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  color: #000000;
+  color: #8f8f8f;
   border-bottom: 1px solid #000000;
 }
 
