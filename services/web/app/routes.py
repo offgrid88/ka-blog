@@ -1,25 +1,39 @@
 #!/usr/bin/python
 
-from flask import render_template, flash, redirect, url_for, request
+from flask_mail import Mail, Message
+from flask import render_template, flash, redirect, url_for, request, session,Flask
 from app import app
 from dotenv import load_dotenv, find_dotenv
 import urllib
 import os
-from pymongo import MongoClient
 from bson import ObjectId
 from datetime import datetime
 from flask import Flask
 from pymongo import MongoClient
-import hashlib
-from flask import Flask, render_template, request, url_for, redirect, session
 import pymongo
 import bcrypt
-
 import datetime
 import hashlib
 import urllib
 
 
+######################################################
+#                                                     #
+#                                                     #
+#           Mail config and functions                 #
+#                                                     #
+#                                                     #
+#                                                     #
+#                                                     #
+######################################################
+app.config['MAIL_SERVER']='mail.aymenrachdi.xyz'
+app.config['MAIL_PORT'] = 587
+app.config['MAIL_USERNAME'] = 'contact@aymenrachdi.xyz'
+app.config['MAIL_PASSWORD'] = 'Kernaug_758400'
+app.config['MAIL_USE_TLS'] = False
+app.config['MAIL_USE_SSL'] = True
+mail = Mail(app)
+######################################################
 
 app.secret_key = "testing"
 load_dotenv(find_dotenv())
@@ -32,6 +46,18 @@ db= MongoClient('offgrid8_db', 27018, username=username, password=password,authS
 mydb=db.offgrid8_db
 def databaseBooks():
     return mydb.books
+
+def generate_password():
+    password=""
+    return password
+
+def password_to_mail():
+   msg = Message('Offgrid request to post', sender = 'contact@aymenrachdi.xyz', recipients = ['contact@aymenrachdi.xyz'])
+   msg.body = "This passcode is available for 30 seconds, Time is of the essence, you still reading !!... hurry up "
+   mail.send(msg)
+   return "Sent"
+
+
 
 def is_user_valid(passwd):
     aymen_password="Kernel_Augmentation758400"
@@ -60,27 +86,32 @@ def articles():
     print(allPosts)
     return render_template('articles.html', posts = allPosts)
 
+@app.route('/getpass' ,methods=['POST'])
+def getpass():
+    if request.method == 'POST':
+        if request.form['submit_button'] == 'get pass':
+            pass
+            print("email_sent")
+
 @app.route('/books' ,methods=['GET', 'POST'])
 def books():
-
     if request.method == "POST":
         info = request.form['info']
         thoughts = request.form['thoughts']
         password = request.form['password']
+        json={"info":info,"thoughts":thoughts}
         if is_user_valid(password):
-            return f'{info}, {thoughts},{password}'
+            inserted_id=booksDB.insert_one(json).inserted_id
+            if inserted_id:
+                print("success")
+            return render_template('books.html', books = inserted_id)
+            #return f'{info}, {thoughts},{password}'
         else:
-            return render_template('invalid.html')
-        
-        #return render_template("books.html")
+            return render_template('invalid.html',error=error)
     else:
-        #json = request.json
-        #print(json)
-        ##
-        #inserted_id=booksDB.insert_one(json).inserted_id
-        #print(inserted_id)
-        #return render_template('books.html', post = inserted_id)
-        return render_template('books.html')
+        allBooks = booksDB.find({})
+        print(allBooks)
+        return render_template('books.html',books=allBooks)
 
 
 @app.route('/fullpost', methods=['GET'])
@@ -104,13 +135,20 @@ def about():
 
 @app.route('/add_article', methods=["GET", "POST"])
 def add_article():
+    
     if request.method == "GET":
         return render_template("add_article.html")
     else:
+        #password = request.form['password']
+        
         json = request.json
+        password=json["password"]
+        json.pop("password")
         print(json)
-        if is_user_valid():
+        #print(password)
+        if is_user_valid(password):
             inserted_id=postsDB.insert_one(json).inserted_id
-            print(inserted_id)
+            if inserted_id:
+                print("success")
             return render_template('fullpost.html', post = inserted_id)
 

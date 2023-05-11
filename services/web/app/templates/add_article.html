@@ -11,7 +11,6 @@
             <main class="row content__page">
                 
                 <section class="column large-full entry format-standard">
-
                     <div class="media-wrap">
                         <div class="content__page-header">
                             <p text-align=center class="display-1">
@@ -36,9 +35,9 @@
                   <input type="password" id="password" name="password" value="{{ request.form['password'] }}" required >
 
                     <input name="submit" id="submit" class="btn btn--primary btn-wide  " value="submit article" type="submit">
-                    <input name="submit" id="submit" class="btn btn--primary btn-wide  " value="get pass" type="submit">
+                    <input name="submit" id="pass" class="btn btn--primary btn-wide  " value="get pass" type="submit">
                  
-          
+               
                
             
      <div class="editor-container" id="editor">
@@ -47,7 +46,7 @@
         <p><br></p>
       </div>
      
-       
+
    
 
       <!-- Initialize Quill editor -->
@@ -83,10 +82,11 @@
         document.getElementById("submit").onclick =  async() => {
           const title = document.getElementById("title").value; 
           const author = document.getElementById("author").value; 
+          const password = document.getElementById("password").value;
           const content =  quill.root.innerHTML;
-          const doc_dict = {title,author,content} 
+          const doc_dict = {title,author,content,password} 
           const full_doc = JSON.stringify(doc_dict);
-           console.log(full_doc)
+          console.log(full_doc)
             fetch("/add_article", {
                 method: 'POST',
                 headers: {

@@ -50,19 +50,25 @@
                   value="{{ request.form['password'] }}" required ></input>  <br>
                 </div>
                    
-        <input name="submit" id="submit" class="btn btn--primary btn-wide  " value="submit query" type="submit">
+       
 
-          <input name="submit" id="submit" class="btn btn--primary btn-wide " value="get pass" type="submit">
+                <input name="submit" id="submit" class="btn btn--primary btn-wide  " value="submit query" type="submit">
         </fieldset>
-        </form>
+      
+       
+     
  <!-- Create the editor container -->
-   </p>                    
-   <hr>           
+   </p>        
+   <form>            
+   <input name="get pass" id="get pass" class="btn btn--primary btn-wide " value="get pass" type="submit">  
+  </form>
    <p text-align=center class="display-1">
     Books I've Read
-    {% for post in posts: %}
-    {{ book['info'] }}
-    {{ books['thoughts'] }}
+    {% for book in books: %}
+    <hr>    
+    <h1>{{ book['info'] }}</h1>
+    <p>{{ book['thoughts'] }}</p>
+    <hr>    
     {% endfor %}
 </p>
                     </div>
