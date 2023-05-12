@@ -14,7 +14,14 @@ services:
       - 27018:27018
     volumes:
       - ./database:/data/db
-
+#  passcode_reset:
+#    build:
+#      context: ./services/passcode_reset
+#      dockerfile: Dockerfile
+#    command: python3 /usr/src/app/passcode_reset.py
+#    volumes:
+#      - ./services/web:/usr/src/app/
+  
   web:
     build:
       context: ./services/web

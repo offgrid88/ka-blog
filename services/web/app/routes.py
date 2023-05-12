@@ -18,15 +18,16 @@ import bcrypt
 import datetime
 import hashlib
 import urllib
+# importing the threading module
+import threading
 
-
+passcode=""
 #######################################################
-#                                                     #
-#                                                     #
 #           Mail config and functions                 #
 #           Password generation using                 #
-#            Minimalistic method "bcrypt"             #
+#        Minimalistic method via "bcrypt"             #
 #######################################################
+
 def generate_password():
     password=b"{random.random()}"
     hashed=bcrypt.hashpw(password,bcrypt.gensalt())
@@ -35,6 +36,7 @@ def generate_password():
 
 def password_to_mail():
     passcode=generate_password()
+    message="This passcode is available for 30 seconds, Time is of the essence,What ?!! you still reading !!... hurry up"
     smtp_server = "mail.aymenrachdi.xyz"
     port = 587  # For starttls
     sender_email = "contact@aymenrachdi.xyz"
@@ -42,7 +44,7 @@ def password_to_mail():
     password = "Kernaug_758400"
     # Create a multipart message and set headers
     subject = "Offgrid request to post"
-    body = "{passcode}This passcode is available for 30 seconds, Time is of the essence,What ?!! you still reading !!... hurry up "
+    body = "passcode ----> " + passcode + " <----" + message
     message = MIMEMultipart()
     message["From"] = sender_email
     message["To"] = receiver_email
@@ -60,9 +62,11 @@ def password_to_mail():
         server.ehlo()  # Can be omitted
         server.login(sender_email, password)
         server.sendmail(sender_email, receiver_email, text)
+        return passcode
+
 ######################################################
 
-app.secret_key = "testing"
+#app.secret_key = "testing"
 load_dotenv(find_dotenv())
 
 password= urllib.parse.quote_plus(os.environ.get("MONGO_PWD"))
@@ -77,7 +81,7 @@ def databaseBooks():
 
 
 def is_user_valid(passwd):
-    aymen_password="Kernel_Augmentation758400"
+    aymen_password=password_to_mail()
     if passwd==aymen_password:
         return True
     else:
@@ -91,8 +95,6 @@ postsDB = databaseArticles()
 
 @app.route('/')
 def index():
-
-    #allPosts = articles.find({})
     return render_template('home.html')
 
 
@@ -103,10 +105,13 @@ def articles():
     print(allPosts)
     return render_template('articles.html', posts = allPosts)
 
-@app.route('/getpass' ,methods=['POST'])
+@app.route('/getpass' ,methods=['POST','GET'])
 def getpass():
-    password_to_mail()
-    return 'email sent'
+    if request.method == "GET":
+        return render_template("getpass.html")
+    else:
+        password_to_mail()
+        return 'email sent'
 
 @app.route('/books' ,methods=['GET', 'POST'])
 def books():
@@ -120,12 +125,11 @@ def books():
             if inserted_id:
                 print("success")
             return render_template('books.html', books = inserted_id)
-            #return f'{info}, {thoughts},{password}'
         else:
-            return render_template('invalid.html',error=error)
+            return render_template('invalid.html')
     else:
         allBooks = booksDB.find({})
-        print(allBooks)
+        #print(allBooks)
         return render_template('books.html',books=allBooks)
 
 

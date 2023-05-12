@@ -24,7 +24,7 @@
                      
                    <p>
                 <!-- Create the editor container -->
-                <form name="contactForm" id="contactForm" method="post" action="" autocomplete="off" >
+                <form name="contactForm" id="contactForm" method="post" action="{{url_for('books')}}" autocomplete="off" >
                     <fieldset>
                         <div class="form-field"> 
                 <label for="info">Book Info</label><br>
@@ -57,10 +57,7 @@
         </fieldset>
       
       </form>
-      <form method="post" action ="{{url_for('getpass')}}" >
-      
-      <button name="get pass" id="get pass" class="btn btn--primary btn-wide"   type="submit" >get pass</button> 
-      </form>
+
       <!-- Create the editor container -->
    </p>        
    
