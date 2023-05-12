@@ -53,15 +53,17 @@
        
 
                 <input name="submit" id="submit" class="btn btn--primary btn-wide  " value="submit query" type="submit">
+                
         </fieldset>
       
-       
-     
- <!-- Create the editor container -->
+      </form>
+      <form method="post" action ="{{url_for('getpass')}}" >
+      
+      <button name="get pass" id="get pass" class="btn btn--primary btn-wide"   type="submit" >get pass</button> 
+      </form>
+      <!-- Create the editor container -->
    </p>        
-   <form>            
-   <input name="get pass" id="get pass" class="btn btn--primary btn-wide " value="get pass" type="submit">  
-  </form>
+   
    <p text-align=center class="display-1">
     Books I've Read
     {% for book in books: %}
@@ -72,13 +74,13 @@
     {% endfor %}
 </p>
                     </div>
-
+                   
                 </section>
 
             </main>
 
         </div> <!-- end s-content -->
-
+        
         {% include 'footer.html'%}
 
 </body>

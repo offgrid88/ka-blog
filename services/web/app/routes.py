@@ -1,6 +1,9 @@
 #!/usr/bin/python
 
-from flask_mail import Mail, Message
+import smtplib, ssl
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+from email.utils import formatdate
 from flask import render_template, flash, redirect, url_for, request, session,Flask
 from app import app
 from dotenv import load_dotenv, find_dotenv
@@ -17,22 +20,46 @@ import hashlib
 import urllib
 
 
-######################################################
+#######################################################
 #                                                     #
 #                                                     #
 #           Mail config and functions                 #
-#                                                     #
-#                                                     #
-#                                                     #
-#                                                     #
-######################################################
-app.config['MAIL_SERVER']='mail.aymenrachdi.xyz'
-app.config['MAIL_PORT'] = 587
-app.config['MAIL_USERNAME'] = 'contact@aymenrachdi.xyz'
-app.config['MAIL_PASSWORD'] = 'Kernaug_758400'
-app.config['MAIL_USE_TLS'] = False
-app.config['MAIL_USE_SSL'] = True
-mail = Mail(app)
+#           Password generation using                 #
+#            Minimalistic method "bcrypt"             #
+#######################################################
+def generate_password():
+    password=b"{random.random()}"
+    hashed=bcrypt.hashpw(password,bcrypt.gensalt())
+    hashed=hashed.decode()
+    return hashed
+
+def password_to_mail():
+    passcode=generate_password()
+    smtp_server = "mail.aymenrachdi.xyz"
+    port = 587  # For starttls
+    sender_email = "contact@aymenrachdi.xyz"
+    receiver_email = "contact@aymenrachdi.xyz"
+    password = "Kernaug_758400"
+    # Create a multipart message and set headers
+    subject = "Offgrid request to post"
+    body = "{passcode}This passcode is available for 30 seconds, Time is of the essence,What ?!! you still reading !!... hurry up "
+    message = MIMEMultipart()
+    message["From"] = sender_email
+    message["To"] = receiver_email
+    message["Subject"] = subject
+    message["Bcc"] = receiver_email
+    message["Date"] = formatdate(localtime=True)
+
+    # Add body to email
+    message.attach(MIMEText(body, "plain"))
+    text = message.as_string()
+    context = ssl.create_default_context()
+    with smtplib.SMTP(smtp_server, port) as server:
+        server.ehlo()  # Can be omitted
+        server.starttls(context=context)
+        server.ehlo()  # Can be omitted
+        server.login(sender_email, password)
+        server.sendmail(sender_email, receiver_email, text)
 ######################################################
 
 app.secret_key = "testing"
@@ -46,16 +73,6 @@ db= MongoClient('offgrid8_db', 27018, username=username, password=password,authS
 mydb=db.offgrid8_db
 def databaseBooks():
     return mydb.books
-
-def generate_password():
-    password=""
-    return password
-
-def password_to_mail():
-   msg = Message('Offgrid request to post', sender = 'contact@aymenrachdi.xyz', recipients = ['contact@aymenrachdi.xyz'])
-   msg.body = "This passcode is available for 30 seconds, Time is of the essence, you still reading !!... hurry up "
-   mail.send(msg)
-   return "Sent"
 
 
 
@@ -88,10 +105,8 @@ def articles():
 
 @app.route('/getpass' ,methods=['POST'])
 def getpass():
-    if request.method == 'POST':
-        if request.form['submit_button'] == 'get pass':
-            pass
-            print("email_sent")
+    password_to_mail()
+    return 'email sent'
 
 @app.route('/books' ,methods=['GET', 'POST'])
 def books():
