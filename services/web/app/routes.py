@@ -1,5 +1,5 @@
 #!/usr/bin/python
-
+import re
 import smtplib, ssl
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
@@ -13,7 +13,6 @@ from bson import ObjectId
 from datetime import datetime
 from flask import Flask
 from pymongo import MongoClient
-import pymongo
 import bcrypt
 import datetime
 import hashlib
@@ -27,12 +26,19 @@ passcode=""
 #           Password generation using                 #
 #        Minimalistic method via "bcrypt"             #
 #######################################################
-
 def generate_password():
     password=b"{random.random()}"
     hashed=bcrypt.hashpw(password,bcrypt.gensalt())
     hashed=hashed.decode()
+    pass_generation_time = str(datetime.datetime.now())
+    hashed_with_timestamp=hashed+" timestamp "+pass_generation_time
+    save_temp_passwd(hashed_with_timestamp)
     return hashed
+
+def save_temp_passwd(passcode):
+    passwd = open("/tmp/passwd.txt", "w")
+    passwd.write(passcode)
+    passwd.close()
 
 def password_to_mail():
     passcode=generate_password()
@@ -151,7 +157,7 @@ def about():
     return render_template('about.html')
 
 
-
+#pass_generation_time_list=re.split(r" |:",pass_generation_time)
 @app.route('/add_article', methods=["GET", "POST"])
 def add_article():
     
@@ -159,15 +165,32 @@ def add_article():
         return render_template("add_article.html")
     else:
         #password = request.form['password']
-        
+        hashed_with_timestamp = open("/tmp/passwd.txt", "r")
+        hashed_with_timestamp=hashed_with_timestamp.read()
+        list_hashed_and_timestamp=re.split(r"' timestamp '| |:",hashed_with_timestamp)
+        hashed=list_hashed_and_timestamp[0]
+        gen_date=list_hashed_and_timestamp[1]
+        gen_hours=list_hashed_and_timestamp[2]
+        gen_minutes=list_hashed_and_timestamp[3]
+        gen_seconds=list_hashed_and_timestamp[4]
+        submit_time = str(datetime.datetime.now())
+        list_submit_time=re.split(r" |:",submit_time)
+        submit_date=list_submit_time[0]
+        submit_hours=list_submit_time[1]
+        submit_minutes=list_submit_time[2]
+        submit_seconds=list_submit_time[3]
+        timeout=float(submit_seconds)-float(gen_seconds)
         json = request.json
         password=json["password"]
         json.pop("password")
         print(json)
         #print(password)
-        if is_user_valid(password):
+        if (password==hashed and gen_date == submit_date and gen_hours == submit_hours and gen_minutes == submit_minutes and timeout > 0 ):
             inserted_id=postsDB.insert_one(json).inserted_id
+            print("success")
             if inserted_id:
                 print("success")
             return render_template('fullpost.html', post = inserted_id)
+        else:
+            return render_template("add_article.html")
 
