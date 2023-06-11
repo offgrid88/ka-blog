@@ -86,12 +86,18 @@ def databaseBooks():
 
 
 
-def is_user_valid(passwd):
-    aymen_password=password_to_mail()
-    if passwd==aymen_password:
-        return True
-    else:
-        return False
+#compare passcode generation time and submit time
+def is_user_valid(password,list_hashed_and_timestamp,list_submit_time):
+    if (password==list_hashed_and_timestamp[0]):
+        print("password_correct")
+    if (list_hashed_and_timestamp[1]==list_submit_time[0]):
+        print("date valid")
+    if (list_hashed_and_timestamp[2]==list_submit_time[1]):
+        print("hours valid")
+    if (list_hashed_and_timestamp[3]==list_submit_time[2]):
+        print("minutes valid")
+    if ((float(list_submit_time[3])-float(list_hashed_and_timestamp[4]))>0):
+        print("did not timeout")
     
 def databaseArticles():
     return mydb.articles
@@ -157,6 +163,7 @@ def about():
     return render_template('about.html')
 
 
+
 #pass_generation_time_list=re.split(r" |:",pass_generation_time)
 @app.route('/add_article', methods=["GET", "POST"])
 def add_article():
@@ -169,28 +176,30 @@ def add_article():
         hashed_with_timestamp=hashed_with_timestamp.read()
         list_hashed_and_timestamp=re.split(r"' timestamp '| |:",hashed_with_timestamp)
         hashed=list_hashed_and_timestamp[0]
-        gen_date=list_hashed_and_timestamp[1]
-        gen_hours=list_hashed_and_timestamp[2]
-        gen_minutes=list_hashed_and_timestamp[3]
-        gen_seconds=list_hashed_and_timestamp[4]
+        #gen_date=list_hashed_and_timestamp[1]
+        #gen_hours=list_hashed_and_timestamp[2]
+        #gen_minutes=list_hashed_and_timestamp[3]
+        #gen_seconds=list_hashed_and_timestamp[4]
         submit_time = str(datetime.datetime.now())
         list_submit_time=re.split(r" |:",submit_time)
-        submit_date=list_submit_time[0]
-        submit_hours=list_submit_time[1]
-        submit_minutes=list_submit_time[2]
-        submit_seconds=list_submit_time[3]
-        timeout=float(submit_seconds)-float(gen_seconds)
+        #submit_date=list_submit_time[0]
+        #submit_hours=list_submit_time[1]
+        #submit_minutes=list_submit_time[2]
+        #submit_seconds=list_submit_time[3]
+        #timeout=float(submit_seconds)-float(gen_seconds)
         json = request.json
         password=json["password"]
         json.pop("password")
         print(json)
         #print(password)
-        if (password==hashed and gen_date == submit_date and gen_hours == submit_hours and gen_minutes == submit_minutes and timeout > 0 ):
+        is_user_valid(password,list_hashed_and_timestamp,list_submit_time)
+        if (password==hashed):
             inserted_id=postsDB.insert_one(json).inserted_id
             print("success")
             if inserted_id:
                 print("success")
             return render_template('fullpost.html', post = inserted_id)
         else:
+            print("failed",password,hashed)
             return render_template("add_article.html")
 
