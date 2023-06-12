@@ -10,3 +10,4 @@ services/mail/docker-data/certbot
 data_certbot
 services/mail/docker-data/dms/mail-logs
 services/mail/docker-data/dms/mail-data/amavis
+appdata
