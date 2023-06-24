@@ -125,6 +125,46 @@ def getpass():
         password_to_mail()
         return 'email sent'
 
+
+@app.route("/register", methods=["GET","POST"])
+def register():
+    if request.method == "POST":
+        allUsers = mydb.users.find({})
+        userMails = [user["email"].lower() for user in allUsers]
+        data = request.form
+        email = data["email"]
+        username = data["user"]
+        psw = data["password"]
+        verif = data["verif_pass"]
+        json = {"email": email, "username": username, "password": psw}
+        if psw != verif:
+            error = "Password Mismatch !"
+            return render_template('register.html', data=error)
+        elif email.lower() in userMails:
+            error = "Email address already exists !"
+            return render_template('register.html', data=error)
+        else:
+            inserted_id = mydb.users.insert_one(json).inserted_id
+            if inserted_id:
+                return render_template('login.html', data=["green","Successfully Added, Please Log In"])
+    else:
+        return render_template('register.html')
+
+@app.route("/login", methods=["GET","POST"])
+def login():
+    if request.method == "POST":
+        data = request.form
+        email = data["email"]
+        psw = data["password"]
+        allUsers = mydb.users.find({})
+        for user in allUsers:
+            if (user["email"] == email) and (user["password"] == psw):
+                return render_template("add_article.html")
+        return render_template('login.html', data=["red","Wrong Credentials !"])
+
+    else:
+        return render_template('login.html', data = ["",""])
+
 @app.route('/books' ,methods=['GET', 'POST'])
 def books():
     if request.method == "POST":

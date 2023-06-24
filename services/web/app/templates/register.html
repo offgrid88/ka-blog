@@ -10,13 +10,13 @@
 </head>
 
 <body>
-    <form method="POST">
+    <form method="POST" action="/register">
     <div class="text-center">
 
         <div class="container-xl" id="elemento">
             <br>
             <h3 id="crie">Are you lost ?</h3>
-            <input type="text" id="inputp" name="email" placeholder="E-mail">
+            <input type="email" id="inputp" name="email" placeholder="E-mail">
             <input type="text" id="inputp" name="user" placeholder="username">
             <input type="password" id="inputp" name="password" placeholder="password">
             <input type="password" id="inputp" name="verif_pass" placeholder="verify password">
@@ -26,6 +26,7 @@
     </form>
         <div class="container-xl" id="elemento2">
             <div class="center">
+                <h3 style = "color: red;">{{data}}</h3>
                 <h1 id="logo">KA registration</h1>
                 <h5>------</h5>
                 <h5 id="logo">If you have mistakenly entered this page, there is nothing to do </h5>
