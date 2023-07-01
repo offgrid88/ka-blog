@@ -17,31 +17,19 @@ import bcrypt
 import datetime
 import hashlib
 import urllib
-# importing the threading module
-import threading
 
-passcode=""
+
+
+
 #######################################################
 #           Mail config and functions                 #
 #           Password generation using                 #
 #        Minimalistic method via "bcrypt"             #
 #######################################################
-def generate_password():
-    password=b"{random.random()}"
-    hashed=bcrypt.hashpw(password,bcrypt.gensalt())
-    hashed=hashed.decode()
-    pass_generation_time = str(datetime.datetime.now())
-    hashed_with_timestamp=hashed+" timestamp "+pass_generation_time
-    save_temp_passwd(hashed_with_timestamp)
-    return hashed
 
-def save_temp_passwd(passcode):
-    passwd = open("/tmp/passwd.txt", "w")
-    passwd.write(passcode)
-    passwd.close()
 
 def password_to_mail():
-    passcode=generate_password()
+
     message="This passcode is available for 30 seconds, Time is of the essence,What ?!! you still reading !!... hurry up"
     smtp_server = "mail.aymenrachdi.xyz"
     port = 587  # For starttls
@@ -50,7 +38,7 @@ def password_to_mail():
     password = "Kernaug_758400"
     # Create a multipart message and set headers
     subject = "Offgrid request to post"
-    body = "passcode ----> " + passcode + " <----" + message
+    body = "passcode ---->   <----" + message
     message = MIMEMultipart()
     message["From"] = sender_email
     message["To"] = receiver_email
@@ -68,7 +56,7 @@ def password_to_mail():
         server.ehlo()  # Can be omitted
         server.login(sender_email, password)
         server.sendmail(sender_email, receiver_email, text)
-        return passcode
+        return message
 
 ######################################################
 
@@ -86,18 +74,7 @@ def databaseBooks():
 
 
 
-#compare passcode generation time and submit time
-def is_user_valid(password,list_hashed_and_timestamp,list_submit_time):
-    if (password==list_hashed_and_timestamp[0]):
-        print("password_correct")
-    if (list_hashed_and_timestamp[1]==list_submit_time[0]):
-        print("date valid")
-    if (list_hashed_and_timestamp[2]==list_submit_time[1]):
-        print("hours valid")
-    if (list_hashed_and_timestamp[3]==list_submit_time[2]):
-        print("minutes valid")
-    if ((float(list_submit_time[3])-float(list_hashed_and_timestamp[4]))>0):
-        print("did not timeout")
+
     
 def databaseArticles():
     return mydb.articles
@@ -117,13 +94,6 @@ def articles():
     print(allPosts)
     return render_template('articles.html', posts = allPosts)
 
-@app.route('/getpass' ,methods=['POST','GET'])
-def getpass():
-    if request.method == "GET":
-        return render_template("getpass.html")
-    else:
-        password_to_mail()
-        return 'email sent'
 
 
 @app.route("/register", methods=["GET","POST"])
@@ -159,30 +129,17 @@ def login():
         allUsers = mydb.users.find({})
         for user in allUsers:
             if (user["email"] == email) and (user["password"] == psw):
-                return render_template("add_article.html")
+                return render_template("add.html")
         return render_template('login.html', data=["red","Wrong Credentials !"])
 
     else:
         return render_template('login.html', data = ["",""])
 
-@app.route('/books' ,methods=['GET', 'POST'])
+@app.route('/books')
 def books():
-    if request.method == "POST":
-        info = request.form['info']
-        thoughts = request.form['thoughts']
-        password = request.form['password']
-        json={"info":info,"thoughts":thoughts}
-        if is_user_valid(password):
-            inserted_id=booksDB.insert_one(json).inserted_id
-            if inserted_id:
-                print("success")
-            return render_template('books.html', books = inserted_id)
-        else:
-            return render_template('invalid.html')
-    else:
-        allBooks = booksDB.find({})
-        #print(allBooks)
-        return render_template('books.html',books=allBooks)
+    allBooks = booksDB.find({})
+    #print(allBooks)
+    return render_template('books.html',books=allBooks)
 
 
 @app.route('/fullpost', methods=['GET'])
@@ -202,44 +159,9 @@ def getCurrentDateTime():
 def about():
     return render_template('about.html')
 
+@app.route('/add')
+def add():
+    return render_template("add.html")
 
 
-#pass_generation_time_list=re.split(r" |:",pass_generation_time)
-@app.route('/add_article', methods=["GET", "POST"])
-def add_article():
-    
-    if request.method == "GET":
-        return render_template("add_article.html")
-    else:
-        #password = request.form['password']
-        hashed_with_timestamp = open("/tmp/passwd.txt", "r")
-        hashed_with_timestamp=hashed_with_timestamp.read()
-        list_hashed_and_timestamp=re.split(r"' timestamp '| |:",hashed_with_timestamp)
-        hashed=list_hashed_and_timestamp[0]
-        #gen_date=list_hashed_and_timestamp[1]
-        #gen_hours=list_hashed_and_timestamp[2]
-        #gen_minutes=list_hashed_and_timestamp[3]
-        #gen_seconds=list_hashed_and_timestamp[4]
-        submit_time = str(datetime.datetime.now())
-        list_submit_time=re.split(r" |:",submit_time)
-        #submit_date=list_submit_time[0]
-        #submit_hours=list_submit_time[1]
-        #submit_minutes=list_submit_time[2]
-        #submit_seconds=list_submit_time[3]
-        #timeout=float(submit_seconds)-float(gen_seconds)
-        json = request.json
-        password=json["password"]
-        json.pop("password")
-        print(json)
-        #print(password)
-        is_user_valid(password,list_hashed_and_timestamp,list_submit_time)
-        if (password==hashed):
-            inserted_id=postsDB.insert_one(json).inserted_id
-            print("success")
-            if inserted_id:
-                print("success")
-            return render_template('fullpost.html', post = inserted_id)
-        else:
-            print("failed",password,hashed)
-            return render_template("add_article.html")
 

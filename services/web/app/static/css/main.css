@@ -1718,7 +1718,7 @@
      height                  : 6rem;
      line-height             : 5.6rem;
      padding                 : 0 3.2rem;
-     margin                  : 0 .4rem 1.6rem 0;
+     margin                  : 1.6rem .4rem 1.6rem 0;
      color                   : #000000;
      text-decoration         : none;
      text-align              : center;
@@ -1785,6 +1785,7 @@
  button.btn--medium {
      height      : 6.4rem !important;
      line-height : 6rem !important;
+     margin-top: 6rem;
  }
  
  .btn--large,
@@ -4788,7 +4789,11 @@ body.search-is-visible {
   padding-right: 100px;
   max-width: 2140px;
 }
-
+.s-footer {
+  padding-left: 100px;
+  padding-right: 100px;
+  max-width: 2140px;
+}
 /* -------------------------------------------------------------------
  * ## content
  * ------------------------------------------------------------------- */
@@ -4892,9 +4897,11 @@ body.search-is-visible {
  * site content & footer
  * ------------------------------------------------------------------- */
 @media screen and (max-width:1600px) {
-  .s-content,
-  .s-footer {
+  .s-content {
     padding-left: 320px;
+  }
+  .s-footer {
+    padding-left: 1px;
   }
 
 }
@@ -4902,7 +4909,7 @@ body.search-is-visible {
 @media screen and (max-width:1200px) {
   .s-content,
   .s-footer {
-    padding-left: 290px;
+
     padding-right: 80px;
   }
 

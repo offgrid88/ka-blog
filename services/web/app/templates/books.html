@@ -18,49 +18,7 @@
                                 Add a book ....
                             </p>
                         </div> <!-- end content__page-header -->
-                       
-                          
-                          
-                     
-                   <p>
-                <!-- Create the editor container -->
-                <form name="contactForm" id="contactForm" method="post" action="{{url_for('books')}}" autocomplete="off" >
-                    <fieldset>
-                        <div class="form-field"> 
-                <label for="info">Book Info</label><br>
 
-                  <input type="text" name="info"
-                  placeholder="Book info"
-                  value="{{ request.form['title'] }}" required ></input>  <br>
-                </div>
-
-                <div class="message form-field">
-                  <label for="title">My thoughts</label><br>
-       <textarea name="thoughts" id="cMessage" class="full-width" placeholder="thoughts" value="{{ request.form['thoughts'] }}" required>
-
-    </textarea>
-      <br>
-                </div>
-                
-                <div class="form-field">
-                  <label for="password">PASSCODE</label><br>
-
-                  <input type="password" name="password"
-                  placeholder="password"
-                  value="{{ request.form['password'] }}" required ></input>  <br>
-                </div>
-                   
-       
-
-                <input name="submit" id="submit" class="btn btn--primary btn-wide  " value="submit query" type="submit">
-                
-        </fieldset>
-      
-      </form>
-
-      <!-- Create the editor container -->
-   </p>        
-   
    <p text-align=center class="display-1">
     Books I've Read
     {% for book in books: %}
