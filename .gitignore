@@ -11,3 +11,4 @@ data_certbot
 services/mail/docker-data/dms/mail-logs
 services/mail/docker-data/dms/mail-data/amavis
 appdata
+.idea
