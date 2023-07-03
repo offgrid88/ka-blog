@@ -78,12 +78,11 @@
         document.getElementById("submit").onclick =  async() => {
           const title = document.getElementById("title").value; 
           const author = document.getElementById("author").value; 
-          const password = document.getElementById("password").value;
           const content =  quill.root.innerHTML;
-          const doc_dict = {title,author,content,password} 
+          const doc_dict = {title,author,content} 
           const full_doc = JSON.stringify(doc_dict);
           console.log(full_doc)
-            fetch("/add_article", {
+            fetch("/add", {
                 method: 'POST',
                 headers: {
                     "Content-Type": "application/json; charset=UTF-8"

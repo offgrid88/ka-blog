@@ -159,9 +159,19 @@ def getCurrentDateTime():
 def about():
     return render_template('about.html')
 
-@app.route('/add')
+@app.route('/add',methods=['GET','POST'])
 def add():
-    return render_template("add.html")
+    if request.method == "GET":
+        return render_template("add_article.html")
+    else:
+        json = request.json
+        inserted_id=postsDB.insert_one(json).inserted_id
+        print("success")
+        if inserted_id:
+            print("success")
+            return render_template('fullpost.html', post = inserted_id)
+        else:
+            print("failed")
 
 
 

@@ -460,7 +460,7 @@
    -webkit-flex: 1 1 0%;
    -ms-flex: 1 1 0%;
    flex: 1 1 0%;
-   padding: 0 20px;
+   padding: 0 0;
  }
  
  .collapse > .column,
@@ -1540,8 +1540,8 @@
  textarea,
  select {
      display       : block;
-     height        : 6.4rem;
-     padding       : 1.6rem 0 1.5rem;
+     height        : 2.4rem;
+     padding       : 0.5rem 0 0.5rem;
      border        : 0;
      outline       : none;
      color         : #cccccc;
@@ -2513,7 +2513,7 @@ fieldset {
   margin-bottom: 1.6rem;
 }
 
-input,
+
 textarea,
 select,
 pre,
@@ -2526,9 +2526,12 @@ dl,
 form,
 .video-container,
 .ss-custom-select {
-  margin-bottom: 3.2rem;
+  margin-bottom: 0.5rem;
 }
-
+input{
+  margin-bottom: 0.1rem;
+  margin-top: 0.1rem;
+}
 
 /* ===================================================================
  * # preloader
