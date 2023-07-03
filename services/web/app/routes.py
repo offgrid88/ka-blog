@@ -4,16 +4,14 @@ import smtplib, ssl
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.utils import formatdate
-from flask import render_template, flash, redirect, url_for, request, session,Flask
+from flask import render_template, flash, redirect, url_for, request, session,Flask,jsonify
 from app import app
 from dotenv import load_dotenv, find_dotenv
-import urllib
 import os
 from bson import ObjectId
 from datetime import datetime
-from flask import Flask
 from pymongo import MongoClient
-import bcrypt
+from flask_jwt_extended import JWTManager, create_access_token, get_jwt_identity, jwt_required
 import datetime
 import hashlib
 import urllib
@@ -28,7 +26,7 @@ import urllib
 #######################################################
 
 
-def password_to_mail():
+def send_mail():
 
     message="This passcode is available for 30 seconds, Time is of the essence,What ?!! you still reading !!... hurry up"
     smtp_server = "mail.aymenrachdi.xyz"
@@ -60,27 +58,32 @@ def password_to_mail():
 
 ######################################################
 
-#app.secret_key = "testing"
+
 load_dotenv(find_dotenv())
 
 password= urllib.parse.quote_plus(os.environ.get("MONGO_PWD"))
 
 username = urllib.parse.quote_plus(os.environ.get("USER_NAME"))
-print(password,username)
+
+
+
+
 db= MongoClient('offgrid8_db', 27018, username=username, password=password,authSource="admin")
 mydb=db.offgrid8_db
 def databaseBooks():
     return mydb.books
-
-
-
-
     
 def databaseArticles():
     return mydb.articles
 
 booksDB = databaseBooks()
 postsDB = databaseArticles()
+users_collection = mydb["users"]
+
+jwt = JWTManager(app) # initialize JWTManager
+app.config['JWT_SECRET_KEY'] = '38dd56f56d405e02ec0ba4be4607eaab'
+app.config['JWT_ACCESS_TOKEN_EXPIRES'] = datetime.timedelta(days=1) # define the life span of the token
+
 
 @app.route('/')
 def index():
@@ -106,7 +109,7 @@ def register():
         username = data["user"]
         psw = data["password"]
         verif = data["verif_pass"]
-        json = {"email": email, "username": username, "password": psw}
+        new_user = {"email": email, "username": username, "password": psw}
         if psw != verif:
             error = "Password Mismatch !"
             return render_template('register.html', data=error)
@@ -114,7 +117,9 @@ def register():
             error = "Email address already exists !"
             return render_template('register.html', data=error)
         else:
-            inserted_id = mydb.users.insert_one(json).inserted_id
+            # Creating Hash of password to store in the database
+            new_user["password"] = hashlib.sha256(new_user["password"].encode("utf-8")).hexdigest() # encrpt password
+            inserted_id=users_collection.insert_one(new_user)
             if inserted_id:
                 return render_template('login.html', data=["green","Successfully Added, Please Log In"])
     else:
@@ -123,10 +128,24 @@ def register():
 @app.route("/login", methods=["GET","POST"])
 def login():
     if request.method == "POST":
-        data = request.form
-        email = data["email"]
-        psw = data["password"]
+        login_details = request.form
+#        email = data["email"]
+#        psw = data["password"]
         allUsers = mydb.users.find({})
+        # Checking if user exists in database or not
+        user_from_db = users_collection.find_one({'username': login_details['username']})  # search for user in database
+        # If user exists
+        if user_from_db:
+            # Check if password is correct
+            encrpted_password = hashlib.sha256(login_details['password'].encode("utf-8")).hexdigest()
+            if encrpted_password == user_from_db['password']:
+                # Create JWT Access Token
+                access_token = create_access_token(identity=user_from_db['username']) # create jwt token
+                # Return Token
+                return jsonify(access_token=access_token), 200
+            else:
+                return jsonify({'msg': 'The username or password is incorrect'})
+        
         for user in allUsers:
             if (user["email"] == email) and (user["password"] == psw):
                 return render_template("add.html")
