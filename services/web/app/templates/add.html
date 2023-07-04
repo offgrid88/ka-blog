@@ -1,5 +1,8 @@
 
 {% include 'header.html'%}
+
+
+
 <!-- Include stylesheet -->
 <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
 <!-- Include the Quill library -->
@@ -13,6 +16,9 @@
                 <section class="column large-full entry format-standard">
                     <div class="media-wrap">
                         <div class="content__page-header">
+                        
+                          {% block content %}
+                  <p>Hello You have Logged in as {{ email }}</p> {% endblock %}
                             <p text-align=center class="display-1">
                                 Write something ....
                             </p>
@@ -101,7 +107,7 @@
             </main>
 
         </div> <!-- end s-content -->
-
+   
         {% include 'footer.html'%}
 
 </body>
