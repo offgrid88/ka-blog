@@ -8,4 +8,9 @@ python-dateutil==2.8.2
 python-dotenv==1.0.0
 Werkzeug==2.2.3
 gunicorn
-flask_jwt_extended
+
+Flask-FlatPages==0.8.1
+Frozen-Flask==0.18
+Markdown==3.3.7
+Pygments==2.12.0
+PyYAML==6.0

@@ -1,0 +1,209 @@
+
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>offgrid8</title>
+    <meta name="description" content="personal article website">
+    <meta name="author" content="Aymen Rachdi">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="/static/css/main.css">
+   
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <!-- script
+    ================================================== -->
+    <script src="/static/js/modernizr.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/pics/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/pics/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+  <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <div id="top" class="s-wrap site-wrapper">
+
+        <!-- site header
+        ================================================== -->
+        <header class="s-header">
+
+            <div class="header__top">
+                <div class="header__logo">
+                    <a class="site-logo" href="/">
+                        <img src="/static/pics/logo.svg" alt="Homepage">
+                    </a>
+                    
+                </div>
+            </div> <!-- end header__top -->
+
+            <nav class="header__nav-wrap">
+
+                <ul class="header__nav">
+                    <li class="current"><a href="/" title="">Home</a></li>
+                   
+                    <li >
+                        <a href="posts" title="">Posts</a>
+                      
+                    </li>
+                    <li><a href="books" title="">Books</a></li>
+                    <li><a href="about" title="">About</a></li>
+
+
+                </ul> <!-- end header__nav -->
+
+                <!-- Dark dialog -->
+
+          
+   
+
+            </nav> <!-- end header__nav-wrap -->
+
+            <!-- menu toggle -->
+            <a href="#0" class="header__menu-toggle">
+                <span>Menu</span>
+            </a>
+
+        </header> <!-- end s-header -->
+
+
+
+
+
+        <!-- site content
+        ================================================== -->
+        <div class="s-content content">
+            <main class="row content__page">
+                
+                <section class="column large-full entry format-standard">
+
+                    <div class="media-wrap">
+                        <div>
+                            <img src="images/thumbs/about/about-1000.jpg" srcset="images/thumbs/about/about-2000.jpg 2000w, 
+                                      images/thumbs/about/about-1000.jpg 1000w, 
+                                      images/thumbs/about/about-500.jpg 500w" sizes="(max-width: 2000px) 100vw, 2000px" alt="">
+                        </div>
+                    </div>
+
+                    <div class="content__page-header">
+                        <h2 >
+                        You reached this page so let me tell you about myself
+                        </h2>
+                        <h2 >
+                        From a technological and philosophical point of view.
+                        </h2>
+                    </div> <!-- end content__page-header -->
+
+                    <p class="lead drop-cap">
+                        An individual with a passion for all things cyberpunk.I am deeply interested in the genre and its many sub-genres, 
+                        and spends much of my free time exploring the worlds created by cyberpunk authors and filmmakers.  
+                    </p>
+                    <p>
+                        My love for this genre has not only provided endless hours of entertainment, but has also given me a unique perspective
+                         on technology, society, and the future.Whether discussing the latest cyberpunk novel or debating the merits 
+                         of a classic film,I always up for a conversation about this exciting and thought-provoking genre.
+                        
+                    </p>
+
+                    <p>
+                        As a technologist with a vision for a better future.I am passionate about using my technological skills to develop
+                         innovative solutions that protect againstthe dystopian future that many fear.With my deep understanding of technology 
+                         and its potential impact on society,I am uniquely positioned to create standards and technologies that can 
+                         safeguard our future.
+                         
+                    <p>
+                        Whether it's developing new encryption methods, designing more secure networks,
+                        or creating tools to combat disinformation and propaganda,
+                        I am dedicated to using technology for the greater good.
+                    </p>
+
+                    <hr>
+
+                    <h2>When you think of wisdom  As an illusion.Nothing can shake your faith. As long as the earth spins</h2>
+
+                    <div class="row block-large-1-2 block-tab-full">
+                        <div class="column">
+                            
+                            
+                            <img src="/static/pics/Cyberpunk1.jpg" alt="">
+                        </div>
+
+                        <div class="column">
+                            
+                            <img src="/static/pics/Cyberpunk2.jpg" alt="">
+                        </div>
+
+                        <div class="column">
+                            
+                            <img src="/static/pics/Cyberpunk3.jpg" alt="">
+                        </div>
+
+                        <div class="column">
+                      
+                            <img src="/static/pics/Cyberpunk4.jpg" alt="">
+                        </div>
+
+                    </div>
+                    </div>
+                   
+
+                </section>
+
+            </main>
+
+        </div> <!-- end s-content -->
+
+                </section>
+
+            </main>
+
+        </div> <!-- end s-content -->
+
+
+        
+        <!-- footer
+            ================================================== -->
+            <footer class="s-footer">
+                <div class="row">
+                    <div class="column large-full footer__content">
+                        <div class="footer__copyright">
+                            <span></span> 
+                            <span>Kernel Augmentation</span>  <a href="https://www.aymenrachdi.xyz.com/">Offgrid8</a></span>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top"></a>
+                </div>
+            </footer>
+    
+        </div> <!-- end s-wrap -->
+    
+    
+        <!-- Java Script
+        ================================================== -->
+        <script src="/static/js/jquery-3.2.1.min.js"></script>
+        <script src="/static/js/plugins.js"></script>
+        <script src="/static/js/main.js"></script>
+</body>
