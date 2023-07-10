@@ -9,6 +9,9 @@ services:
     command: python3 wsgi.py
     ports:
       - 5000:5000
+    environment:
+      - PUID=1467201853
+      - PGID=1467200513
     volumes:
       - ./services/web:/usr/src/app/
       - ./appdata/config/content:/usr/src/app/content:ro
