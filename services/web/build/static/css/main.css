@@ -3628,7 +3628,7 @@ select:-webkit-autofill:focus {
 
 .masonry .entry__text {
   padding: 3.2rem 2.8rem 4rem;
-  background-color: #ffffff;
+  background-color: #00051a; 
 }
 
 .masonry .entry__text p {
@@ -3644,12 +3644,12 @@ select:-webkit-autofill:focus {
 }
 
 .masonry .entry__title a {
-  color: #000000;
+  color: #cce2ff;
 }
 
 .masonry .entry__title a:hover,
 .masonry .entry__title a:focus {
-  color: #267367;
+  color: #4bffe4;
 }
 
 .masonry .entry__excerpt {
@@ -3676,7 +3676,7 @@ select:-webkit-autofill:focus {
 }
 
 .masonry .entry__meta a {
-  color: #000000;
+  color: #ffffff;
 }
 
 .masonry .entry__meta a:hover,

@@ -1,8 +1,8 @@
 title: Template to post
-date: 2023-08-11
+date: 2013-08-27
 
-American-style dates. I know, I know.
-Duplicate this to post something new
+Duplicate this template to post something
+
 You can have:
 * Lists
 * More Lists
