@@ -14,7 +14,6 @@ services:
       - PGID=1467200513
     volumes:
       - ./services/web:/usr/src/app/
-      - ./appdata/config/content:/usr/src/app/content:ro
     depends_on:
       - syncthing
   nginx:
@@ -38,6 +37,7 @@ services:
       - TZ=Etc/UTC
     volumes:
       - ./appdata/config:/config
+      - ./services/web/content:/config/content
       - ./data1:/data1
       - ./data2:/data2
      

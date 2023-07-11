@@ -24,7 +24,7 @@ def index():
 def books():
     return render_template('books.html')
 
-@app.route('/about')
+@app.route('/about/')
 def about():
     return render_template('about.html')
 
@@ -45,4 +45,4 @@ if __name__ == "__main__":
     if len(sys.argv) > 1 and sys.argv[1] == "build":
         freezer.freeze()
     else:
-        app.run(host='127.0.0.1', port=5000,debug=True,threaded=True)
+        app.run(host='0.0.0.0', port=5000,debug=True,threaded=True)
