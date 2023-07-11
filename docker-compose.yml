@@ -5,8 +5,8 @@ services:
     build:
       context: ./services/web
       dockerfile: Dockerfile
-    #command: python wsgi.py build && gunicorn --config gunicorn_config.py wsgi:app
-    command: python3 wsgi.py
+    command: gunicorn --config gunicorn_config.py wsgi:app
+    #command: python3 wsgi.py
     ports:
       - 5000:5000
     volumes:

@@ -19,12 +19,12 @@
 
    <p text-align=center class="display-1">
     Books I've Read
-    {% for book in books: %}
+    
+    <hr>  
+    {{ books.title }}  
+    <p> {{ books.html|safe }}</p>
     <hr>    
-    <h1>{{ book['info'] }}</h1>
-    <p>{{ book['thoughts'] }}</p>
-    <hr>    
-    {% endfor %}
+
 </p>
                     </div>
                    

@@ -9,6 +9,7 @@ FLATPAGES_AUTO_RELOAD = DEBUG
 FLATPAGES_EXTENSION = '.md','.html'
 FLATPAGES_ROOT = 'content'
 POST_DIR = 'posts'
+BOOKS_DIR='books'
 
 app = Flask(__name__)
 flatpages = FlatPages(app)
@@ -22,7 +23,9 @@ def index():
 
 @app.route('/books/')
 def books():
-    return render_template('books.html')
+    path = '{}/{}'.format(BOOKS_DIR,'books')
+    books = flatpages.get_or_404(path)
+    return render_template('books.html', books=books)
 
 @app.route('/about/')
 def about():
