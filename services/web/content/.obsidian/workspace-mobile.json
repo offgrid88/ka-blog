@@ -11,12 +11,8 @@
             "id": "a20558b473b772db",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "books/test2.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           },
           {
@@ -25,7 +21,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/This is a test from my phone.md",
+                "file": "posts/template to post.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +94,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "posts/This is a test from my phone.md",
+            "file": "posts/template to post.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -115,7 +111,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "posts/This is a test from my phone.md",
+            "file": "posts/template to post.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -127,7 +123,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "posts/This is a test from my phone.md"
+            "file": "posts/template to post.md"
           }
         }
       }
@@ -144,10 +140,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b50074bdf22031e9",
+  "active": "b8abba987689846d",
   "lastOpenFiles": [
+    "books/books.md",
+    "posts/template to post.md",
     "books/test2.md",
-    "posts/This is a test from my phone.md",
     "this a test from my phone"
   ]
 }
