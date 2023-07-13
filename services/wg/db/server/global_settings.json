@@ -1,0 +1,12 @@
+{
+	"endpoint_address": "107.175.76.231",
+	"dns_servers": [
+		"1.1.1.1"
+	],
+	"mtu": "1450",
+	"persistent_keepalive": "15",
+	"firewall_mark": "0xca6c",
+	"table": "auto",
+	"config_file_path": "/etc/wireguard/wg0.conf",
+	"updated_at": "2023-06-14T14:58:34.372642435Z"
+}

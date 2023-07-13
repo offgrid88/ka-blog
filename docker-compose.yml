@@ -1,0 +1,57 @@
+version: "3.8"
+
+services:
+  web:
+    build:
+      context: ./services/web
+      dockerfile: Dockerfile
+    command: gunicorn --config gunicorn_config.py wsgi:app
+    #command: python3 wsgi.py
+    ports:
+      - 5000:5000
+    volumes:
+      - ./services/web:/usr/src/app/
+    depends_on:
+      - syncthing
+  nginx:
+    build: ./services/nginx
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - ./services/nginx/conf.d:/etc/nginx/conf.d
+      - ./data_certbot/certbot/conf:/etc/letsencrypt
+      - ./services/nginx/log/nginx:/var/log/nginx/
+    depends_on:
+      - web
+  syncthing:
+    image: lscr.io/linuxserver/syncthing:latest
+    container_name: syncthing
+    hostname: sync.aymenrachdi.xyz
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+    volumes:
+      - ./appdata/config:/config
+      - ./services/web/content:/config/content
+      - ./data1:/data1
+      - ./data2:/data2
+     
+    ports:
+      - 8384:8384
+      - 22000:22000/tcp
+      - 22000:22000/udp
+      - 21027:21027/udp
+    restart: unless-stopped
+
+
+  certbot:
+    image: certbot/certbot
+    volumes:
+      - ./data_certbot/certbot/conf:/etc/letsencrypt
+      - ./data_certbot/certbot/www:/var/www/certbot
+
+
+volumes:
+  database:

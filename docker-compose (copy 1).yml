@@ -1,0 +1,56 @@
+version: "3.8"
+
+services:
+#  offgrid8_db:
+#    image: mongo:latest
+#    command: mongod --port 27018
+#    restart: unless-stopped
+#    env_file: ./services/db/.env.db
+#    #environment:
+#    #  - MONGO_INITDB_ROOT_USERNAME=$MONGO_INITDB_ROOT_USERNAME
+#    #  - MONGO_INITDB_ROOT_PASSWORD=password
+#    #  - MONGO_INITDB_DATABASE=admin
+#    ports:
+#      - 27018:27018
+#    volumes:
+#      - ./database:/data/db
+#  passcode_reset:
+#    build:
+#      context: ./services/passcode_reset
+#      dockerfile: Dockerfile
+#    command: python3 /usr/src/app/passcode_reset.py
+#    volumes:
+#      - ./services/web:/usr/src/app/ 
+  web:
+    build:
+      context: ./services/web
+      dockerfile: Dockerfile
+    command: gunicorn --config gunicorn_config.py wsgi:app
+    #command: python3 wsgi.py
+    ports:
+      - 5000:5000
+    env_file:
+      - ./.env
+    volumes:
+      - ./services/web:/usr/src/app/
+    depends_on:
+      - offgrid8_db
+  nginx:
+    build: ./services/nginx
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - ./services/nginx/conf.d:/etc/nginx/conf.d
+      - ./data_certbot/certbot/conf:/etc/letsencrypt
+      - ./services/nginx/log/nginx:/var/log/nginx/
+    depends_on:
+      - web
+  certbot:
+    image: certbot/certbot
+    volumes:
+      - ./data_certbot/certbot/conf:/etc/letsencrypt
+      - ./data_certbot/certbot/www:/var/www/certbot
+
+volumes:
+  database:

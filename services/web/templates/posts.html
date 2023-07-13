@@ -1,0 +1,45 @@
+{% include 'header.html'%}
+<body>
+        <!-- site content
+        ================================================== -->
+        <div class="s-content">
+            
+            <div class="masonry-wrap">
+
+                <div class="masonry">
+    
+                    <div class="grid-sizer"></div>
+                    <!-- article list -->
+                    {% for post in posts %}
+                    <article class="masonry__brick entry format-standard animate-this">
+                        <div class="entry__text">
+                            <div class="entry__header">
+    
+                                <h2 class="entry__title"><a href="{{ url_for('post', name=post.path.replace('posts/', '')) }}">
+                                    {{ post.title }}
+                                </a>
+                            </h2>
+                                
+                                 <div class="entry__meta">
+                                    <span class="entry__meta-date">
+                                        <a > <small>{{ post.date }}</small></a>
+                                    </span>
+                                </div> 
+                            
+                            </div>
+                           
+                        </div>
+        
+                    </article> <!-- article list -->
+                    {% endfor %}
+                </div> <!-- end masonry -->
+
+            </div> <!-- end masonry-wrap -->
+
+           
+
+        </div> <!-- end s-content -->
+
+
+        {% include 'footer.html'%}
+</body>

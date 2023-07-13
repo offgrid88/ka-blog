@@ -1,0 +1,19 @@
+{
+	"id": "ci4tplf7vbic74re3pig",
+	"private_key": "eNTcTMqq2mHAkKevaxumq9wUXYmHQuLfVxLyL99g+HY=",
+	"public_key": "cbyKKv7XsG43C0QjjL3VXbVffODi4eO116PumN7NUwA=",
+	"preshared_key": "7yMnKgxWobeKWjufgihnDBVyw9fiDJseefdpogBaHVc=",
+	"name": "phone",
+	"email": "",
+	"allocated_ips": [
+		"10.252.1.1/32"
+	],
+	"allowed_ips": [
+		"10.252.1.1/32"
+	],
+	"extra_allowed_ips": [],
+	"use_server_dns": true,
+	"enabled": true,
+	"created_at": "2023-06-14T15:29:25.912076573Z",
+	"updated_at": "2023-06-14T15:38:02.215596975Z"
+}
