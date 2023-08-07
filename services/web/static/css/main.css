@@ -2035,7 +2035,7 @@ input.inputp:focus{
 *::after,
 *::before {
   margin: 0;
-  padding: 0;
+  padding: 6px;
   box-sizing: inherit;
   font-size: 62,5%;
 }

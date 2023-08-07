@@ -24,6 +24,13 @@ services:
       - ./services/nginx/log/nginx:/var/log/nginx/
     depends_on:
       - web
+    healthcheck:
+            test: ["CMD", "curl", "-f", "http://localhost"]
+            interval: 1m30s
+            timeout: 10s
+            retries: 3
+            start_period: 40s
+
   syncthing:
     image: lscr.io/linuxserver/syncthing:latest
     container_name: syncthing
