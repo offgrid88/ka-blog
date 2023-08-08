@@ -5,14 +5,18 @@ services:
     build:
       context: ./services/web
       dockerfile: Dockerfile
+    restart: always
     command: gunicorn --config gunicorn_config.py wsgi:app
     #command: python3 wsgi.py
     ports:
       - 5000:5000
     volumes:
       - ./services/web:/usr/src/app/
-    depends_on:
-      - syncthing
+    healthcheck:
+            test: ["CMD", "curl", "127.0.0.1:5000"]
+            interval: 30s
+            timeout: 10s
+            retries: 3
   nginx:
     build: ./services/nginx
     ports:
@@ -24,13 +28,6 @@ services:
       - ./services/nginx/log/nginx:/var/log/nginx/
     depends_on:
       - web
-    healthcheck:
-            test: ["CMD", "curl", "-f", "http://localhost"]
-            interval: 1m30s
-            timeout: 10s
-            retries: 3
-            start_period: 40s
-
   syncthing:
     image: lscr.io/linuxserver/syncthing:latest
     container_name: syncthing
