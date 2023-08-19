@@ -4,27 +4,25 @@
         ================================================== -->
         <div class="s-content">
             
-            <div class="masonry-wrap">
+            <div>
 
-                <div class="masonry">
+                <div>
     
-                    <div class="grid-sizer"></div>
+                    
                     <!-- article list -->
                     {% for post in posts %}
                     <article class="masonry__brick entry format-standard animate-this">
                         <div class="entry__text">
                             <div class="entry__header">
-    
-                                <h2 class="entry__title"><a href="{{ url_for('post', name=post.path.replace('posts/', '')) }}">
+				    <dl>
+				  <dt>
+                                <h4 class="entry__title"><a href="{{ url_for('post', name=post.path.replace('posts/', '')) }}">
                                     {{ post.title }}
                                 </a>
-                            </h2>
-                                
-                                 <div class="entry__meta">
-                                    <span class="entry__meta-date">
-                                        <a > <small>{{ post.date }}</small></a>
-                                    </span>
-                                </div> 
+                            </h4>
+				  </dt>
+				  <dd>- <a > <small>{{ post.date }}</small></a></dd>
+				</dl> 
                             
                             </div>
                            
