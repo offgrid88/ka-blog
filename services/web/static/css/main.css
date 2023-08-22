@@ -192,6 +192,9 @@ pre.html-code code {
  /* Remove the border on images inside links in IE 10. */
  img {
    border-style: none;
+           display: block;
+        margin-left: auto; 
+        margin-right: auto;
  }
  
  /* ------------------------------------------------------------------- 
@@ -2258,7 +2261,7 @@ a:active {
 
 
 
-p img {
+p  {
   margin: 0;
 }
 

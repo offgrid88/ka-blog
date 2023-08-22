@@ -14,4 +14,4 @@ appdata
 .idea
 /services/web/content/**
 services/web/content/**
-
+services/web/build/**
