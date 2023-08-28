@@ -134,7 +134,12 @@ pre.css-code code {
 pre.html-code code {
     color: #00ca02;
 }
- 
+ div.entry__header {
+  margin: 0;
+  padding: 0px;
+  font-size: 7.5px;
+  box-sizing: content-box;
+ }
  
  a {
    background-color: transparent;
@@ -397,7 +402,7 @@ pre.html-code code {
    line-height: 1.6;
    margin-bottom: auto;
    text-rendering: optimizeLegibility;
-   color: #cdd6ff;;
+   color: #fff;;
  
  }
  
@@ -2076,7 +2081,7 @@ input.inputp:focus{
   margin: 0;
   padding: 6px;
   box-sizing: inherit;
-  font-size: 62,5%;
+  
 }
 
 
