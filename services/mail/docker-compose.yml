@@ -1,9 +1,10 @@
 services:
   mailserver:
+    environment:
+      # Set SSL certificate type.
+      - SSL_TYPE=letsencrypt
     image: docker.io/mailserver/docker-mailserver:latest
     container_name: mailserver
-    # If the FQDN for your mail-server is only two labels (eg: example.com),
-    # you can assign this entirely to `hostname` and remove `domainname`.
     hostname: mail
     domainname: aymenrachdi.xyz
     env_file: mailserver.env
@@ -32,3 +33,18 @@ services:
       timeout: 3s
       retries: 0
 
+  certbot-cloudflare:
+    image: certbot/dns-cloudflare:latest
+    command: certonly --dns-cloudflare --dns-cloudflare-credentials /run/secrets/cloudflare-api-token -d mail.aymenrachdi.xyz
+    volumes:
+      - ./docker-data/certbot/certs/:/etc/letsencrypt/
+      - ./docker-data/certbot/logs/:/var/log/letsencrypt/
+    secrets:
+      - cloudflare-api-token
+
+# Docs: https://docs.docker.com/engine/swarm/secrets/#use-secrets-in-compose
+# WARNING: In compose configs without swarm, the long syntax options have no effect,
+# Ensure that you properly `chmod 600` and `chown 0:0` the file on disk. Effectively treated as a bind mount.
+secrets:
+  cloudflare-api-token:
+    file: ./docker-data/certbot/secrets/cloudflare.ini

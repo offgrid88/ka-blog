@@ -54,8 +54,7 @@ font-size: 3.5em;
 
   ul {
       
-   color: #FFEEDD;
-   padding: 1.4rem 1.2rem 1.2rem;
+   padding: 1rem 1rem 1rem;
  }
 
  hr {
@@ -2449,6 +2448,7 @@ ul {
 li {
   display: list-item;
   font-size:15px;
+  color:#FAF0E6;
 }
 
 ol, ul {
@@ -5009,7 +5009,7 @@ body.search-is-visible {
   font-weight: 300;
   line-height: 1.778;
   margin-left: 0;
-  color: #000000;
+  color: #ce4e4e;
 }
 
 .entry__header-meta li {

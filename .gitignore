@@ -12,6 +12,6 @@ services/mail/docker-data/dms/mail-logs
 services/mail/docker-data/dms/mail-data/amavis
 appdata
 .idea
-/services/web/content/**
-services/web/content/**
-services/web/build/**
+services/web/content
+services/web/content*
+services/web/build*
