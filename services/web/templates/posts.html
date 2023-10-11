@@ -1,43 +1,48 @@
 {% include 'header.html'%}
 <body>
-        <!-- site content
-        ================================================== -->
-        <div class="s-content">
-            
-            <div>
 
-                <div>
-    
-                    
-                    <!-- article list -->
+<!-- site content
+        ================================================== -->
+        <div class="s-content content">
+            <main class="row content__page">
+		    <h3>Posts</h3>               
+                <article class="column large-full entry format-standard">
+
+                 
                     {% for post in posts %}
-                    <article class="masonry__brick entry format-standard animate-this">
-                        <div class="entry__text">
-                            <div class="entry__header">
-				    <dl>
-				  <dt>
-                                <h4 class="entry__title"><a href="{{ url_for('post', name=post.path.replace('posts/', '')) }}">
-                                    {{ post.title }}
-                                </a>
-                            </h4>
-				  </dt>
-				  <dd>- <a > <small>{{ post.date }}</small></a></dd>
-				</dl> 
-                            
-                            </div>
+
+			<ul>
+	<li>
+        <a href="{{ url_for('post', name=post.path.replace('posts/', '')) }}"> {{ post.title }}</a>
+				</li>
+				</ul>
+
+                    {% endfor %}   
+                                                   
                            
-                        </div>
         
                     </article> <!-- article list -->
-                    {% endfor %}
-                </div> <!-- end masonry -->
+                    
 
-            </div> <!-- end masonry-wrap -->
 
-           
+
+    
+
+                  
+
+                </article> <!-- end column large-full entry-->
+
+
+            
+    
+            
+       
+            </main>
 
         </div> <!-- end s-content -->
 
 
+
+        
         {% include 'footer.html'%}
 </body>

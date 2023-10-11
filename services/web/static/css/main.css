@@ -38,6 +38,10 @@ font-size: 3.5em;
    
    color: #C8C8FF;    
  }
+h4.entry__title {
+margin:0em;
+padding:0px;
+}
 
    h5 {
    font-size: 2em;
@@ -64,15 +68,16 @@ font-size: 3.5em;
  }
  
  pre {
-    background: #352F44;
+    background: #24273A;
     white-space: pre;
     word-wrap: break-word;
     overflow: auto;
     color:white;
     font-size:1.5rem;
     border: solid;
-    border-width:thin;
-    border-color:#FAF0E6;
+    border-width:0.1em;
+    #border-radius: 5px;
+    border-color:#A5ADCB;
     padding:15px;
     line-height:1.5;
  }
@@ -136,10 +141,20 @@ pre.html-code code {
 }
  div.entry__header {
   margin: 0;
+  line-height:1.5;
   padding: 0px;
   font-size: 7.5px;
   box-sizing: content-box;
  }
+ dl.entry__header{
+padding:1px;
+ }
+  div.entry__text {
+  
+  line-height:1.5;
+  padding: 0px;
+ }
+
  
  a {
    background-color: transparent;
@@ -169,6 +184,7 @@ pre.html-code code {
  /* Add the correct font size in all browsers. */
  small {
    font-size: 80%;
+   padding:1px;
  }
  
  /* Prevent `sub` and `sup` elements from affecting the line height in
@@ -3599,7 +3615,10 @@ select:-webkit-autofill:focus {
 }
 
 .masonry__brick {
-  padding: 0 20px;
+  margin:  0.2em;
+  #border:solid;
+  #border-color:#A5ADCB;
+  border-width:1px;
 }
 
 .masonry .entry {
@@ -5016,6 +5035,10 @@ body.search-is-visible {
   margin-left: 0;
   color: #ce4e4e;
 }
+dd.entry__header {
+	padding=0px;
+}
+
 
 .entry__header-meta li {
   display: inline-block;

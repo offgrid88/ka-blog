@@ -7,9 +7,8 @@ from flask_frozen import Freezer
 DEBUG = True
 FLATPAGES_AUTO_RELOAD = DEBUG
 FLATPAGES_EXTENSION = '.md','.html'
-FLATPAGES_ROOT = 'content'
+FLATPAGES_ROOT = 'content/blog'
 POST_DIR = 'posts'
-BOOKS_DIR='books'
 
 app = Flask(__name__)
 flatpages = FlatPages(app)
@@ -20,12 +19,6 @@ app.config.from_object(__name__)
 @app.route('/')
 def index():
     return render_template('home.html')
-
-@app.route('/books/')
-def books():
-    path = '{}/{}'.format(BOOKS_DIR,'books')
-    books = flatpages.get_or_404(path)
-    return render_template('books.html', books=books)
 
 @app.route('/about/')
 def about():

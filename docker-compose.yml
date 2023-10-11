@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
     restart: always
     command: gunicorn --config gunicorn_config.py wsgi:app
-    #command: python3 wsgi.py
+    #command: python3 build wsgi.py
     ports:
       - 5000:5000
     volumes:
@@ -26,8 +26,12 @@ services:
       - ./services/nginx/conf.d:/etc/nginx/conf.d
       - ./data_certbot/certbot/conf:/etc/letsencrypt
       - ./services/nginx/log/nginx:/var/log/nginx/
-    depends_on:
-      - web
+    healthcheck:
+            test: ["CMD", "curl", "127.0.0.1:5000"]
+            interval: 30s
+            timeout: 10s
+            retries: 3
+
   syncthing:
     image: lscr.io/linuxserver/syncthing:latest
     container_name: syncthing
