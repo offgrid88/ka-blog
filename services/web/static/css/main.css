@@ -4864,8 +4864,8 @@ body.search-is-visible {
 }
 
 .content__page img {
-  margin-top: 3.2rem;
-  margin-bottom: 3.2rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
 }
 
 .content__page-header {
@@ -4896,7 +4896,6 @@ body.search-is-visible {
 .footer__copyright span {
   display: inline-block;
 }
-
 .footer__copyright span::after {
   content: "|";
   display: inline-block;
