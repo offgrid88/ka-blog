@@ -1,0 +1,15 @@
+2023-11-23 18:11:05,694:DEBUG:certbot._internal.main:certbot version: 2.5.0
+2023-11-23 18:11:05,694:DEBUG:certbot._internal.main:Location of certbot entry point: /usr/local/bin/certbot
+2023-11-23 18:11:05,694:DEBUG:certbot._internal.main:Arguments: ['--standalone', '-d', 'mail.aymenrachdi.xyz']
+2023-11-23 18:11:05,695:DEBUG:certbot._internal.main:Discovered plugins: PluginsRegistry(PluginEntryPoint#manual,PluginEntryPoint#null,PluginEntryPoint#standalone,PluginEntryPoint#webroot)
+2023-11-23 18:11:05,722:DEBUG:certbot._internal.log:Root logging level set at 30
+2023-11-23 18:11:05,725:DEBUG:certbot._internal.plugins.selection:Requested authenticator standalone and installer None
+2023-11-23 18:11:05,733:DEBUG:certbot._internal.plugins.selection:Single candidate plugin: * standalone
+Description: Runs an HTTP server locally which serves the necessary validation files under the /.well-known/acme-challenge/ request path. Suitable if there is no HTTP server already running. HTTP challenge only (wildcards not supported).
+Interfaces: Authenticator, Plugin
+Entry point: standalone = certbot._internal.plugins.standalone:Authenticator
+Initialized: <certbot._internal.plugins.standalone.Authenticator object at 0x7fe0176ee260>
+Prep: True
+2023-11-23 18:11:05,734:DEBUG:certbot._internal.plugins.selection:Selected authenticator <certbot._internal.plugins.standalone.Authenticator object at 0x7fe0176ee260> and installer None
+2023-11-23 18:11:05,734:INFO:certbot._internal.plugins.selection:Plugins selected: Authenticator standalone, Installer None
+2023-11-23 18:11:37,906:ERROR:certbot._internal.log:Exiting due to user request.

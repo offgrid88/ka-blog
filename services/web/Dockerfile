@@ -13,7 +13,5 @@ RUN pip install --upgrade pip
 COPY ./requirements.txt /usr/src/app/requirements.txt
 RUN pip install -r /usr/src/app/requirements.txt
 RUN apt update && apt install -y curl
-RUN mkdir -p /usr/src/app/build
-RUN python3  /usr/src/app/wsgi.py build
 # copy project
 #COPY . /usr/src/app/

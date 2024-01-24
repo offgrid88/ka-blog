@@ -18,7 +18,9 @@ services:
             timeout: 10s
             retries: 3
   nginx:
-    build: ./services/nginx
+    build:
+        context: ./services/nginx
+        dockerfile: Dockerfile
     ports:
       - 80:80
       - 443:443
