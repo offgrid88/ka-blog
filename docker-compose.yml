@@ -9,7 +9,7 @@ services:
     command: gunicorn --config gunicorn_config.py wsgi:app
     #command: python3 build wsgi.py
     ports:
-      - 5000:5000
+      - 5000
     volumes:
       - ./services/web:/usr/src/app/
     healthcheck:
@@ -49,19 +49,51 @@ services:
       - ./data2:/data2
      
     ports:
-      - 8384:8384
+      - 8384
       - 22000:22000/tcp
       - 22000:22000/udp
       - 21027:21027/udp
     restart: unless-stopped
-
-
-  certbot:
-    image: certbot/certbot
+  wireguard:
+    image: lscr.io/linuxserver/wireguard:latest
+    container_name: wireguard
+    cap_add:
+      - NET_ADMIN
+      - SYS_MODULE #optional
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+      - SERVERURL=aymenrachdi.xyz #optional
+      - SERVERPORT=51820 #optional
+      - PEERS=4 #optional
+      - PEERDNS=auto #optional
+      - INTERNAL_SUBNET=10.13.13.0 #optional
+      - ALLOWEDIPS=0.0.0.0/0 #optional
+      - PERSISTENTKEEPALIVE_PEERS=all #optional
+      - LOG_CONFS=true #optional
     volumes:
-      - ./data_certbot/certbot/conf:/etc/letsencrypt
-      - ./data_certbot/certbot/www:/var/www/certbot
+      - /path/to/appdata/config:/config
+      - /lib/modules:/lib/modules #optional
+    ports:
+      - 51820:51820/udp
+    sysctls:
+      - net.ipv4.conf.all.src_valid_mark=1
+    restart: unless-stopped
 
+  code-server:
+    image: lscr.io/linuxserver/code-server:latest
+    container_name: code-server
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+      - PASSWORD=Kernaug_758400 #optional
+      - DEFAULT_WORKSPACE=/config/content #optional
+    volumes:
+      - ./appdata/config:/config
+      - ./services/web/content:/config/content
+    ports:
+      - 8443:8443
+    restart: unless-stopped
 
-volumes:
-  database:

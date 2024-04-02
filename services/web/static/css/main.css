@@ -174,7 +174,6 @@ padding:1px;
  
  /* 1. Correct the inheritance and scaling of font size in all browsers.
   * 2. Correct the odd `em` font sizing in all browsers. */
- code,
  kbd,
  samp {
    font-family: monospace, monospace;  /* 1 */
@@ -2408,11 +2407,11 @@ pre {
 
 
 code {
-  font-size: 2rem;
-  padding:1rem;
+  font-size: 1rem;
+  padding:0.3rem;
   font-color: white; 
   white-space: normal;   
-  background: #272D2D;
+  
   color: #F6F8FF;
   border:solid;
   border-width:thin;
