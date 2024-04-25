@@ -17,6 +17,6 @@ RUN rm /etc/nginx/conf.d/default.conf
 
 
 
-RUN touch /etc/cron.d/certbot.sh && echo "0 12 * * * /usr/bin/certbot.sh renew --quiet" > /etc/cron.d/certbot.sh 
+RUN touch /etc/cron.d/certbot.sh && echo "0 12 * * * /usr/bin/certbot renew --quiet" > /etc/cron.d/certbot.sh 
 
 
