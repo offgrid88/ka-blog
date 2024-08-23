@@ -1,3 +1,7 @@
+*.env*
+docker-data/dms/
+docker-data/certbot
+docker-data/certbot/logs
 services/web/core
 services/mail/docker-data
 services/nginx/log
@@ -16,3 +20,4 @@ appdata
 services/web/content*
 services/web/content/**
 services/web/build/**
+services/wg/config

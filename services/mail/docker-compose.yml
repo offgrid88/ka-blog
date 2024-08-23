@@ -34,3 +34,19 @@ services:
       retries: 0
 
 
+  certbot:
+    image: certbot/certbot
+    volumes:
+      - ./docker-data/certbot/certs/:/etc/letsencrypt
+      - ./certbot-data:/var/lib/letsencrypt
+    entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew --verbose; sleep 12h & wait $${!}; done;'"
+    environment:
+      - EMAIL=contact@aymenrachdi.xyz
+      - DOMAINS=aymenrachdi.xyz
+
+volumes:
+  maildata:
+  mailstate:
+  maillogs:
+  certs:
+  certbot-data:

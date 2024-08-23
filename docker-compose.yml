@@ -1,4 +1,4 @@
-version: "3.8"
+
 
 services:
   web:
@@ -17,6 +17,9 @@ services:
             interval: 30s
             timeout: 10s
             retries: 3
+            #networks:
+            #- compose_frontend
+
   nginx:
     build:
         context: ./services/nginx
@@ -28,11 +31,15 @@ services:
       - ./services/nginx/conf.d:/etc/nginx/conf.d
       - ./data_certbot/certbot/conf:/etc/letsencrypt
       - ./services/nginx/log/nginx:/var/log/nginx/
+      - ./services/nginx/webroot:/var/www/certbot
+    restart: always
     healthcheck:
             test: ["CMD", "curl", "127.0.0.1:5000"]
             interval: 30s
             timeout: 10s
             retries: 3
+            #networks:
+            #- compose_frontend
 
   syncthing:
     image: lscr.io/linuxserver/syncthing:latest
@@ -54,6 +61,8 @@ services:
       - 22000:22000/udp
       - 21027:21027/udp
     restart: unless-stopped
+    #networks:
+            #- compose_frontend
   wireguard:
     image: lscr.io/linuxserver/wireguard:latest
     container_name: wireguard
@@ -66,14 +75,14 @@ services:
       - TZ=Etc/UTC
       - SERVERURL=aymenrachdi.xyz #optional
       - SERVERPORT=51820 #optional
-      - PEERS=4 #optional
+      - PEERS=100 #optional
       - PEERDNS=auto #optional
       - INTERNAL_SUBNET=10.13.13.0 #optional
       - ALLOWEDIPS=0.0.0.0/0 #optional
       - PERSISTENTKEEPALIVE_PEERS=all #optional
       - LOG_CONFS=true #optional
     volumes:
-      - /path/to/appdata/config:/config
+      - ./services/wg/config:/config
       - /lib/modules:/lib/modules #optional
     ports:
       - 51820:51820/udp
@@ -96,4 +105,46 @@ services:
     ports:
       - 8443:8443
     restart: unless-stopped
-
+  mailserver:
+    environment:
+      # Set SSL certificate type.
+      - SSL_TYPE=letsencrypt
+    image: docker.io/mailserver/docker-mailserver:latest
+    container_name: mailserver
+    hostname: mail
+    domainname: aymenrachdi.xyz
+    env_file: mailserver.env
+    # More information about the mail-server ports:
+    # https://docker-mailserver.github.io/docker-mailserver/latest/config/security/understanding-the-ports/
+    # To avoid conflicts with yaml base-60 float, DO NOT remove the quotation marks.
+    ports:
+      - "25:25"    # SMTP  (explicit TLS => STARTTLS)
+      - "143:143"  # IMAP4 (explicit TLS => STARTTLS)
+      - "465:465"  # ESMTP (implicit TLS)
+      - "587:587"  # ESMTP (explicit TLS => STARTTLS)
+      - "993:993"  # IMAP4 (implicit TLS)
+    volumes:
+      - ./docker-data/certbot/certs/:/etc/letsencrypt
+      - ./docker-data/dms/mail-data/:/var/mail/
+      - ./docker-data/dms/mail-state/:/var/mail-state/
+      - ./docker-data/dms/mail-logs/:/var/log/mail/
+      - ./docker-data/dms/config/:/tmp/docker-mailserver/
+      - /etc/localtime:/etc/localtime:ro
+    restart: always
+    stop_grace_period: 1m
+    cap_add:
+      - NET_ADMIN
+    healthcheck:
+      test: "ss --listening --tcp | grep -P 'LISTEN.+:smtp' || exit 1"
+      timeout: 3s
+      retries: 0
+      
+  certbot:
+        stdin_open: true
+        tty: true
+        volumes:
+            - ${PWD}/docker-data/certbot/certs/:/etc/letsencrypt/
+            - ${PWD}/docker-data/certbot/logs/:/var/log/letsencrypt/
+            - ./services/nginx/webroot:/var/www/certbot
+        image: certbot/certbot
+        command: renew --webroot --webroot-path=/var/www/certbot
