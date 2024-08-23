@@ -21,3 +21,4 @@ services/web/content*
 services/web/content/**
 services/web/build/**
 services/wg/config
+docker-data
