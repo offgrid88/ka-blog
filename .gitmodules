@@ -1,0 +1,3 @@
+[submodule "services/web/quartz"]
+	path = services/web/quartz
+	url = git@github.com:offgrid88/quartz.git
