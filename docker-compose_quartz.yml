@@ -1,0 +1,17 @@
+
+services:
+  app:
+     build:
+       context: ./services/web/quartz
+       dockerfile: Dockerfile
+     ports:
+       - "8080:8080"
+     volumes:
+       - ./services/web/quartz:/usr/src/app
+       - ./services/web/content:/usr/src/app/content
+       - /usr/src/app/node_modules
+     command: ["npx", "quartz", "build", "--serve"]
+     environment:
+       - NODE_ENV=development
+
+

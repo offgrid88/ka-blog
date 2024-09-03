@@ -2,23 +2,27 @@
 
 services:
   web:
-    build:
-      context: ./services/web
-      dockerfile: Dockerfile
-    restart: always
-    command: gunicorn --config gunicorn_config.py wsgi:app
-    #command: python3 build wsgi.py
-    ports:
-      - 5000
-    volumes:
-      - ./services/web:/usr/src/app/
-    healthcheck:
-            test: ["CMD", "curl", "127.0.0.1:5000"]
-            interval: 30s
-            timeout: 10s
-            retries: 3
-            #networks:
-            #- compose_frontend
+     build:
+       context: ./services/web/quartz
+       dockerfile: Dockerfile
+     restart: always
+     ports:
+       - "8080:8080"
+     volumes:
+       - ./services/web/quartz:/usr/src/app
+       - ./services/web/content:/usr/src/app/content
+       - /usr/src/app/node_modules
+       
+     healthcheck:
+        test: ["CMD", "curl", "127.0.0.1:5000"]
+        interval: 30s
+        timeout: 10s
+        retries: 3
+
+     command: ["npx", "quartz", "build", "--serve"]
+     environment:
+       - NODE_ENV=development
+
 
   nginx:
     build:
