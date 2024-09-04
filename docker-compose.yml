@@ -10,7 +10,7 @@ services:
        - "8080:8080"
      volumes:
        - ./services/web/quartz:/usr/src/app
-       - ./services/web/content:/usr/src/app/content
+       - ./services/web/content/blog:/usr/src/app/content
        - /usr/src/app/node_modules
        
      healthcheck:

@@ -1,3 +1,7 @@
 [submodule "services/web/quartz"]
 	path = services/web/quartz
 	url = git@github.com:offgrid88/quartz.git
+
+[submodule "services/mqtts-docker"]
+	path = services/mqtts-docker
+	url = git@github.com:Kernel-Augmentation/mqtts-docker.git

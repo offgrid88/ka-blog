@@ -1,3 +1,4 @@
+data
 *.env*
 docker-data/dms/
 docker-data/certbot
