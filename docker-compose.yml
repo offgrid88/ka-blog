@@ -22,7 +22,8 @@ services:
      command: ["npx", "quartz", "build", "--serve"]
      environment:
        - NODE_ENV=development
-
+     networks:
+       - shared_network
 
   nginx:
     build:
@@ -36,14 +37,16 @@ services:
       - ./data_certbot/certbot/conf:/etc/letsencrypt
       - ./services/nginx/log/nginx:/var/log/nginx/
       - ./services/nginx/webroot:/var/www/certbot
+    extra_hosts:
+      - "host.docker.internal:host-gateway"    
+    networks:
+      - shared_network
     restart: always
     healthcheck:
-            test: ["CMD", "curl", "127.0.0.1:5000"]
+            test: ["CMD", "curl", "127.0.0.1:8080"]
             interval: 30s
             timeout: 10s
             retries: 3
-            #networks:
-            #- compose_frontend
 
   syncthing:
     image: lscr.io/linuxserver/syncthing:latest
@@ -65,8 +68,9 @@ services:
       - 22000:22000/udp
       - 21027:21027/udp
     restart: unless-stopped
-    #networks:
-            #- compose_frontend
+    networks:
+      - shared_network
+
   wireguard:
     image: lscr.io/linuxserver/wireguard:latest
     container_name: wireguard
@@ -109,6 +113,9 @@ services:
     ports:
       - 8443:8443
     restart: unless-stopped
+    networks:
+      - shared_network
+
   mailserver:
     environment:
       # Set SSL certificate type.
@@ -152,3 +159,8 @@ services:
             - ./services/nginx/webroot:/var/www/certbot
         image: certbot/certbot
         command: renew --webroot --webroot-path=/var/www/certbot
+
+networks:
+  shared_network:
+    external: true
+
