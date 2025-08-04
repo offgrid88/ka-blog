@@ -25,28 +25,31 @@ services:
      networks:
        - shared_network
 
-  nginx:
-    build:
-        context: ./services/nginx
-        dockerfile: Dockerfile
+  nginxmanager:
+    image: 'jc21/nginx-proxy-manager:latest'
+    restart: unless-stopped
     ports:
-      - 80:80
-      - 443:443
+      # These ports are in format <host-port>:<container-port>
+      - '80:80' # Public HTTP Port
+      - '443:443' # Public HTTPS Port
+      - '81:81' # Admin Web Port
+      # Add any other Stream port you want to expose
+      # - '21:21' # FTP
+
+    #environment:
+      # Uncomment this if you want to change the location of
+      # the SQLite DB file within the container
+      # DB_SQLITE_FILE: "/data/database.sqlite"
+
+      # Uncomment this if IPv6 is not enabled on your host
+      # DISABLE_IPV6: 'true'
+
     volumes:
-      - ./services/nginx/conf.d:/etc/nginx/conf.d
-      - ./data_certbot/certbot/conf:/etc/letsencrypt
-      - ./services/nginx/log/nginx:/var/log/nginx/
-      - ./services/nginx/webroot:/var/www/certbot
-    extra_hosts:
-      - "host.docker.internal:host-gateway"    
+      - ./data:/data
+      - ./wordpress:/var/www/html
+      - ./letsencrypt:/etc/letsencrypt
     networks:
       - shared_network
-    restart: always
-    healthcheck:
-            test: ["CMD", "curl", "127.0.0.1:8080"]
-            interval: 30s
-            timeout: 10s
-            retries: 3
 
   syncthing:
     image: lscr.io/linuxserver/syncthing:latest
@@ -116,39 +119,40 @@ services:
     networks:
       - shared_network
 
-  mailserver:
-    environment:
-      # Set SSL certificate type.
-      - SSL_TYPE=letsencrypt
-    image: docker.io/mailserver/docker-mailserver:latest
-    container_name: mailserver
-    hostname: mail
-    domainname: aymenrachdi.xyz
-    env_file: mailserver.env
-    # More information about the mail-server ports:
-    # https://docker-mailserver.github.io/docker-mailserver/latest/config/security/understanding-the-ports/
-    # To avoid conflicts with yaml base-60 float, DO NOT remove the quotation marks.
+  #################################################################
+  # Stalwart Mail Server
+  #################################################################
+  stalwart-mail:
+    image: stalwartlabs/mail-server:latest
+    container_name: stalwart-mail
+    restart: unless-stopped
     ports:
-      - "25:25"    # SMTP  (explicit TLS => STARTTLS)
-      - "143:143"  # IMAP4 (explicit TLS => STARTTLS)
-      - "465:465"  # ESMTP (implicit TLS)
-      - "587:587"  # ESMTP (explicit TLS => STARTTLS)
-      - "993:993"  # IMAP4 (implicit TLS)
+      - "8080:8080"
+      - "25:25"
+      - "587:587"
+      - "465:465"
+      - "143:143"
+      - "993:993"
+      - "4190:4190"
+      - "110:110"
+      - "995:995"
     volumes:
-      - ./docker-data/certbot/certs/:/etc/letsencrypt
-      - ./docker-data/dms/mail-data/:/var/mail/
-      - ./docker-data/dms/mail-state/:/var/mail-state/
-      - ./docker-data/dms/mail-logs/:/var/log/mail/
-      - ./docker-data/dms/config/:/tmp/docker-mailserver/
-      - /etc/localtime:/etc/localtime:ro
-    restart: always
-    stop_grace_period: 1m
-    cap_add:
-      - NET_ADMIN
+      - ./stalwart-mail:/opt/stalwart-mail
+      - ./backups:/opt/stalwart-mail/backups
+      - ./certbot/conf:/etc/letsencrypt
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
     healthcheck:
-      test: "ss --listening --tcp | grep -P 'LISTEN.+:smtp' || exit 1"
-      timeout: 3s
-      retries: 0
+      test: ["CMD-SHELL", "curl -f http://localhost:8080/health || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    networks:
+      - shared_network
+ #################################################################
       
   certbot:
         stdin_open: true
