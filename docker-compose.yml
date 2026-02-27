@@ -123,7 +123,7 @@ services:
   # Stalwart Mail Server
   #################################################################
   stalwart-mail:
-    image: stalwartlabs/mail-server:latest
+    image: stalwartlabs/stalwart:latest
     container_name: stalwart-mail
     restart: unless-stopped
     ports:
@@ -137,7 +137,7 @@ services:
       - "110:110"
       - "995:995"
     volumes:
-      - ./stalwart-mail:/opt/stalwart-mail
+      - ./stalwart-mail:/opt/stalwart
       - ./backups:/opt/stalwart-mail/backups
       - ./certbot/conf:/etc/letsencrypt
     logging:
@@ -153,17 +153,6 @@ services:
     networks:
       - shared_network
  #################################################################
-      
-  certbot:
-        stdin_open: true
-        tty: true
-        volumes:
-            - ${PWD}/docker-data/certbot/certs/:/etc/letsencrypt/
-            - ${PWD}/docker-data/certbot/logs/:/var/log/letsencrypt/
-            - ./services/nginx/webroot:/var/www/certbot
-        image: certbot/certbot
-        command: renew --webroot --webroot-path=/var/www/certbot
-
 networks:
   shared_network:
     external: true

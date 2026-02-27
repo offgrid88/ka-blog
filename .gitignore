@@ -1,3 +1,5 @@
+stalwart-mail
+letsencrypt/
 data
 *.env*
 docker-data/dms/
